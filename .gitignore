@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# Node / frontend
+node_modules/
+dist/
+.vite/
+
+# Local env
+.env
+.env.*
+
+# Private source snapshots
+raw/

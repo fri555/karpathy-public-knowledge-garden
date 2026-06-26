@@ -1,0 +1,3920 @@
+{
+  "cards": [
+    {
+      "id": "concept-30-70-定律-definition-001",
+      "type": "definition",
+      "question": "什么是 30/70 定律？",
+      "answer": "**Agent 的\"智能\"部分只占 30% 的工作量，剩下 70% 全在\"连接\"上**——管权限、防泄露、协议互通——这是 Agent 从 demo 走向生产的核心工程现实。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/30-70定律.md",
+      "concepts": [
+        "30/70 定律"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-30-70-定律-connection-001",
+      "type": "connection",
+      "question": "30/70 定律 和哪些旧概念发生连接？",
+      "answer": "20260528-掘金-MCP协议落地三条铁律、Agent Gateway协议翻译层、工具调用幻觉、LLM 编程三宗罪、Hooks确定性执行、Goal-Driven Execution",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/30-70定律.md",
+      "concepts": [
+        "20260528-掘金-MCP协议落地三条铁律",
+        "Agent Gateway协议翻译层",
+        "工具调用幻觉",
+        "LLM 编程三宗罪",
+        "Hooks确定性执行",
+        "Goal-Driven Execution"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-agent-md-协议-definition-001",
+      "type": "definition",
+      "question": "什么是 AGENT.md 协议？",
+      "answer": "[[三层架构]] 中的第三层——给 LLM Agent 读的配置文件，规定 Wiki 怎么组织、用什么约定、各种操作遵循什么流程。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/AGENT.md 协议.md",
+      "concepts": [
+        "AGENT.md 协议"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-agent-md-协议-connection-001",
+      "type": "connection",
+      "question": "AGENT.md 协议 和哪些旧概念发生连接？",
+      "answer": "三层架构、Ingest 录入、Query 查询、Maintain 维护、../../AGENT、LLM Wiki、20260407-知乎-Karpathy开源Agent知识库、20260413-知乎-Qwen Code+Obsidian搭建Karpathy知识库",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/AGENT.md 协议.md",
+      "concepts": [
+        "三层架构",
+        "Ingest 录入",
+        "Query 查询",
+        "Maintain 维护",
+        "../../AGENT",
+        "LLM Wiki",
+        "20260407-知乎-Karpathy开源Agent知识库",
+        "20260413-知乎-Qwen Code+Obsidian搭建Karpathy知识库"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-ai-agent-工作台-definition-001",
+      "type": "definition",
+      "question": "什么是 AI Agent 工作台？",
+      "answer": "AI Agent 工作台是把自然语言、任务规划、工具调用、文件/知识库、产物沉淀和长期上下文整合在一起的生产力系统；它不是聊天机器人，而是面向真实工作的 Agent 操作台。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/AI Agent 工作台.md",
+      "concepts": [
+        "AI Agent 工作台"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-ai-agent-工作台-connection-001",
+      "type": "connection",
+      "question": "AI Agent 工作台 和哪些旧概念发生连接？",
+      "answer": "Agentic Engineering、上下文工程、RAG、../entities/MCP、Agent工程化兜底、../summaries/20260625-Codex-从0搭建AI-Agent工作台规划、../syntheses/20260625-功能完备AI-Agent工作台学习路线",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/AI Agent 工作台.md",
+      "concepts": [
+        "Agentic Engineering",
+        "上下文工程",
+        "RAG",
+        "../entities/MCP",
+        "Agent工程化兜底",
+        "../summaries/20260625-Codex-从0搭建AI-Agent工作台规划",
+        "../syntheses/20260625-功能完备AI-Agent工作台学习路线"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-agent-gateway-协议翻译层-definition-001",
+      "type": "definition",
+      "question": "什么是 Agent Gateway 协议翻译层？",
+      "answer": "不要试图统一所有 Agent 的通信协议（不现实），而是在中间加一个轻量级 Gateway——**对外暴露统一 MCP，内部路由到 A2A/REST/gRPC**。把协议差异隔离在 Gateway 层，不污染业务逻辑。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/Agent Gateway协议翻译层.md",
+      "concepts": [
+        "Agent Gateway 协议翻译层"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-agent-gateway-协议翻译层-connection-001",
+      "type": "connection",
+      "question": "Agent Gateway 协议翻译层 和哪些旧概念发生连接？",
+      "answer": "20260528-掘金-MCP协议落地三条铁律、MCP、A2A、30-70定律",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/Agent Gateway协议翻译层.md",
+      "concepts": [
+        "20260528-掘金-MCP协议落地三条铁律",
+        "MCP",
+        "A2A",
+        "30-70定律"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-agent-工作台产品化-definition-001",
+      "type": "definition",
+      "question": "什么是 Agent 工作台产品化？",
+      "answer": "Agent 工作台产品化，是把“模型能做”变成“用户敢用、可追踪、可恢复、可持续运营”的过程；核心不是再加一个 prompt，而是补齐信任、控制、反馈和运营系统。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/Agent 工作台产品化.md",
+      "concepts": [
+        "Agent 工作台产品化"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-agent-工作台产品化-connection-001",
+      "type": "connection",
+      "question": "Agent 工作台产品化 和哪些旧概念发生连接？",
+      "answer": "Agent工程化兜底、验证瓶颈、Goal-Driven Execution、上下文工程、../summaries/20260625-Codex-从0搭建AI-Agent工作台规划、../syntheses/20260625-功能完备AI-Agent工作台学习路线",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/Agent 工作台产品化.md",
+      "concepts": [
+        "Agent工程化兜底",
+        "验证瓶颈",
+        "Goal-Driven Execution",
+        "上下文工程",
+        "../summaries/20260625-Codex-从0搭建AI-Agent工作台规划",
+        "../syntheses/20260625-功能完备AI-Agent工作台学习路线"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-agent-工作台能力分层-definition-001",
+      "type": "definition",
+      "question": "什么是 Agent 工作台能力分层？",
+      "answer": "把功能完备的 AI Agent 工作台拆成从用户界面到模型、工具、数据、权限、观测和运营的多层能力图谱，避免把“Agent”误解成一个 prompt 或一个聊天接口。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/Agent 工作台能力分层.md",
+      "concepts": [
+        "Agent 工作台能力分层"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-agent-工作台能力分层-connection-001",
+      "type": "connection",
+      "question": "Agent 工作台能力分层 和哪些旧概念发生连接？",
+      "answer": "上下文工程、AI Agent 工作台、Agent工程化兜底、验证瓶颈、../entities/MCP、RAG、../summaries/20260625-Codex-从0搭建AI-Agent工作台规划、../syntheses/20260625-功能完备AI-Agent工作台学习路线",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/Agent 工作台能力分层.md",
+      "concepts": [
+        "上下文工程",
+        "AI Agent 工作台",
+        "Agent工程化兜底",
+        "验证瓶颈",
+        "../entities/MCP",
+        "RAG",
+        "../summaries/20260625-Codex-从0搭建AI-Agent工作台规划",
+        "../syntheses/20260625-功能完备AI-Agent工作台学习路线"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-agent-自主工具链构建-connection-001",
+      "type": "connection",
+      "question": "Agent 自主工具链构建 和哪些旧概念发生连接？",
+      "answer": "20260611-SimonWillison-ClaudeFableRelentlesslyProactive、concepts/Coding Agent 安全沙箱、concepts/工具调用、concepts/Agent 工程化兜底、entities/Claude Fable 5",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/Agent 自主工具链构建.md",
+      "concepts": [
+        "20260611-SimonWillison-ClaudeFableRelentlesslyProactive",
+        "concepts/Coding Agent 安全沙箱",
+        "concepts/工具调用",
+        "concepts/Agent 工程化兜底",
+        "entities/Claude Fable 5"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-agentic-engineering-definition-001",
+      "type": "definition",
+      "question": "什么是 Agentic Engineering？",
+      "answer": "Simon Willison 定义的术语——**专业软件工程师用 AI 工具提升自己工作的方式**，关注质量、安全、可维护性、性能，不是用 AI 降低标准。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/Agentic Engineering.md",
+      "concepts": [
+        "Agentic Engineering"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-agentic-engineering-connection-001",
+      "type": "connection",
+      "question": "Agentic Engineering 和哪些旧概念发生连接？",
+      "answer": "Vibe Coding、../summaries/20260506-SimonWillison-Vibe coding and agentic engineering、Simplicity First、Surgical Changes、Think Before Coding、Goal-Driven Execution、规范偏差正常化、Agent工程化兜底、../entities/forrestchang、../summaries/20260526-GitHub-andrej-karpathy-skills原仓库、../summaries/20260622-SimonWillison-Porting-Moebius-model-to-browser",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/Agentic Engineering.md",
+      "concepts": [
+        "Vibe Coding",
+        "../summaries/20260506-SimonWillison-Vibe coding and agentic engineering",
+        "Simplicity First",
+        "Surgical Changes",
+        "Think Before Coding",
+        "Goal-Driven Execution",
+        "规范偏差正常化",
+        "Agent工程化兜底",
+        "../entities/forrestchang",
+        "../summaries/20260526-GitHub-andrej-karpathy-skills原仓库",
+        "../summaries/20260622-SimonWillison-Porting-Moebius-model-to-browser"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-agent-团队三阶段曲线-definition-001",
+      "type": "definition",
+      "question": "什么是 Agent 团队三阶段曲线？",
+      "answer": "每个 Agent 团队都会经历 **混乱期（1-7 天，负收益）→ 稳定期（8-21 天，少量编辑）→ 复利期（21 天+，自动跑通）** 三阶段——**绝大多数人死在第 1 阶段**。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/Agent团队三阶段曲线.md",
+      "concepts": [
+        "Agent 团队三阶段曲线"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-agent-团队三阶段曲线-connection-001",
+      "type": "connection",
+      "question": "Agent 团队三阶段曲线 和哪些旧概念发生连接？",
+      "answer": "Shubham Saboo、20260528-36氪-Saboo30天6Agent复盘、反馈闭环写入文件、纠错式Prompt工程、Goal-Driven Execution、知识复利、Mac Mini Agent Fleet",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/Agent团队三阶段曲线.md",
+      "concepts": [
+        "Shubham Saboo",
+        "20260528-36氪-Saboo30天6Agent复盘",
+        "反馈闭环写入文件",
+        "纠错式Prompt工程",
+        "Goal-Driven Execution",
+        "知识复利",
+        "Mac Mini Agent Fleet"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-agent-工程化兜底-definition-001",
+      "type": "definition",
+      "question": "什么是 Agent 工程化兜底？",
+      "answer": "Agent 再智能，也是软件系统，**软件系统就需要边界和兜底**——用确定性的工程手段（Schema 校验、白名单、循环检测、Hooks）弥补 LLM 的概率性本质。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/Agent工程化兜底.md",
+      "concepts": [
+        "Agent 工程化兜底"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-agent-工程化兜底-connection-001",
+      "type": "connection",
+      "question": "Agent 工程化兜底 和哪些旧概念发生连接？",
+      "answer": "20260528-掘金-MCP协议落地三条铁律、Shareuhack、20260528-Shareuhack-CLAUDE四层架构实战、Hooks确定性执行、工具调用幻觉、字段级权限、Goal-Driven Execution、LLM 编程三宗罪",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/Agent工程化兜底.md",
+      "concepts": [
+        "20260528-掘金-MCP协议落地三条铁律",
+        "Shareuhack",
+        "20260528-Shareuhack-CLAUDE四层架构实战",
+        "Hooks确定性执行",
+        "工具调用幻觉",
+        "字段级权限",
+        "Goal-Driven Execution",
+        "LLM 编程三宗罪"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-claude-md-四层架构-definition-001",
+      "type": "definition",
+      "question": "什么是 CLAUDE.md 四层架构？",
+      "answer": "Claude Code 的完整配置体系不是 CLAUDE.md 一个文件，而是 **CLAUDE.md（行为宪法）/ Skills（可执行 SOP）/ Hooks（强制执行法）/ Memory（学习记录）** 四层分工——把所有东西塞进 CLAUDE.md 是最常见的错误。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/CLAUDE.md四层架构.md",
+      "concepts": [
+        "CLAUDE.md 四层架构"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-claude-md-四层架构-connection-001",
+      "type": "connection",
+      "question": "CLAUDE.md 四层架构 和哪些旧概念发生连接？",
+      "answer": "Shareuhack、20260528-Shareuhack-CLAUDE四层架构实战、原则化指令、记忆文件vs技能文件、Hooks确定性执行、三套记忆系统、20260528-36氪-Saboo30天6Agent复盘",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/CLAUDE.md四层架构.md",
+      "concepts": [
+        "Shareuhack",
+        "20260528-Shareuhack-CLAUDE四层架构实战",
+        "原则化指令",
+        "记忆文件vs技能文件",
+        "Hooks确定性执行",
+        "三套记忆系统",
+        "20260528-36氪-Saboo30天6Agent复盘"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-coding-agent-安全沙箱-connection-001",
+      "type": "connection",
+      "question": "Coding Agent 安全沙箱 和哪些旧概念发生连接？",
+      "answer": "concepts/Agent 自主工具链构建、concepts/规范偏差正常化、concepts/Agent 工程化兜底、concepts/字段级权限",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/Coding Agent 安全沙箱.md",
+      "concepts": [
+        "concepts/Agent 自主工具链构建",
+        "concepts/规范偏差正常化",
+        "concepts/Agent 工程化兜底",
+        "concepts/字段级权限"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-goal-模式自动化爬虫-connection-001",
+      "type": "connection",
+      "question": "Goal 模式自动化爬虫 和哪些旧概念发生连接？",
+      "answer": "Codex、Goal-Driven Execution、卡尔的AI沃茨、20260527-知乎-卡尔-淘金小镇Skill榜单情报项目、Convex、淘金小镇、复刻用户视角拿数据",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/Goal 模式自动化爬虫.md",
+      "concepts": [
+        "Codex",
+        "Goal-Driven Execution",
+        "卡尔的AI沃茨",
+        "20260527-知乎-卡尔-淘金小镇Skill榜单情报项目",
+        "Convex",
+        "淘金小镇",
+        "复刻用户视角拿数据"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-goal-driven-execution-connection-001",
+      "type": "connection",
+      "question": "Goal-Driven Execution 和哪些旧概念发生连接？",
+      "answer": "CLAUDE.md、Codex、Andrej Karpathy、20260526-GitHub-andrej-karpathy-skills原仓库、卡尔的AI沃茨、淘金小镇、20260527-知乎-卡尔-淘金小镇Skill榜单情报项目、LLM 编程三宗罪、Goal 模式自动化爬虫、复刻用户视角拿数据、原则化指令",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/Goal-Driven Execution.md",
+      "concepts": [
+        "CLAUDE.md",
+        "Codex",
+        "Andrej Karpathy",
+        "20260526-GitHub-andrej-karpathy-skills原仓库",
+        "卡尔的AI沃茨",
+        "淘金小镇",
+        "20260527-知乎-卡尔-淘金小镇Skill榜单情报项目",
+        "LLM 编程三宗罪",
+        "Goal 模式自动化爬虫",
+        "复刻用户视角拿数据",
+        "原则化指令"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-hooks-确定性执行-definition-001",
+      "type": "definition",
+      "question": "什么是 Hooks 确定性执行？",
+      "answer": "**Hooks 是把\"建议\"变成\"法律\"的唯一机制**——CLAUDE.md 写\"每次都要跑测试\"，Claude 在压力情境下常会跳过；Stop Hook 强制跑测试遵守率 100%。**这就是\"建议\"和\"法律\"的差距**。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/Hooks确定性执行.md",
+      "concepts": [
+        "Hooks 确定性执行"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-hooks-确定性执行-connection-001",
+      "type": "connection",
+      "question": "Hooks 确定性执行 和哪些旧概念发生连接？",
+      "answer": "Shareuhack、20260528-Shareuhack-CLAUDE四层架构实战、Goal-Driven Execution、原则化指令、Agent工程化兜底、20260528-掘金-MCP协议落地三条铁律",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/Hooks确定性执行.md",
+      "concepts": [
+        "Shareuhack",
+        "20260528-Shareuhack-CLAUDE四层架构实战",
+        "Goal-Driven Execution",
+        "原则化指令",
+        "Agent工程化兜底",
+        "20260528-掘金-MCP协议落地三条铁律"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-ingest-录入-definition-001",
+      "type": "definition",
+      "question": "什么是 Ingest 录入？",
+      "answer": "[[LLM Wiki]] 三个核心操作之一——把一份新资料编译进 Wiki，通常牵动 10–15 个页面更新。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/Ingest 录入.md",
+      "concepts": [
+        "Ingest 录入"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-ingest-录入-connection-001",
+      "type": "connection",
+      "question": "Ingest 录入 和哪些旧概念发生连接？",
+      "answer": "LLM Wiki、../../AGENT、实体页、概念页、双向链、Query 查询、Maintain 维护、../log、20260407-知乎-Karpathy开源Agent知识库",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/Ingest 录入.md",
+      "concepts": [
+        "LLM Wiki",
+        "../../AGENT",
+        "实体页",
+        "概念页",
+        "双向链",
+        "Query 查询",
+        "Maintain 维护",
+        "../log",
+        "20260407-知乎-Karpathy开源Agent知识库"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-just-in-time-检索-definition-001",
+      "type": "definition",
+      "question": "什么是 Just-in-Time 检索？",
+      "answer": "Agent 不预先加载所有可能相关的数据，而是维护轻量标识符（文件路径、查询、链接），在运行时按需动态加载数据到 context——类比人类用文件系统/书签而非记忆全部内容。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/Just-in-Time检索.md",
+      "concepts": [
+        "Just-in-Time 检索"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-just-in-time-检索-connection-001",
+      "type": "connection",
+      "question": "Just-in-Time 检索 和哪些旧概念发生连接？",
+      "answer": "../entities/Anthropic、上下文工程、../summaries/20260929-Anthropic-Effective context engineering for AI agents、渐进式披露、上下文腐烂、RAG、Prompt Cache局部性、../entities/Claude Code、../entities/OpenClacky、../summaries/20260514-RubyChina-OpenClacky-Harness工程7个关键决策、三层架构",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/Just-in-Time检索.md",
+      "concepts": [
+        "../entities/Anthropic",
+        "上下文工程",
+        "../summaries/20260929-Anthropic-Effective context engineering for AI agents",
+        "渐进式披露",
+        "上下文腐烂",
+        "RAG",
+        "Prompt Cache局部性",
+        "../entities/Claude Code",
+        "../entities/OpenClacky",
+        "../summaries/20260514-RubyChina-OpenClacky-Harness工程7个关键决策",
+        "三层架构"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-llm-wiki-definition-001",
+      "type": "definition",
+      "question": "什么是 LLM Wiki？",
+      "answer": "[[Andrej Karpathy]] 提出的知识库范式——人类喂资料提问题，LLM 持续编译维护一个 Markdown 知识网络，知识\"编译一次、持续保持最新\"。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/LLM Wiki.md",
+      "concepts": [
+        "LLM Wiki"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-llm-wiki-connection-001",
+      "type": "connection",
+      "question": "LLM Wiki 和哪些旧概念发生连接？",
+      "answer": "Andrej Karpathy、知识复利、RAG、三层架构、AGENT.md 协议、Ingest 录入、Query 查询、Maintain 维护、...、Zettelkasten、Roam Research、Memex、NotebookLM、20260407-知乎-Karpathy开源Agent知识库、../../AGENT、Claude Code、Anthropic、Memory Files、20260525-知乎-Claude永久大脑真的来了、20260413-知乎-Qwen Code+Obsidian搭建Karpathy知识库、20260524-理念vs实操-两篇知乎对比综述、20260526-Karpathy理念vsAnthropic产品化-LLM Wiki的消费级落地",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/LLM Wiki.md",
+      "concepts": [
+        "Andrej Karpathy",
+        "知识复利",
+        "RAG",
+        "三层架构",
+        "AGENT.md 协议",
+        "Ingest 录入",
+        "Query 查询",
+        "Maintain 维护",
+        "...",
+        "Zettelkasten",
+        "Roam Research",
+        "Memex",
+        "NotebookLM",
+        "20260407-知乎-Karpathy开源Agent知识库",
+        "../../AGENT",
+        "Claude Code",
+        "Anthropic",
+        "Memory Files",
+        "20260525-知乎-Claude永久大脑真的来了",
+        "20260413-知乎-Qwen Code+Obsidian搭建Karpathy知识库",
+        "20260524-理念vs实操-两篇知乎对比综述",
+        "20260526-Karpathy理念vsAnthropic产品化-LLM Wiki的消费级落地"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-llm-编程三宗罪-connection-001",
+      "type": "connection",
+      "question": "LLM 编程三宗罪 和哪些旧概念发生连接？",
+      "answer": "LLM 编程 4 个观察、Andrej Karpathy、CLAUDE.md、forrestchang、20260526-GitHub-andrej-karpathy-skills原仓库、Think Before Coding、Simplicity First、Surgical Changes、Goal-Driven Execution、../../AGENT、Ingest 录入、Claude Code、Cursor、20260526-知乎-CLAUDE.md神文件让ClaudeCode听话",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/LLM 编程三宗罪.md",
+      "concepts": [
+        "LLM 编程 4 个观察",
+        "Andrej Karpathy",
+        "CLAUDE.md",
+        "forrestchang",
+        "20260526-GitHub-andrej-karpathy-skills原仓库",
+        "Think Before Coding",
+        "Simplicity First",
+        "Surgical Changes",
+        "Goal-Driven Execution",
+        "../../AGENT",
+        "Ingest 录入",
+        "Claude Code",
+        "Cursor",
+        "20260526-知乎-CLAUDE.md神文件让ClaudeCode听话"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-maintain-维护-definition-001",
+      "type": "definition",
+      "question": "什么是 Maintain 维护？",
+      "answer": "[[LLM Wiki]] 三个核心操作之一——定期让 Agent 对 Wiki 做审计，找矛盾、孤儿页、过时数据、缺失反链等问题。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/Maintain 维护.md",
+      "concepts": [
+        "Maintain 维护"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-maintain-维护-connection-001",
+      "type": "connection",
+      "question": "Maintain 维护 和哪些旧概念发生连接？",
+      "answer": "LLM Wiki、Memex、../../AGENT、Dreams、REM 睡眠式记忆整合、Anthropic、20260525-知乎-Claude永久大脑真的来了、Ingest 录入、Query 查询、20260407-知乎-Karpathy开源Agent知识库",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/Maintain 维护.md",
+      "concepts": [
+        "LLM Wiki",
+        "Memex",
+        "../../AGENT",
+        "Dreams",
+        "REM 睡眠式记忆整合",
+        "Anthropic",
+        "20260525-知乎-Claude永久大脑真的来了",
+        "Ingest 录入",
+        "Query 查询",
+        "20260407-知乎-Karpathy开源Agent知识库"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-query-查询-definition-001",
+      "type": "definition",
+      "question": "什么是 Query 查询？",
+      "answer": "[[LLM Wiki]] 三个核心操作之一——对着 Wiki 提问，Agent 综合相关页面回答，并把新洞察沉淀回 Wiki。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/Query 查询.md",
+      "concepts": [
+        "Query 查询"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-query-查询-connection-001",
+      "type": "connection",
+      "question": "Query 查询 和哪些旧概念发生连接？",
+      "answer": "LLM Wiki、../../AGENT、页面链接、20260407-知乎-Karpathy开源Agent知识库、Ingest 录入、Maintain 维护",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/Query 查询.md",
+      "concepts": [
+        "LLM Wiki",
+        "../../AGENT",
+        "页面链接",
+        "20260407-知乎-Karpathy开源Agent知识库",
+        "Ingest 录入",
+        "Maintain 维护"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-rag-definition-001",
+      "type": "definition",
+      "question": "什么是 RAG？",
+      "answer": "Retrieval-Augmented Generation——把文档分块索引，提问时检索相关片段拼进 prompt 让 LLM 生成回答的主流方案。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/RAG.md",
+      "concepts": [
+        "RAG"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-rag-connection-001",
+      "type": "connection",
+      "question": "RAG 和哪些旧概念发生连接？",
+      "answer": "NotebookLM、LLM Wiki、Andrej Karpathy、20260407-知乎-Karpathy开源Agent知识库",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/RAG.md",
+      "concepts": [
+        "NotebookLM",
+        "LLM Wiki",
+        "Andrej Karpathy",
+        "20260407-知乎-Karpathy开源Agent知识库"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-rem-睡眠式记忆整合-definition-001",
+      "type": "definition",
+      "question": "什么是 REM 睡眠式记忆整合？",
+      "answer": "把人类 REM 睡眠期\"白天经历回放 + 强化重要连接 + 丢弃噪声 + 短期转长期\"的记忆整合机制，迁移到 AI Agent 上的设计范式——代表实现是 [[Anthropic]] 的 [[Dreams]]。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/REM 睡眠式记忆整合.md",
+      "concepts": [
+        "REM 睡眠式记忆整合"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-rem-睡眠式记忆整合-connection-001",
+      "type": "connection",
+      "question": "REM 睡眠式记忆整合 和哪些旧概念发生连接？",
+      "answer": "Anthropic、Dreams、Maintain 维护、知识复利、Claude Code、../AGENT、20260525-知乎-Claude永久大脑真的来了",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/REM 睡眠式记忆整合.md",
+      "concepts": [
+        "Anthropic",
+        "Dreams",
+        "Maintain 维护",
+        "知识复利",
+        "Claude Code",
+        "../AGENT",
+        "20260525-知乎-Claude永久大脑真的来了"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-simplicity-first-connection-001",
+      "type": "connection",
+      "question": "Simplicity First 和哪些旧概念发生连接？",
+      "answer": "CLAUDE.md、LLM 编程三宗罪、20260526-GitHub-andrej-karpathy-skills原仓库、原则化指令",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/Simplicity First.md",
+      "concepts": [
+        "CLAUDE.md",
+        "LLM 编程三宗罪",
+        "20260526-GitHub-andrej-karpathy-skills原仓库",
+        "原则化指令"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-skill-榜单情报化-connection-001",
+      "type": "connection",
+      "question": "Skill 榜单情报化 和哪些旧概念发生连接？",
+      "answer": "20260527-知乎-卡尔-淘金小镇Skill榜单情报项目、淘金小镇、Goal-Driven Execution、复刻用户视角拿数据、知识复利",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/Skill 榜单情报化.md",
+      "concepts": [
+        "20260527-知乎-卡尔-淘金小镇Skill榜单情报项目",
+        "淘金小镇",
+        "Goal-Driven Execution",
+        "复刻用户视角拿数据",
+        "知识复利"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-skills-2-0-模块化-definition-001",
+      "type": "definition",
+      "question": "什么是 Skills 2.0 模块化？",
+      "answer": "Claude Code 2026 年的 Skills 升级——从旧版 `.claude/commands/*.md` 单文件，升级到 `.claude/skills/{name}/SKILL.md + scripts/ + references/` 文件夹结构，**支持 on-demand 载入和可执行脚本**。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/Skills 2.0模块化.md",
+      "concepts": [
+        "Skills 2.0 模块化"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-skills-2-0-模块化-connection-001",
+      "type": "connection",
+      "question": "Skills 2.0 模块化 和哪些旧概念发生连接？",
+      "answer": "Shareuhack、20260528-Shareuhack-CLAUDE四层架构实战、CLAUDE.md四层架构、原则化指令、Skill 榜单情报化、../summaries/20260608-知乎-SkillFactory面向Harness设计的技能工厂、Skill工厂、评测驱动Skill生成、轨迹蒸馏为技能、../entities/Trace2Skill",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/Skills 2.0模块化.md",
+      "concepts": [
+        "Shareuhack",
+        "20260528-Shareuhack-CLAUDE四层架构实战",
+        "CLAUDE.md四层架构",
+        "原则化指令",
+        "Skill 榜单情报化",
+        "../summaries/20260608-知乎-SkillFactory面向Harness设计的技能工厂",
+        "Skill工厂",
+        "评测驱动Skill生成",
+        "轨迹蒸馏为技能",
+        "../entities/Trace2Skill"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-skill-工厂-definition-001",
+      "type": "definition",
+      "question": "什么是 Skill 工厂？",
+      "answer": "Skill 工厂是把 Skill 从“手写 Markdown / 对话生成”升级为可诊断、可评测、可回归、可发布的生产流水线。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/Skill工厂.md",
+      "concepts": [
+        "Skill 工厂"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-skill-工厂-connection-001",
+      "type": "connection",
+      "question": "Skill 工厂 和哪些旧概念发生连接？",
+      "answer": "../concepts/Skills 2.0模块化、../summaries/20260608-知乎-SkillFactory面向Harness设计的技能工厂、Skills 2.0模块化、评测驱动Skill生成、轨迹蒸馏为技能、验证瓶颈、../entities/SkillFactory、../entities/Trace2Skill",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/Skill工厂.md",
+      "concepts": [
+        "../concepts/Skills 2.0模块化",
+        "../summaries/20260608-知乎-SkillFactory面向Harness设计的技能工厂",
+        "Skills 2.0模块化",
+        "评测驱动Skill生成",
+        "轨迹蒸馏为技能",
+        "验证瓶颈",
+        "../entities/SkillFactory",
+        "../entities/Trace2Skill"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-surgical-changes-connection-001",
+      "type": "connection",
+      "question": "Surgical Changes 和哪些旧概念发生连接？",
+      "answer": "CLAUDE.md、LLM 编程三宗罪、20260526-GitHub-andrej-karpathy-skills原仓库、原则化指令",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/Surgical Changes.md",
+      "concepts": [
+        "CLAUDE.md",
+        "LLM 编程三宗罪",
+        "20260526-GitHub-andrej-karpathy-skills原仓库",
+        "原则化指令"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-think-before-coding-connection-001",
+      "type": "connection",
+      "question": "Think Before Coding 和哪些旧概念发生连接？",
+      "answer": "CLAUDE.md、LLM 编程三宗罪、20260526-GitHub-andrej-karpathy-skills原仓库、../../AGENT、原则化指令、Hana、Claude Code、Codex、Cursor、Goal-Driven Execution",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/Think Before Coding.md",
+      "concepts": [
+        "CLAUDE.md",
+        "LLM 编程三宗罪",
+        "20260526-GitHub-andrej-karpathy-skills原仓库",
+        "../../AGENT",
+        "原则化指令",
+        "Hana",
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "Goal-Driven Execution"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-vibe-coding-definition-001",
+      "type": "definition",
+      "question": "什么是 Vibe Coding？",
+      "answer": "[[../entities/Andrej Karpathy|Karpathy]] 2025 年 3 月提出的术语——用 AI 写代码时**完全不看代码**，只看运行结果；不工作就告诉模型不工作，碰运气让它修。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/Vibe Coding.md",
+      "concepts": [
+        "Vibe Coding"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-vibe-coding-connection-001",
+      "type": "connection",
+      "question": "Vibe Coding 和哪些旧概念发生连接？",
+      "answer": "../entities/Andrej Karpathy、Agentic Engineering、规范偏差正常化、../summaries/20260506-SimonWillison-Vibe coding and agentic engineering、LLM 编程三宗罪、Goal-Driven Execution、../summaries/20260622-SimonWillison-Porting-Moebius-model-to-browser",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/Vibe Coding.md",
+      "concepts": [
+        "../entities/Andrej Karpathy",
+        "Agentic Engineering",
+        "规范偏差正常化",
+        "../summaries/20260506-SimonWillison-Vibe coding and agentic engineering",
+        "LLM 编程三宗罪",
+        "Goal-Driven Execution",
+        "../summaries/20260622-SimonWillison-Porting-Moebius-model-to-browser"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-三套记忆系统-definition-001",
+      "type": "definition",
+      "question": "什么是 三套记忆系统？",
+      "answer": "Claude Code 有三套**完全不同**的记忆机制——CLAUDE.md（人写的规则）/ Auto Memory（Claude 自己写的笔记）/ Session Memory（系统写的状态摘要）——**混用是 Agent 行为不稳定的最常见原因**。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/三套记忆系统.md",
+      "concepts": [
+        "三套记忆系统"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-三套记忆系统-connection-001",
+      "type": "connection",
+      "question": "三套记忆系统 和哪些旧概念发生连接？",
+      "answer": "Shareuhack、20260528-Shareuhack-CLAUDE四层架构实战、CLAUDE.md四层架构、记忆文件vs技能文件、Memory Files、REM 睡眠式记忆整合",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/三套记忆系统.md",
+      "concepts": [
+        "Shareuhack",
+        "20260528-Shareuhack-CLAUDE四层架构实战",
+        "CLAUDE.md四层架构",
+        "记忆文件vs技能文件",
+        "Memory Files",
+        "REM 睡眠式记忆整合"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-三层架构-definition-001",
+      "type": "definition",
+      "question": "什么是 三层架构？",
+      "answer": "[[LLM Wiki]] 方法论的核心结构——原始资料层（只读）+ Wiki 层（LLM 写人读）+ [[AGENT.md 协议]]（共同迭代）。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/三层架构.md",
+      "concepts": [
+        "三层架构"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-三层架构-connection-001",
+      "type": "connection",
+      "question": "三层架构 和哪些旧概念发生连接？",
+      "answer": "LLM Wiki、AGENT.md 协议、摘要页、实体页、概念页、综述页、../../AGENT、20260407-知乎-Karpathy开源Agent知识库、../../README",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/三层架构.md",
+      "concepts": [
+        "LLM Wiki",
+        "AGENT.md 协议",
+        "摘要页",
+        "实体页",
+        "概念页",
+        "综述页",
+        "../../AGENT",
+        "20260407-知乎-Karpathy开源Agent知识库",
+        "../../README"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-上下文工程-definition-001",
+      "type": "definition",
+      "question": "什么是 上下文工程？",
+      "answer": "[[../entities/Anthropic|Anthropic]] 官方提出的 Agent 时代核心范式——从 [[原则化指令|prompt engineering]] 进化到对 Agent 运行时全生命周期 context 的 curation 与维护，目标是\"找到最小高信号 token 集合，最大化期望输出\"。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/上下文工程.md",
+      "concepts": [
+        "上下文工程"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-上下文工程-connection-001",
+      "type": "connection",
+      "question": "上下文工程 和哪些旧概念发生连接？",
+      "answer": "../entities/Anthropic、原则化指令、注意力预算、上下文腐烂、../summaries/20260929-Anthropic-Effective context engineering for AI agents、Just-in-Time检索、上下文膨胀与压缩、渐进式披露、Prompt Cache局部性、../entities/OpenClacky、../entities/Claude Code、../summaries/20260514-RubyChina-OpenClacky-Harness工程7个关键决策",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/上下文工程.md",
+      "concepts": [
+        "../entities/Anthropic",
+        "原则化指令",
+        "注意力预算",
+        "上下文腐烂",
+        "../summaries/20260929-Anthropic-Effective context engineering for AI agents",
+        "Just-in-Time检索",
+        "上下文膨胀与压缩",
+        "渐进式披露",
+        "Prompt Cache局部性",
+        "../entities/OpenClacky",
+        "../entities/Claude Code",
+        "../summaries/20260514-RubyChina-OpenClacky-Harness工程7个关键决策"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-上下文腐烂-definition-001",
+      "type": "definition",
+      "question": "什么是 上下文腐烂？",
+      "answer": "随着 context window 中 token 数量增加，LLM 准确召回信息的能力会下降——context 越长，\"中间被遗忘\"和\"细节失真\"越严重。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/上下文腐烂.md",
+      "concepts": [
+        "上下文腐烂"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-上下文腐烂-connection-001",
+      "type": "connection",
+      "question": "上下文腐烂 和哪些旧概念发生连接？",
+      "answer": "../entities/Anthropic、上下文工程、注意力预算、../summaries/20260929-Anthropic-Effective context engineering for AI agents、上下文膨胀与压缩、Just-in-Time检索、../entities/Shubham Saboo、../summaries/20260528-36氪-Saboo30天6Agent复盘、../entities/OpenClacky、../summaries/20260514-RubyChina-OpenClacky-Harness工程7个关键决策",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/上下文腐烂.md",
+      "concepts": [
+        "../entities/Anthropic",
+        "上下文工程",
+        "注意力预算",
+        "../summaries/20260929-Anthropic-Effective context engineering for AI agents",
+        "上下文膨胀与压缩",
+        "Just-in-Time检索",
+        "../entities/Shubham Saboo",
+        "../summaries/20260528-36氪-Saboo30天6Agent复盘",
+        "../entities/OpenClacky",
+        "../summaries/20260514-RubyChina-OpenClacky-Harness工程7个关键决策"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-上下文膨胀与压缩-definition-001",
+      "type": "definition",
+      "question": "什么是 上下文膨胀与压缩？",
+      "answer": "长期运行的 Agent 会因为历史记录不断积累导致上下文膨胀（如 161K token），响应变慢、输出降质——必须**每两周强制压缩**到合理量级（~40K），像软件的代码重构一样定期维护。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/上下文膨胀与压缩.md",
+      "concepts": [
+        "上下文膨胀与压缩"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-上下文膨胀与压缩-connection-001",
+      "type": "connection",
+      "question": "上下文膨胀与压缩 和哪些旧概念发生连接？",
+      "answer": "Shubham Saboo、20260528-36氪-Saboo30天6Agent复盘、记忆文件vs技能文件、CLAUDE.md四层架构、REM 睡眠式记忆整合",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/上下文膨胀与压缩.md",
+      "concepts": [
+        "Shubham Saboo",
+        "20260528-36氪-Saboo30天6Agent复盘",
+        "记忆文件vs技能文件",
+        "CLAUDE.md四层架构",
+        "REM 睡眠式记忆整合"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-原则化指令-connection-001",
+      "type": "connection",
+      "question": "原则化指令 和哪些旧概念发生连接？",
+      "answer": "CLAUDE.md、Claude Code、LLM 编程三宗罪、Think Before Coding、../../AGENT、LLM Wiki、20260526-知乎-CLAUDE.md神文件让ClaudeCode听话",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/原则化指令.md",
+      "concepts": [
+        "CLAUDE.md",
+        "Claude Code",
+        "LLM 编程三宗罪",
+        "Think Before Coding",
+        "../../AGENT",
+        "LLM Wiki",
+        "20260526-知乎-CLAUDE.md神文件让ClaudeCode听话"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-去风格化防御-destyling-connection-001",
+      "type": "connection",
+      "question": "去风格化防御（Destyling） 和哪些旧概念发生连接？",
+      "answer": "20260622-SimonWillison-PromptInjectionAsRoleConfusion、concepts/角色混淆攻击、concepts/提示注入",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/去风格化防御.md",
+      "concepts": [
+        "20260622-SimonWillison-PromptInjectionAsRoleConfusion",
+        "concepts/角色混淆攻击",
+        "concepts/提示注入"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-反馈闭环写入文件-definition-001",
+      "type": "definition",
+      "question": "什么是 反馈闭环写入文件？",
+      "answer": "Agent 的反馈**必须具体到可以直接写进可持续加载的文件**，否则下一轮 Agent 会再犯同样错误——这是 Agent 系统\"真正进化\"的唯一通道。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/反馈闭环写入文件.md",
+      "concepts": [
+        "反馈闭环写入文件"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-反馈闭环写入文件-connection-001",
+      "type": "connection",
+      "question": "反馈闭环写入文件 和哪些旧概念发生连接？",
+      "answer": "Shubham Saboo、20260528-36氪-Saboo30天6Agent复盘、记忆文件vs技能文件、纠错式Prompt工程、Hooks确定性执行、原则化指令、20260528-Shareuhack-CLAUDE四层架构实战",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/反馈闭环写入文件.md",
+      "concepts": [
+        "Shubham Saboo",
+        "20260528-36氪-Saboo30天6Agent复盘",
+        "记忆文件vs技能文件",
+        "纠错式Prompt工程",
+        "Hooks确定性执行",
+        "原则化指令",
+        "20260528-Shareuhack-CLAUDE四层架构实战"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-复刻用户视角拿数据-connection-001",
+      "type": "connection",
+      "question": "复刻用户视角拿数据 和哪些旧概念发生连接？",
+      "answer": "20260527-知乎-卡尔-淘金小镇Skill榜单情报项目、Convex、淘金小镇、Goal-Driven Execution",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/复刻用户视角拿数据.md",
+      "concepts": [
+        "20260527-知乎-卡尔-淘金小镇Skill榜单情报项目",
+        "Convex",
+        "淘金小镇",
+        "Goal-Driven Execution"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-多路并发竞优-definition-001",
+      "type": "definition",
+      "question": "什么是 多路并发竞优？",
+      "answer": "多路并发竞优是同时让多个模型、Prompt 或策略生成候选方案，再通过评测选择最优解，用并行探索对抗 LLM 输出随机性。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/多路并发竞优.md",
+      "concepts": [
+        "多路并发竞优"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-多路并发竞优-connection-001",
+      "type": "connection",
+      "question": "多路并发竞优 和哪些旧概念发生连接？",
+      "answer": "../summaries/20260608-知乎-SkillFactory面向Harness设计的技能工厂、评测驱动Skill生成、Subagents上下文隔离、Agent团队三阶段曲线、../entities/SkillFactory、../entities/Trace2Skill",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/多路并发竞优.md",
+      "concepts": [
+        "../summaries/20260608-知乎-SkillFactory面向Harness设计的技能工厂",
+        "评测驱动Skill生成",
+        "Subagents上下文隔离",
+        "Agent团队三阶段曲线",
+        "../entities/SkillFactory",
+        "../entities/Trace2Skill"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-字段级权限-definition-001",
+      "type": "definition",
+      "question": "什么是 字段级权限？",
+      "answer": "MCP Server 不应只给 Agent \"能用/不能用\"的开关，而要让每个工具声明**数据敏感度等级**，给每个会话绑定**最小权限令牌**——权限检查发生在模型\"决定做什么\"之前，而不是\"已经做了什么\"之后。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/字段级权限.md",
+      "concepts": [
+        "字段级权限"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-字段级权限-connection-001",
+      "type": "connection",
+      "question": "字段级权限 和哪些旧概念发生连接？",
+      "answer": "20260528-掘金-MCP协议落地三条铁律、MCP、Hooks确定性执行、Agent工程化兜底",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/字段级权限.md",
+      "concepts": [
+        "20260528-掘金-MCP协议落地三条铁律",
+        "MCP",
+        "Hooks确定性执行",
+        "Agent工程化兜底"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-工具调用幻觉-definition-001",
+      "type": "definition",
+      "question": "什么是 工具调用幻觉？",
+      "answer": "LLM 不只编造文本，还会在 Agent 场景中编造**不存在的工具名、错误的参数格式、无限循环调用**——这是比文本幻觉更危险的新型缺陷，必须用工程手段三层防护。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/工具调用幻觉.md",
+      "concepts": [
+        "工具调用幻觉"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-工具调用幻觉-connection-001",
+      "type": "connection",
+      "question": "工具调用幻觉 和哪些旧概念发生连接？",
+      "answer": "20260528-掘金-MCP协议落地三条铁律、LLM 编程三宗罪、Hooks确定性执行、Agent工程化兜底",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/工具调用幻觉.md",
+      "concepts": [
+        "20260528-掘金-MCP协议落地三条铁律",
+        "LLM 编程三宗罪",
+        "Hooks确定性执行",
+        "Agent工程化兜底"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-注意力预算-definition-001",
+      "type": "definition",
+      "question": "什么是 注意力预算？",
+      "answer": "LLM 在每次推理时拥有的\"注意力总额度\"是有限且会被消耗的——每个新 token 都从这个预算里扣分，类似人类的工作记忆容量。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/注意力预算.md",
+      "concepts": [
+        "注意力预算"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-注意力预算-connection-001",
+      "type": "connection",
+      "question": "注意力预算 和哪些旧概念发生连接？",
+      "answer": "../entities/Anthropic、上下文工程、../summaries/20260929-Anthropic-Effective context engineering for AI agents、上下文腐烂、上下文膨胀与压缩、Just-in-Time检索",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/注意力预算.md",
+      "concepts": [
+        "../entities/Anthropic",
+        "上下文工程",
+        "../summaries/20260929-Anthropic-Effective context engineering for AI agents",
+        "上下文腐烂",
+        "上下文膨胀与压缩",
+        "Just-in-Time检索"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-渐进式披露-definition-001",
+      "type": "definition",
+      "question": "什么是 渐进式披露？",
+      "answer": "Agent 不一次性加载所有信息，而是通过探索逐层发现相关 context——每次交互产出指导下一步决策的信息（文件大小暗示复杂度，命名暗示用途，时间戳暗示相关性）。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/渐进式披露.md",
+      "concepts": [
+        "渐进式披露"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-渐进式披露-connection-001",
+      "type": "connection",
+      "question": "渐进式披露 和哪些旧概念发生连接？",
+      "answer": "../entities/Anthropic、上下文工程、Just-in-Time检索、../summaries/20260929-Anthropic-Effective context engineering for AI agents、上下文腐烂、三层架构、注意力预算",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/渐进式披露.md",
+      "concepts": [
+        "../entities/Anthropic",
+        "上下文工程",
+        "Just-in-Time检索",
+        "../summaries/20260929-Anthropic-Effective context engineering for AI agents",
+        "上下文腐烂",
+        "三层架构",
+        "注意力预算"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-知识复利-definition-001",
+      "type": "definition",
+      "question": "什么是 知识复利？",
+      "answer": "[[LLM Wiki]] 的灵魂原则——每加一份资料、每问一个问题，知识库都要变得更好，绝不允许\"读完即忘\"。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/知识复利.md",
+      "concepts": [
+        "知识复利"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-知识复利-connection-001",
+      "type": "connection",
+      "question": "知识复利 和哪些旧概念发生连接？",
+      "answer": "LLM Wiki、Ingest 录入、Query 查询、Maintain 维护、RAG、三层架构、20260407-知乎-Karpathy开源Agent知识库",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/知识复利.md",
+      "concepts": [
+        "LLM Wiki",
+        "Ingest 录入",
+        "Query 查询",
+        "Maintain 维护",
+        "RAG",
+        "三层架构",
+        "20260407-知乎-Karpathy开源Agent知识库"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-纠错式-prompt-工程-definition-001",
+      "type": "definition",
+      "question": "什么是 纠错式 Prompt 工程？",
+      "answer": "与其一开始设计完美 prompt，不如先写粗糙版让 Agent 跑起来，通过持续把具体反馈写入文件来迭代——**第 1 版很烂，第 10 版开始能用，第 30 版才稳定**，像管理新员工一样管理 Agent。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/纠错式Prompt工程.md",
+      "concepts": [
+        "纠错式 Prompt 工程"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-纠错式-prompt-工程-connection-001",
+      "type": "connection",
+      "question": "纠错式 Prompt 工程 和哪些旧概念发生连接？",
+      "answer": "Shubham Saboo、Goal-Driven Execution、20260528-36氪-Saboo30天6Agent复盘、原则化指令、反馈闭环写入文件、Mac Mini Agent Fleet、淘金小镇、20260527-知乎-卡尔-淘金小镇Skill榜单情报项目、20260528-Shareuhack-CLAUDE四层架构实战",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/纠错式Prompt工程.md",
+      "concepts": [
+        "Shubham Saboo",
+        "Goal-Driven Execution",
+        "20260528-36氪-Saboo30天6Agent复盘",
+        "原则化指令",
+        "反馈闭环写入文件",
+        "Mac Mini Agent Fleet",
+        "淘金小镇",
+        "20260527-知乎-卡尔-淘金小镇Skill榜单情报项目",
+        "20260528-Shareuhack-CLAUDE四层架构实战"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-规范偏差正常化-definition-001",
+      "type": "definition",
+      "question": "什么是 规范偏差正常化？",
+      "answer": "来自航天工程的概念（挑战者号灾难根因之一）——每次违反规范但没出事，就会降低团队对风险的感知；侥幸累积不等于安全，而是在累积下一次灾难的概率。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/规范偏差正常化.md",
+      "concepts": [
+        "规范偏差正常化"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-规范偏差正常化-connection-001",
+      "type": "connection",
+      "question": "规范偏差正常化 和哪些旧概念发生连接？",
+      "answer": "../summaries/20260506-SimonWillison-Vibe coding and agentic engineering、Vibe Coding、Agentic Engineering、LLM 编程三宗罪、Agent工程化兜底、Maintain 维护",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/规范偏差正常化.md",
+      "concepts": [
+        "../summaries/20260506-SimonWillison-Vibe coding and agentic engineering",
+        "Vibe Coding",
+        "Agentic Engineering",
+        "LLM 编程三宗罪",
+        "Agent工程化兜底",
+        "Maintain 维护"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-角色混淆攻击-role-confusion-connection-001",
+      "type": "connection",
+      "question": "角色混淆攻击（Role Confusion） 和哪些旧概念发生连接？",
+      "answer": "20260622-SimonWillison-PromptInjectionAsRoleConfusion、concepts/去风格化防御、concepts/工具调用幻觉、concepts/提示注入、concepts/LLM 安全",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/角色混淆攻击.md",
+      "concepts": [
+        "20260622-SimonWillison-PromptInjectionAsRoleConfusion",
+        "concepts/去风格化防御",
+        "concepts/工具调用幻觉",
+        "concepts/提示注入",
+        "concepts/LLM 安全"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-记忆文件-vs-技能文件-definition-001",
+      "type": "definition",
+      "question": "什么是 记忆文件 vs 技能文件？",
+      "answer": "Agent 的持久化存储必须把**偏好（记忆文件）**和**操作 SOP（技能文件）**拆开——前者是\"用户喜欢什么/不喜欢什么\"，后者是\"这件事该怎么做\"。混在一起会导致规则互相打架。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/记忆文件vs技能文件.md",
+      "concepts": [
+        "记忆文件 vs 技能文件"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-记忆文件-vs-技能文件-connection-001",
+      "type": "connection",
+      "question": "记忆文件 vs 技能文件 和哪些旧概念发生连接？",
+      "answer": "Shubham Saboo、Shareuhack、CLAUDE.md四层架构、20260528-36氪-Saboo30天6Agent复盘、三套记忆系统、上下文膨胀与压缩、Skills 2.0模块化、20260528-Shareuhack-CLAUDE四层架构实战",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/记忆文件vs技能文件.md",
+      "concepts": [
+        "Shubham Saboo",
+        "Shareuhack",
+        "CLAUDE.md四层架构",
+        "20260528-36氪-Saboo30天6Agent复盘",
+        "三套记忆系统",
+        "上下文膨胀与压缩",
+        "Skills 2.0模块化",
+        "20260528-Shareuhack-CLAUDE四层架构实战"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-评测驱动-skill-生成-definition-001",
+      "type": "definition",
+      "question": "什么是 评测驱动 Skill 生成？",
+      "answer": "评测驱动 Skill 生成是在写 Skill 前先定义基线、测试问题和评分维度，用验证闭环决定是否生成、保留、优化或发布 Skill。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/评测驱动Skill生成.md",
+      "concepts": [
+        "评测驱动 Skill 生成"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-评测驱动-skill-生成-connection-001",
+      "type": "connection",
+      "question": "评测驱动 Skill 生成 和哪些旧概念发生连接？",
+      "answer": "../summaries/20260608-知乎-SkillFactory面向Harness设计的技能工厂、验证瓶颈、First Run The Tests、Goal-Driven Execution、Skill工厂、../entities/SkillFactory",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/评测驱动Skill生成.md",
+      "concepts": [
+        "../summaries/20260608-知乎-SkillFactory面向Harness设计的技能工厂",
+        "验证瓶颈",
+        "First Run The Tests",
+        "Goal-Driven Execution",
+        "Skill工厂",
+        "../entities/SkillFactory"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-路径作用域规则-definition-001",
+      "type": "definition",
+      "question": "什么是 路径作用域规则？",
+      "answer": "Claude Code 的 `.claude/rules/{name}.md` 文件**只在 Claude 处理对应路径的文件时才载入**——让 CLAUDE.md 从静态文件进化成\"动态规则引擎\"，大幅减少不相关规则浪费 context。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/路径作用域规则.md",
+      "concepts": [
+        "路径作用域规则"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-路径作用域规则-connection-001",
+      "type": "connection",
+      "question": "路径作用域规则 和哪些旧概念发生连接？",
+      "answer": "Shareuhack、20260528-Shareuhack-CLAUDE四层架构实战、CLAUDE.md四层架构、Skills 2.0模块化、原则化指令",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/路径作用域规则.md",
+      "concepts": [
+        "Shareuhack",
+        "20260528-Shareuhack-CLAUDE四层架构实战",
+        "CLAUDE.md四层架构",
+        "Skills 2.0模块化",
+        "原则化指令"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-轨迹蒸馏为技能-definition-001",
+      "type": "definition",
+      "question": "什么是 轨迹蒸馏为技能？",
+      "answer": "轨迹蒸馏为技能是把 Agent 执行过程中的成功路径、失败教训和 workaround，从冗长轨迹压缩成可复用、可迁移、可按需加载的 Skill 文件。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/轨迹蒸馏为技能.md",
+      "concepts": [
+        "轨迹蒸馏为技能"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-轨迹蒸馏为技能-connection-001",
+      "type": "connection",
+      "question": "轨迹蒸馏为技能 和哪些旧概念发生连接？",
+      "answer": "../summaries/20260608-知乎-SkillFactory面向Harness设计的技能工厂、反馈闭环写入文件、Skills 2.0模块化、上下文膨胀与压缩、知识复利、../entities/Trace2Skill",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/轨迹蒸馏为技能.md",
+      "concepts": [
+        "../summaries/20260608-知乎-SkillFactory面向Harness设计的技能工厂",
+        "反馈闭环写入文件",
+        "Skills 2.0模块化",
+        "上下文膨胀与压缩",
+        "知识复利",
+        "../entities/Trace2Skill"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-递归自我改进-definition-001",
+      "type": "definition",
+      "question": "什么是 递归自我改进？",
+      "answer": "AI 系统**用自己改进自己**的循环范式——通过运行结果反馈、自动调整自身（模型权重 / Prompt / 工具调用策略），实现性能随时间累积的复利增长。Karpathy 2026-05 加入 [[Anthropic]] 预训练团队后，被推测的重点研究方向之一。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/递归自我改进.md",
+      "concepts": [
+        "递归自我改进"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-递归自我改进-connection-001",
+      "type": "connection",
+      "question": "递归自我改进 和哪些旧概念发生连接？",
+      "answer": "Anthropic、Andrej Karpathy、知识复利、LLM Wiki、Maintain 维护、20260519-TechCrunch-Karpathy加入Anthropic预训练团队",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/递归自我改进.md",
+      "concepts": [
+        "Anthropic",
+        "Andrej Karpathy",
+        "知识复利",
+        "LLM Wiki",
+        "Maintain 维护",
+        "20260519-TechCrunch-Karpathy加入Anthropic预训练团队"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-验证瓶颈-definition-001",
+      "type": "definition",
+      "question": "什么是 验证瓶颈？",
+      "answer": "AI 让代码/内容生成成本急剧下降后，真正稀缺的环节从“生成”迁移到“验证、审查、判断和负责”。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/concepts/验证瓶颈.md",
+      "concepts": [
+        "验证瓶颈"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "concept-验证瓶颈-connection-001",
+      "type": "connection",
+      "question": "验证瓶颈 和哪些旧概念发生连接？",
+      "answer": "davidycwei、../summaries/20260306-知乎-从第一性原理思考AgenticEngineering、Agentic Engineering、Vibe Coding、Goal-Driven Execution、Agent工程化兜底、Spec-First工作流",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/concepts/验证瓶颈.md",
+      "concepts": [
+        "davidycwei",
+        "../summaries/20260306-知乎-从第一性原理思考AgenticEngineering",
+        "Agentic Engineering",
+        "Vibe Coding",
+        "Goal-Driven Execution",
+        "Agent工程化兜底",
+        "Spec-First工作流"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-a2a-definition-001",
+      "type": "definition",
+      "question": "什么是 A2A？",
+      "answer": "Google 推出的 **Agent-to-Agent 通信协议**，定位与 [[MCP]] 形成竞争——MCP 解决 Agent 到工具，A2A 解决 Agent 到 Agent。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/A2A.md",
+      "concepts": [
+        "A2A"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-a2a-connection-001",
+      "type": "connection",
+      "question": "A2A 和哪些旧概念发生连接？",
+      "answer": "MCP、Anthropic、Agent Gateway协议翻译层、20260528-掘金-MCP协议落地三条铁律",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/A2A.md",
+      "concepts": [
+        "MCP",
+        "Anthropic",
+        "Agent Gateway协议翻译层",
+        "20260528-掘金-MCP协议落地三条铁律"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-ai-team-ai-工程交付团队-connection-001",
+      "type": "connection",
+      "question": "AI Team（AI 工程交付团队） 和哪些旧概念发生连接？",
+      "answer": "三层知识索引、知识成熟度模型、知识分层架构、LLM Wiki、OpenClacky",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/AI Team.md",
+      "concepts": [
+        "三层知识索引",
+        "知识成熟度模型",
+        "知识分层架构",
+        "LLM Wiki",
+        "OpenClacky"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-agent-skills-for-context-engineering-definition-001",
+      "type": "definition",
+      "question": "什么是 Agent Skills for Context Engineering？",
+      "answer": "Agent Skills for Context Engineering 是一个开源 Skill 集合，把 context engineering、multi-agent architecture、tool design、evaluation、harness engineering 等原则封装成可按需加载的 Agent Skills。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/Agent Skills for Context Engineering.md",
+      "concepts": [
+        "Agent Skills for Context Engineering"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-agent-skills-for-context-engineering-connection-001",
+      "type": "connection",
+      "question": "Agent Skills for Context Engineering 和哪些旧概念发生连接？",
+      "answer": "muratcankoylan、Claude Code、Cursor、../concepts/上下文工程、../concepts/Skills 2.0模块化、../concepts/渐进式披露、../concepts/工具设计合并原则、../summaries/20260607-HN-AgentSkillsForContextEngineering",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Agent Skills for Context Engineering.md",
+      "concepts": [
+        "muratcankoylan",
+        "Claude Code",
+        "Cursor",
+        "../concepts/上下文工程",
+        "../concepts/Skills 2.0模块化",
+        "../concepts/渐进式披露",
+        "../concepts/工具设计合并原则",
+        "../summaries/20260607-HN-AgentSkillsForContextEngineering"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-andrej-karpathy-definition-001",
+      "type": "definition",
+      "question": "什么是 Andrej Karpathy？",
+      "answer": "AI 领域顶级研究者，[[OpenAI]] 联合创始人，前 [[Tesla]] AI 总监，[[LLM Wiki]] 方法论的提出者。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/Andrej Karpathy.md",
+      "concepts": [
+        "Andrej Karpathy"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-andrej-karpathy-connection-001",
+      "type": "connection",
+      "question": "Andrej Karpathy 和哪些旧概念发生连接？",
+      "answer": "OpenAI、Tesla、LLM Wiki、Anthropic、三层架构、AGENT.md 协议、20260407-知乎-Karpathy开源Agent知识库、20260519-TechCrunch-Karpathy加入Anthropic预训练团队、Nicholas Joseph、Claude Code、Eureka Labs、Codex、LLM 编程三宗罪、forrestchang、CLAUDE.md、20260526-知乎-CLAUDE.md神文件让ClaudeCode听话、../../AGENT、20260413-知乎-Qwen Code+Obsidian搭建Karpathy知识库、递归自我改进",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Andrej Karpathy.md",
+      "concepts": [
+        "OpenAI",
+        "Tesla",
+        "LLM Wiki",
+        "Anthropic",
+        "三层架构",
+        "AGENT.md 协议",
+        "20260407-知乎-Karpathy开源Agent知识库",
+        "20260519-TechCrunch-Karpathy加入Anthropic预训练团队",
+        "Nicholas Joseph",
+        "Claude Code",
+        "Eureka Labs",
+        "Codex",
+        "LLM 编程三宗罪",
+        "forrestchang",
+        "CLAUDE.md",
+        "20260526-知乎-CLAUDE.md神文件让ClaudeCode听话",
+        "../../AGENT",
+        "20260413-知乎-Qwen Code+Obsidian搭建Karpathy知识库",
+        "递归自我改进"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-anthropic-definition-001",
+      "type": "definition",
+      "question": "什么是 Anthropic？",
+      "answer": "Claude 系列大模型背后的 AI 安全公司，[[Andrej Karpathy]] 2026 年 5 月新东家，[[Memory Files]] / [[Dreams]] / [[Conway]] 三件套的推出方。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/Anthropic.md",
+      "concepts": [
+        "Anthropic"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-anthropic-connection-001",
+      "type": "connection",
+      "question": "Anthropic 和哪些旧概念发生连接？",
+      "answer": "Andrej Karpathy、Memory Files、Dreams、Conway、Claude Code、OpenAI、Nicholas Joseph、递归自我改进、20260519-TechCrunch-Karpathy加入Anthropic预训练团队、20260525-知乎-Claude永久大脑真的来了、forrestchang、CLAUDE.md、MCP、A2A、20260528-掘金-MCP协议落地三条铁律、LLM Wiki、Hana、20260407-知乎-Karpathy开源Agent知识库、20260526-GitHub-andrej-karpathy-skills原仓库",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Anthropic.md",
+      "concepts": [
+        "Andrej Karpathy",
+        "Memory Files",
+        "Dreams",
+        "Conway",
+        "Claude Code",
+        "OpenAI",
+        "Nicholas Joseph",
+        "递归自我改进",
+        "20260519-TechCrunch-Karpathy加入Anthropic预训练团队",
+        "20260525-知乎-Claude永久大脑真的来了",
+        "forrestchang",
+        "CLAUDE.md",
+        "MCP",
+        "A2A",
+        "20260528-掘金-MCP协议落地三条铁律",
+        "LLM Wiki",
+        "Hana",
+        "20260407-知乎-Karpathy开源Agent知识库",
+        "20260526-GitHub-andrej-karpathy-skills原仓库"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-brat-definition-001",
+      "type": "definition",
+      "question": "什么是 BRAT？",
+      "answer": "Obsidian 的 beta 插件加载器，让用户能装上未进入官方插件市场的第三方插件。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/BRAT.md",
+      "concepts": [
+        "BRAT"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-brat-connection-001",
+      "type": "connection",
+      "question": "BRAT 和哪些旧概念发生连接？",
+      "answer": "Obsidian、obsidian-agent-client、20260413-知乎-Qwen Code+Obsidian搭建Karpathy知识库",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/BRAT.md",
+      "concepts": [
+        "Obsidian",
+        "obsidian-agent-client",
+        "20260413-知乎-Qwen Code+Obsidian搭建Karpathy知识库"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-bear-blog-definition-001",
+      "type": "definition",
+      "question": "什么是 Bear Blog？",
+      "answer": "Bear Blog 是一个轻量博客平台；本库收录的 [[../summaries/20260507-BearBlog-AgentsNeedControlFlowNotMorePrompts|agents need control flow, not more prompts]] 由 [[bsuh]] 发布在该平台。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/Bear Blog.md",
+      "concepts": [
+        "Bear Blog"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-bear-blog-connection-001",
+      "type": "connection",
+      "question": "Bear Blog 和哪些旧概念发生连接？",
+      "answer": "../summaries/20260507-BearBlog-AgentsNeedControlFlowNotMorePrompts、bsuh",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Bear Blog.md",
+      "concepts": [
+        "../summaries/20260507-BearBlog-AgentsNeedControlFlowNotMorePrompts",
+        "bsuh"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-claude-md-connection-001",
+      "type": "connection",
+      "question": "CLAUDE.md 和哪些旧概念发生连接？",
+      "answer": "forrestchang、Claude Code、Cursor、Multica、Andrej Karpathy、GitHub、LLM 编程三宗罪、Think Before Coding、Simplicity First、Surgical Changes、Goal-Driven Execution、原则化指令、20260526-GitHub-andrej-karpathy-skills原仓库、LLM Wiki、../../AGENT、Shareuhack、20260528-Shareuhack-CLAUDE四层架构实战、../concepts/CLAUDE.md四层架构、../concepts/路径作用域规则、20260526-知乎-CLAUDE.md神文件让ClaudeCode听话",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/CLAUDE.md.md",
+      "concepts": [
+        "forrestchang",
+        "Claude Code",
+        "Cursor",
+        "Multica",
+        "Andrej Karpathy",
+        "GitHub",
+        "LLM 编程三宗罪",
+        "Think Before Coding",
+        "Simplicity First",
+        "Surgical Changes",
+        "Goal-Driven Execution",
+        "原则化指令",
+        "20260526-GitHub-andrej-karpathy-skills原仓库",
+        "LLM Wiki",
+        "../../AGENT",
+        "Shareuhack",
+        "20260528-Shareuhack-CLAUDE四层架构实战",
+        "../concepts/CLAUDE.md四层架构",
+        "../concepts/路径作用域规则",
+        "20260526-知乎-CLAUDE.md神文件让ClaudeCode听话"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-charles-ye-connection-001",
+      "type": "connection",
+      "question": "Charles Ye 和哪些旧概念发生连接？",
+      "answer": "Jasmine Cui、Dylan Hadfield-Menell、concepts/角色混淆攻击、concepts/去风格化防御",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Charles Ye.md",
+      "concepts": [
+        "Jasmine Cui",
+        "Dylan Hadfield-Menell",
+        "concepts/角色混淆攻击",
+        "concepts/去风格化防御"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-claude-code-definition-001",
+      "type": "definition",
+      "question": "什么是 Claude Code？",
+      "answer": "[[Anthropic]] 推出的 CLI 编码 Agent，是 [[Andrej Karpathy]] 本人在 [[LLM Wiki]] 工作流中使用的主力工具之一。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/Claude Code.md",
+      "concepts": [
+        "Claude Code"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-claude-code-connection-001",
+      "type": "connection",
+      "question": "Claude Code 和哪些旧概念发生连接？",
+      "answer": "Anthropic、Andrej Karpathy、LLM Wiki、Codex、Qwen Code、Ingest 录入、Maintain 维护、20260407-知乎-Karpathy开源Agent知识库、CLAUDE.md、20260526-知乎-CLAUDE.md神文件让ClaudeCode听话、LLM 编程三宗罪、Dreams、20260525-知乎-Claude永久大脑真的来了、Conway、Hana、Shareuhack、20260528-Shareuhack-CLAUDE四层架构实战、CLAUDE.md四层架构、Skills 2.0模块化、Hooks确定性执行、三套记忆系统、20260413-知乎-Qwen Code+Obsidian搭建Karpathy知识库、forrestchang、entities/CLAUDE.md",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Claude Code.md",
+      "concepts": [
+        "Anthropic",
+        "Andrej Karpathy",
+        "LLM Wiki",
+        "Codex",
+        "Qwen Code",
+        "Ingest 录入",
+        "Maintain 维护",
+        "20260407-知乎-Karpathy开源Agent知识库",
+        "CLAUDE.md",
+        "20260526-知乎-CLAUDE.md神文件让ClaudeCode听话",
+        "LLM 编程三宗罪",
+        "Dreams",
+        "20260525-知乎-Claude永久大脑真的来了",
+        "Conway",
+        "Hana",
+        "Shareuhack",
+        "20260528-Shareuhack-CLAUDE四层架构实战",
+        "CLAUDE.md四层架构",
+        "Skills 2.0模块化",
+        "Hooks确定性执行",
+        "三套记忆系统",
+        "20260413-知乎-Qwen Code+Obsidian搭建Karpathy知识库",
+        "forrestchang",
+        "entities/CLAUDE.md"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-claude-fable-5-connection-001",
+      "type": "connection",
+      "question": "Claude Fable 5 和哪些旧概念发生连接？",
+      "answer": "20260611-SimonWillison-ClaudeFableRelentlesslyProactive、concepts/Agent 自主工具链构建、entities/Anthropic、entities/Claude Code、concepts/Coding Agent 安全沙箱、Simon Willison",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Claude Fable 5.md",
+      "concepts": [
+        "20260611-SimonWillison-ClaudeFableRelentlesslyProactive",
+        "concepts/Agent 自主工具链构建",
+        "entities/Anthropic",
+        "entities/Claude Code",
+        "concepts/Coding Agent 安全沙箱",
+        "Simon Willison"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-clawhub-connection-001",
+      "type": "connection",
+      "question": "ClawHub 和哪些旧概念发生连接？",
+      "answer": "Claude Code、淘金小镇、Convex、Skill 榜单情报化、20260527-知乎-卡尔-淘金小镇Skill榜单情报项目、Multica",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/ClawHub.md",
+      "concepts": [
+        "Claude Code",
+        "淘金小镇",
+        "Convex",
+        "Skill 榜单情报化",
+        "20260527-知乎-卡尔-淘金小镇Skill榜单情报项目",
+        "Multica"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-codebuddy-definition-001",
+      "type": "definition",
+      "question": "什么是 CodeBuddy？",
+      "answer": "CodeBuddy 是本文案例中使用的 AI Coding Agent，用于在 [[TDSQL]] HBase 兼容层 conditional mutation 功能开发中执行需求澄清、方案设计、测试生成和代码编写工作流。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/CodeBuddy.md",
+      "concepts": [
+        "CodeBuddy"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-codebuddy-connection-001",
+      "type": "connection",
+      "question": "CodeBuddy 和哪些旧概念发生连接？",
+      "answer": "TDSQL、davidycwei、agentic-engineering-framework、../concepts/Agentic Engineering、../concepts/Spec-First工作流、../summaries/20260306-知乎-从第一性原理思考AgenticEngineering",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/CodeBuddy.md",
+      "concepts": [
+        "TDSQL",
+        "davidycwei",
+        "agentic-engineering-framework",
+        "../concepts/Agentic Engineering",
+        "../concepts/Spec-First工作流",
+        "../summaries/20260306-知乎-从第一性原理思考AgenticEngineering"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-codex-definition-001",
+      "type": "definition",
+      "question": "什么是 Codex？",
+      "answer": "OpenAI 的 CLI 编码 Agent，与 [[Claude Code]] 同类竞品，[[Andrej Karpathy]] 自己日常使用的两大 Agent 之一；**`/goal` 无限循环模式**是其旗舰特性，已被 [[卡尔的AI沃茨]] 的 [[淘金小镇]] 项目工程验证。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/Codex.md",
+      "concepts": [
+        "Codex"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-codex-connection-001",
+      "type": "connection",
+      "question": "Codex 和哪些旧概念发生连接？",
+      "answer": "Claude Code、Andrej Karpathy、卡尔的AI沃茨、淘金小镇、Qwen Code、Goal-Driven Execution、Goal 模式自动化爬虫、LLM Wiki、20260407-知乎-Karpathy开源Agent知识库、CLAUDE.md、20260527-知乎-卡尔-淘金小镇Skill榜单情报项目、Convex",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Codex.md",
+      "concepts": [
+        "Claude Code",
+        "Andrej Karpathy",
+        "卡尔的AI沃茨",
+        "淘金小镇",
+        "Qwen Code",
+        "Goal-Driven Execution",
+        "Goal 模式自动化爬虫",
+        "LLM Wiki",
+        "20260407-知乎-Karpathy开源Agent知识库",
+        "CLAUDE.md",
+        "20260527-知乎-卡尔-淘金小镇Skill榜单情报项目",
+        "Convex"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-convex-connection-001",
+      "type": "connection",
+      "question": "Convex 和哪些旧概念发生连接？",
+      "answer": "ClawHub、复刻用户视角拿数据、淘金小镇、20260527-知乎-卡尔-淘金小镇Skill榜单情报项目",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Convex.md",
+      "concepts": [
+        "ClawHub",
+        "复刻用户视角拿数据",
+        "淘金小镇",
+        "20260527-知乎-卡尔-淘金小镇Skill榜单情报项目"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-conway-definition-001",
+      "type": "definition",
+      "question": "什么是 Conway？",
+      "answer": "[[Anthropic]] 在研的**永不下线 Agent 平台**——独立运行环境、监听外部事件、操控浏览器，把 [[Memory Files]] + [[Dreams]] 拼成完整闭环。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/Conway.md",
+      "concepts": [
+        "Conway"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-conway-connection-001",
+      "type": "connection",
+      "question": "Conway 和哪些旧概念发生连接？",
+      "answer": "Anthropic、Memory Files、Dreams、Claude Code、OpenClaw、20260525-知乎-Claude永久大脑真的来了、LLM Wiki、Maintain 维护",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Conway.md",
+      "concepts": [
+        "Anthropic",
+        "Memory Files",
+        "Dreams",
+        "Claude Code",
+        "OpenClaw",
+        "20260525-知乎-Claude永久大脑真的来了",
+        "LLM Wiki",
+        "Maintain 维护"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-cursor-connection-001",
+      "type": "connection",
+      "question": "Cursor 和哪些旧概念发生连接？",
+      "answer": "CLAUDE.md、Claude Code、原则化指令、20260526-GitHub-andrej-karpathy-skills原仓库",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Cursor.md",
+      "concepts": [
+        "CLAUDE.md",
+        "Claude Code",
+        "原则化指令",
+        "20260526-GitHub-andrej-karpathy-skills原仓库"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-dreams-definition-001",
+      "type": "definition",
+      "question": "什么是 Dreams？",
+      "answer": "[[Anthropic]] 推出的异步后台记忆整合机制，灵感来自人类 [[REM 睡眠式记忆整合]]——让 [[Claude]] \"白天干活、晚上做梦复盘\"，是 [[Maintain 维护]] 的**自动化版本**。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/Dreams.md",
+      "concepts": [
+        "Dreams"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-dreams-connection-001",
+      "type": "connection",
+      "question": "Dreams 和哪些旧概念发生连接？",
+      "answer": "Anthropic、REM 睡眠式记忆整合、Claude、Maintain 维护、Claude Code、Memory Files、Conway、知识复利、Hana、../AGENT、20260525-知乎-Claude永久大脑真的来了",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Dreams.md",
+      "concepts": [
+        "Anthropic",
+        "REM 睡眠式记忆整合",
+        "Claude",
+        "Maintain 维护",
+        "Claude Code",
+        "Memory Files",
+        "Conway",
+        "知识复利",
+        "Hana",
+        "../AGENT",
+        "20260525-知乎-Claude永久大脑真的来了"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-dylan-hadfield-menell-connection-001",
+      "type": "connection",
+      "question": "Dylan Hadfield-Menell 和哪些旧概念发生连接？",
+      "answer": "Charles Ye、Jasmine Cui、concepts/角色混淆攻击",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Dylan Hadfield-Menell.md",
+      "concepts": [
+        "Charles Ye",
+        "Jasmine Cui",
+        "concepts/角色混淆攻击"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-eureka-labs-definition-001",
+      "type": "definition",
+      "question": "什么是 Eureka Labs？",
+      "answer": "[[Andrej Karpathy]] 2024 年创办的 AI 原生教育创业公司，定位\"应用 AI 助手到教育\"，截至 2026-05 因 Karpathy 加入 [[Anthropic]] 而**事实上暂停**。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/Eureka Labs.md",
+      "concepts": [
+        "Eureka Labs"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-eureka-labs-connection-001",
+      "type": "connection",
+      "question": "Eureka Labs 和哪些旧概念发生连接？",
+      "answer": "Andrej Karpathy、Anthropic、20260519-TechCrunch-Karpathy加入Anthropic预训练团队、LLM Wiki",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Eureka Labs.md",
+      "concepts": [
+        "Andrej Karpathy",
+        "Anthropic",
+        "20260519-TechCrunch-Karpathy加入Anthropic预训练团队",
+        "LLM Wiki"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-gemini-cli-definition-001",
+      "type": "definition",
+      "question": "什么是 Gemini CLI？",
+      "answer": "Gemini CLI 是 Google/Gemini 生态的命令行 coding agent；在本库中主要作为 [[Claude Code]]、[[Codex]] 的同类对照。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/Gemini CLI.md",
+      "concepts": [
+        "Gemini CLI"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-gemini-cli-connection-001",
+      "type": "connection",
+      "question": "Gemini CLI 和哪些旧概念发生连接？",
+      "answer": "Claude Code、Codex、Simon Willison、../concepts/Agentic Engineering、../concepts/Agent工具循环、../summaries/20260607-SimonWillison-AgenticEngineeringPatterns",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Gemini CLI.md",
+      "concepts": [
+        "Claude Code",
+        "Codex",
+        "Simon Willison",
+        "../concepts/Agentic Engineering",
+        "../concepts/Agent工具循环",
+        "../summaries/20260607-SimonWillison-AgenticEngineeringPatterns"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-hacker-news-definition-001",
+      "type": "definition",
+      "question": "什么是 Hacker News？",
+      "answer": "Hacker News 是 Y Combinator 旗下的开发者/创业者社区；在本知识库中，它主要作为技术文章的社区讨论辅助源，用来观察工程师群体的反应、反例和实践补充。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/Hacker News.md",
+      "concepts": [
+        "Hacker News"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-hacker-news-connection-001",
+      "type": "connection",
+      "question": "Hacker News 和哪些旧概念发生连接？",
+      "answer": "../summaries/20260507-BearBlog-AgentsNeedControlFlowNotMorePrompts、../concepts/确定性控制流、../concepts/Agent工程化兜底",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Hacker News.md",
+      "concepts": [
+        "../summaries/20260507-BearBlog-AgentsNeedControlFlowNotMorePrompts",
+        "../concepts/确定性控制流",
+        "../concepts/Agent工程化兜底"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-hermes-definition-001",
+      "type": "definition",
+      "question": "什么是 Hermes？",
+      "answer": "Hermes 是 OpenClacky 文章中被拿来横向评测的 Agent 对照对象之一；在本库中暂作为 [[OpenClacky]] 的成本/请求数/cache 命中率参照实体。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/Hermes.md",
+      "concepts": [
+        "Hermes"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-hermes-connection-001",
+      "type": "connection",
+      "question": "Hermes 和哪些旧概念发生连接？",
+      "answer": "OpenClacky、Claude Code、OpenClaw、../concepts/Harness工程、../concepts/Prompt Cache局部性、20260514-RubyChina-OpenClacky-Harness工程7个关键决策",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Hermes.md",
+      "concepts": [
+        "OpenClacky",
+        "Claude Code",
+        "OpenClaw",
+        "../concepts/Harness工程",
+        "../concepts/Prompt Cache局部性",
+        "20260514-RubyChina-OpenClacky-Harness工程7个关键决策"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-jasmine-cui-connection-001",
+      "type": "connection",
+      "question": "Jasmine Cui 和哪些旧概念发生连接？",
+      "answer": "Charles Ye、Dylan Hadfield-Menell、concepts/角色混淆攻击",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Jasmine Cui.md",
+      "concepts": [
+        "Charles Ye",
+        "Dylan Hadfield-Menell",
+        "concepts/角色混淆攻击"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-langfuse-llm-可观测性平台-connection-001",
+      "type": "connection",
+      "question": "Langfuse（LLM 可观测性平台） 和哪些旧概念发生连接？",
+      "answer": "Prompt 版本化管理、动态 Token 预算、上下文预算控制、Harness Engineering",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Langfuse.md",
+      "concepts": [
+        "Prompt 版本化管理",
+        "动态 Token 预算",
+        "上下文预算控制",
+        "Harness Engineering"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-learnprompt-connection-001",
+      "type": "connection",
+      "question": "LearnPrompt 和哪些旧概念发生连接？",
+      "answer": "卡尔的AI沃茨、淘金小镇、20260527-知乎-卡尔-淘金小镇Skill榜单情报项目、Multica",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/LearnPrompt.md",
+      "concepts": [
+        "卡尔的AI沃茨",
+        "淘金小镇",
+        "20260527-知乎-卡尔-淘金小镇Skill榜单情报项目",
+        "Multica"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-mcp-definition-001",
+      "type": "definition",
+      "question": "什么是 MCP？",
+      "answer": "Model Context Protocol，[[Anthropic]] 在 2024-2025 年间开源的 **Agent 与外部工具/数据源通信的标准协议**，被视为 Agent 时代的\"TCP/IP\"。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/MCP.md",
+      "concepts": [
+        "MCP"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-mcp-connection-001",
+      "type": "connection",
+      "question": "MCP 和哪些旧概念发生连接？",
+      "answer": "Anthropic、Claude Code、A2A、字段级权限、Agent Gateway协议翻译层、工具调用幻觉、30-70定律、20260528-掘金-MCP协议落地三条铁律",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/MCP.md",
+      "concepts": [
+        "Anthropic",
+        "Claude Code",
+        "A2A",
+        "字段级权限",
+        "Agent Gateway协议翻译层",
+        "工具调用幻觉",
+        "30-70定律",
+        "20260528-掘金-MCP协议落地三条铁律"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-mac-mini-agent-fleet-definition-001",
+      "type": "definition",
+      "question": "什么是 Mac Mini Agent Fleet？",
+      "answer": "[[Shubham Saboo]] 在一台 Mac Mini 上跑的 6 个 Agent 自治系统，托管他的副业内容创作全流程——是 2026 年最广为流传的\"一个人 + 一台机器 + 一支 AI 团队\"实战案例。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/Mac Mini Agent Fleet.md",
+      "concepts": [
+        "Mac Mini Agent Fleet"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-mac-mini-agent-fleet-connection-001",
+      "type": "connection",
+      "question": "Mac Mini Agent Fleet 和哪些旧概念发生连接？",
+      "answer": "Shubham Saboo、Claude Code、纠错式Prompt工程、Agent团队三阶段曲线、反馈闭环写入文件、20260528-36氪-Saboo30天6Agent复盘、淘金小镇、CLAUDE.md",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Mac Mini Agent Fleet.md",
+      "concepts": [
+        "Shubham Saboo",
+        "Claude Code",
+        "纠错式Prompt工程",
+        "Agent团队三阶段曲线",
+        "反馈闭环写入文件",
+        "20260528-36氪-Saboo30天6Agent复盘",
+        "淘金小镇",
+        "CLAUDE.md"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-memory-files-definition-001",
+      "type": "definition",
+      "question": "什么是 Memory Files？",
+      "answer": "[[Anthropic]] 给 [[Claude]] 造的\"内置个人 Wiki\"——按话题/项目自动组织成结构化文档，按需选择性读取，是 [[LLM Wiki]] 理念的**消费级产品化**。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/Memory Files.md",
+      "concepts": [
+        "Memory Files"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-memory-files-connection-001",
+      "type": "connection",
+      "question": "Memory Files 和哪些旧概念发生连接？",
+      "answer": "Anthropic、Claude、LLM Wiki、Dreams、Conway、CLAUDE.md、RAG、Maintain 维护、REM 睡眠式记忆整合、20260525-知乎-Claude永久大脑真的来了、Obsidian、Hana、20260524-理念vs实操-两篇知乎对比综述",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Memory Files.md",
+      "concepts": [
+        "Anthropic",
+        "Claude",
+        "LLM Wiki",
+        "Dreams",
+        "Conway",
+        "CLAUDE.md",
+        "RAG",
+        "Maintain 维护",
+        "REM 睡眠式记忆整合",
+        "20260525-知乎-Claude永久大脑真的来了",
+        "Obsidian",
+        "Hana",
+        "20260524-理念vs实操-两篇知乎对比综述"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-multica-connection-001",
+      "type": "connection",
+      "question": "Multica 和哪些旧概念发生连接？",
+      "answer": "forrestchang、CLAUDE.md、Claude Code、Cursor、原则化指令、Goal-Driven Execution、20260526-GitHub-andrej-karpathy-skills原仓库",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Multica.md",
+      "concepts": [
+        "forrestchang",
+        "CLAUDE.md",
+        "Claude Code",
+        "Cursor",
+        "原则化指令",
+        "Goal-Driven Execution",
+        "20260526-GitHub-andrej-karpathy-skills原仓库"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-nicholas-joseph-definition-001",
+      "type": "definition",
+      "question": "什么是 Nicholas Joseph？",
+      "answer": "[[Anthropic]] Head of Pretraining，[[Andrej Karpathy]] 2026-05 加入 Anthropic 后的直属上级，前 [[OpenAI]] 核心成员。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/Nicholas Joseph.md",
+      "concepts": [
+        "Nicholas Joseph"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-nicholas-joseph-connection-001",
+      "type": "connection",
+      "question": "Nicholas Joseph 和哪些旧概念发生连接？",
+      "answer": "Anthropic、Andrej Karpathy、OpenAI、20260519-TechCrunch-Karpathy加入Anthropic预训练团队、Claude Code",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Nicholas Joseph.md",
+      "concepts": [
+        "Anthropic",
+        "Andrej Karpathy",
+        "OpenAI",
+        "20260519-TechCrunch-Karpathy加入Anthropic预训练团队",
+        "Claude Code"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-obsidian-definition-001",
+      "type": "definition",
+      "question": "什么是 Obsidian？",
+      "answer": "基于本地 Markdown 文件的笔记软件，以双向链接和图谱视图见长，是 [[LLM Wiki]] 方法论的默认载体。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/Obsidian.md",
+      "concepts": [
+        "Obsidian"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-obsidian-connection-001",
+      "type": "connection",
+      "question": "Obsidian 和哪些旧概念发生连接？",
+      "answer": "LLM Wiki、obsidian-agent-client、BRAT、三层架构、20260407-知乎-Karpathy开源Agent知识库、双向链、20260601-知乎-阿浩的笔记-Obsidian七种同步方案对比、20260413-知乎-Qwen Code+Obsidian搭建Karpathy知识库",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Obsidian.md",
+      "concepts": [
+        "LLM Wiki",
+        "obsidian-agent-client",
+        "BRAT",
+        "三层架构",
+        "20260407-知乎-Karpathy开源Agent知识库",
+        "双向链",
+        "20260601-知乎-阿浩的笔记-Obsidian七种同步方案对比",
+        "20260413-知乎-Qwen Code+Obsidian搭建Karpathy知识库"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-openclacky-definition-001",
+      "type": "definition",
+      "question": "什么是 OpenClacky？",
+      "answer": "OpenClacky 是一个 Ruby 编写的开源通用 AI Agent，主张用 [[../concepts/Harness工程|Harness 工程]] 把 Agent 成本压低到接近 [[Claude Code]]，核心抓手是 [[../concepts/Prompt Cache局部性|Prompt Cache 局部性]] 和 [[../concepts/工具集稳定性|工具集稳定性]]。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/OpenClacky.md",
+      "concepts": [
+        "OpenClacky"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-openclacky-connection-001",
+      "type": "connection",
+      "question": "OpenClacky 和哪些旧概念发生连接？",
+      "answer": "../concepts/Harness工程、Claude Code、../concepts/Prompt Cache局部性、../concepts/工具集稳定性、20260514-RubyChina-OpenClacky-Harness工程7个关键决策、OpenClaw、Hermes、../concepts/上下文膨胀与压缩、Codex、../concepts/Skills 2.0模块化、../concepts/Agent工程化兜底",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/OpenClacky.md",
+      "concepts": [
+        "../concepts/Harness工程",
+        "Claude Code",
+        "../concepts/Prompt Cache局部性",
+        "../concepts/工具集稳定性",
+        "20260514-RubyChina-OpenClacky-Harness工程7个关键决策",
+        "OpenClaw",
+        "Hermes",
+        "../concepts/上下文膨胀与压缩",
+        "Codex",
+        "../concepts/Skills 2.0模块化",
+        "../concepts/Agent工程化兜底"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-openclaw-definition-001",
+      "type": "definition",
+      "question": "什么是 OpenClaw？",
+      "answer": "OpenClaw 是 OpenClacky 文章中被拿来横向评测的开源 Agent 对照对象之一；在本库中暂作为 [[OpenClacky]] 的成本/架构参照实体。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/OpenClaw.md",
+      "concepts": [
+        "OpenClaw"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-openclaw-connection-001",
+      "type": "connection",
+      "question": "OpenClaw 和哪些旧概念发生连接？",
+      "answer": "OpenClacky、Claude Code、Hermes、../concepts/Harness工程、../concepts/Prompt Cache局部性、20260514-RubyChina-OpenClacky-Harness工程7个关键决策",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/OpenClaw.md",
+      "concepts": [
+        "OpenClacky",
+        "Claude Code",
+        "Hermes",
+        "../concepts/Harness工程",
+        "../concepts/Prompt Cache局部性",
+        "20260514-RubyChina-OpenClacky-Harness工程7个关键决策"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-openspec-ai-长文档生成平台-connection-001",
+      "type": "connection",
+      "question": "OpenSpec（AI 长文档生成平台） 和哪些旧概念发生连接？",
+      "answer": "LangGraph、RAGFlow、Langfuse、三角色分离工作流、动态 Token 预算、Prompt 版本化管理、双引擎架构",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/OpenSpec.md",
+      "concepts": [
+        "LangGraph",
+        "RAGFlow",
+        "Langfuse",
+        "三角色分离工作流",
+        "动态 Token 预算",
+        "Prompt 版本化管理",
+        "双引擎架构"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-qwen-code-definition-001",
+      "type": "definition",
+      "question": "什么是 Qwen Code？",
+      "answer": "阿里通义千问推出的 CLI 编码 Agent，是国内用户搭建 [[LLM Wiki]] 时 [[Claude Code]] / [[Codex]] 的国产替代。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/Qwen Code.md",
+      "concepts": [
+        "Qwen Code"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-qwen-code-connection-001",
+      "type": "connection",
+      "question": "Qwen Code 和哪些旧概念发生连接？",
+      "answer": "LLM Wiki、Claude Code、Codex、obsidian-agent-client、AGENT.md 协议、20260413-知乎-Qwen Code+Obsidian搭建Karpathy知识库、Node.js、菠萝吹雪、Ingest 录入、Maintain 维护",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Qwen Code.md",
+      "concepts": [
+        "LLM Wiki",
+        "Claude Code",
+        "Codex",
+        "obsidian-agent-client",
+        "AGENT.md 协议",
+        "20260413-知乎-Qwen Code+Obsidian搭建Karpathy知识库",
+        "Node.js",
+        "菠萝吹雪",
+        "Ingest 录入",
+        "Maintain 维护"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-shareuhack-definition-001",
+      "type": "definition",
+      "question": "什么是 Shareuhack？",
+      "answer": "一个**自运营 6-Agent fleet** 的内容团队（Sage / Mia / Luna / Rex 等），围绕 Claude Code 的 CLAUDE.md + Skills + Hooks 架构搭建全流程无人值守的选题→研究→撰写→发布 pipeline。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/Shareuhack.md",
+      "concepts": [
+        "Shareuhack"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-shareuhack-connection-001",
+      "type": "connection",
+      "question": "Shareuhack 和哪些旧概念发生连接？",
+      "answer": "Claude Code、CLAUDE.md、Mac Mini Agent Fleet、CLAUDE.md四层架构、Hooks确定性执行、Skills 2.0模块化、三套记忆系统、20260528-Shareuhack-CLAUDE四层架构实战、Shubham Saboo",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Shareuhack.md",
+      "concepts": [
+        "Claude Code",
+        "CLAUDE.md",
+        "Mac Mini Agent Fleet",
+        "CLAUDE.md四层架构",
+        "Hooks确定性执行",
+        "Skills 2.0模块化",
+        "三套记忆系统",
+        "20260528-Shareuhack-CLAUDE四层架构实战",
+        "Shubham Saboo"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-shubham-saboo-definition-001",
+      "type": "definition",
+      "question": "什么是 Shubham Saboo？",
+      "answer": "前 Google PM、现 Senior AI Product Manager @ Google，Awesome LLM Apps 维护者，**用 30 天在一台 Mac Mini 上养出 6 个 Agent 团队** 并把全过程方法论化的 Agent 实战派代表。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/Shubham Saboo.md",
+      "concepts": [
+        "Shubham Saboo"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-shubham-saboo-connection-001",
+      "type": "connection",
+      "question": "Shubham Saboo 和哪些旧概念发生连接？",
+      "answer": "Mac Mini Agent Fleet、Claude Code、纠错式Prompt工程、反馈闭环写入文件、记忆文件vs技能文件、上下文膨胀与压缩、Agent团队三阶段曲线、20260528-36氪-Saboo30天6Agent复盘、forrestchang、卡尔的AI沃茨",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Shubham Saboo.md",
+      "concepts": [
+        "Mac Mini Agent Fleet",
+        "Claude Code",
+        "纠错式Prompt工程",
+        "反馈闭环写入文件",
+        "记忆文件vs技能文件",
+        "上下文膨胀与压缩",
+        "Agent团队三阶段曲线",
+        "20260528-36氪-Saboo30天6Agent复盘",
+        "forrestchang",
+        "卡尔的AI沃茨"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-simon-willison-definition-001",
+      "type": "definition",
+      "question": "什么是 Simon Willison？",
+      "answer": "Simon Willison 是长期记录 LLM 与软件工程实践的技术作者/开发者，在本库中主要贡献 [[../concepts/Agentic Engineering|Agentic Engineering]]、[[../concepts/Vibe Coding|Vibe Coding]] 边界、coding agent 工作模式与 context engineering 术语传播。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/Simon Willison.md",
+      "concepts": [
+        "Simon Willison"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-simon-willison-connection-001",
+      "type": "connection",
+      "question": "Simon Willison 和哪些旧概念发生连接？",
+      "answer": "../concepts/Agentic Engineering、../concepts/Vibe Coding、Claude Code、Codex、Gemini CLI、Hacker News、../concepts/Agent工具循环、../concepts/Harness工程、../concepts/Red-Green TDD、../summaries/20260607-SimonWillison-AgenticEngineeringPatterns、Andrej Karpathy、Anthropic、../summaries/20260506-SimonWillison-Vibe coding and agentic engineering、../summaries/20260316-SimonWillison-HowCodingAgentsWork",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Simon Willison.md",
+      "concepts": [
+        "../concepts/Agentic Engineering",
+        "../concepts/Vibe Coding",
+        "Claude Code",
+        "Codex",
+        "Gemini CLI",
+        "Hacker News",
+        "../concepts/Agent工具循环",
+        "../concepts/Harness工程",
+        "../concepts/Red-Green TDD",
+        "../summaries/20260607-SimonWillison-AgenticEngineeringPatterns",
+        "Andrej Karpathy",
+        "Anthropic",
+        "../summaries/20260506-SimonWillison-Vibe coding and agentic engineering",
+        "../summaries/20260316-SimonWillison-HowCodingAgentsWork"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-skillfactory-definition-001",
+      "type": "definition",
+      "question": "什么是 SkillFactory？",
+      "answer": "SkillFactory 是知乎实践文章中的一个面向 [[../concepts/Harness工程|Harness 工程]] 的技能生产系统，把 Skill 创建流程改造成基线诊断、测试驱动、多路生成、质量评分、回归优化的流水线。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/SkillFactory.md",
+      "concepts": [
+        "SkillFactory"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-skillfactory-connection-001",
+      "type": "connection",
+      "question": "SkillFactory 和哪些旧概念发生连接？",
+      "answer": "../concepts/Harness工程、Trace2Skill、Anthropic、OpenClaw、Claude Code、../concepts/Skill工厂、../concepts/评测驱动Skill生成、../concepts/多路并发竞优、../summaries/20260608-知乎-SkillFactory面向Harness设计的技能工厂、../concepts/Skills 2.0模块化",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/SkillFactory.md",
+      "concepts": [
+        "../concepts/Harness工程",
+        "Trace2Skill",
+        "Anthropic",
+        "OpenClaw",
+        "Claude Code",
+        "../concepts/Skill工厂",
+        "../concepts/评测驱动Skill生成",
+        "../concepts/多路并发竞优",
+        "../summaries/20260608-知乎-SkillFactory面向Harness设计的技能工厂",
+        "../concepts/Skills 2.0模块化"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-tdsql-definition-001",
+      "type": "definition",
+      "question": "什么是 TDSQL？",
+      "answer": "TDSQL 是腾讯数据库产品；在 [[davidycwei]] 的 [[../concepts/Agentic Engineering|Agentic Engineering]] 文章中，它作为真实工程案例的项目背景出现。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/TDSQL.md",
+      "concepts": [
+        "TDSQL"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-tdsql-connection-001",
+      "type": "connection",
+      "question": "TDSQL 和哪些旧概念发生连接？",
+      "answer": "davidycwei、../concepts/Agentic Engineering、CodeBuddy、agentic-engineering-framework、../summaries/20260306-知乎-从第一性原理思考AgenticEngineering、../concepts/Spec-First工作流",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/TDSQL.md",
+      "concepts": [
+        "davidycwei",
+        "../concepts/Agentic Engineering",
+        "CodeBuddy",
+        "agentic-engineering-framework",
+        "../summaries/20260306-知乎-从第一性原理思考AgenticEngineering",
+        "../concepts/Spec-First工作流"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-trace2skill-definition-001",
+      "type": "definition",
+      "question": "什么是 Trace2Skill？",
+      "answer": "Trace2Skill 是 Qwen Large Model Application Team 提出的 agent skill 自动演化框架，把大量执行轨迹中的局部经验并行分析、合并成统一且无冲突的可迁移 skill directory。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/Trace2Skill.md",
+      "concepts": [
+        "Trace2Skill"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-trace2skill-connection-001",
+      "type": "connection",
+      "question": "Trace2Skill 和哪些旧概念发生连接？",
+      "answer": "../concepts/轨迹蒸馏为技能、../concepts/评测驱动Skill生成、../concepts/Skills 2.0模块化、../summaries/20260608-知乎-SkillFactory面向Harness设计的技能工厂、../concepts/反馈闭环写入文件",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/Trace2Skill.md",
+      "concepts": [
+        "../concepts/轨迹蒸馏为技能",
+        "../concepts/评测驱动Skill生成",
+        "../concepts/Skills 2.0模块化",
+        "../summaries/20260608-知乎-SkillFactory面向Harness设计的技能工厂",
+        "../concepts/反馈闭环写入文件"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-agentic-engineering-framework-definition-001",
+      "type": "definition",
+      "question": "什么是 agentic-engineering-framework？",
+      "answer": "[[davidycwei]] 提出的基于 Skill 的模块化 [[../concepts/Agentic Engineering|Agentic Engineering]] 框架，用 Markdown + YAML 将 SDLC 工作流、最佳实践、项目规范和错误复盘组织成 Agent 可按需加载的工程上下文。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/agentic-engineering-framework.md",
+      "concepts": [
+        "agentic-engineering-framework"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-agentic-engineering-framework-connection-001",
+      "type": "connection",
+      "question": "agentic-engineering-framework 和哪些旧概念发生连接？",
+      "answer": "davidycwei、../concepts/Agentic Engineering、../summaries/20260306-知乎-从第一性原理思考AgenticEngineering、../concepts/Spec-First工作流、../concepts/LLM Wiki、../concepts/Error-Driven Context Refinement",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/agentic-engineering-framework.md",
+      "concepts": [
+        "davidycwei",
+        "../concepts/Agentic Engineering",
+        "../summaries/20260306-知乎-从第一性原理思考AgenticEngineering",
+        "../concepts/Spec-First工作流",
+        "../concepts/LLM Wiki",
+        "../concepts/Error-Driven Context Refinement"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-autoresearch-definition-001",
+      "type": "definition",
+      "question": "什么是 autoresearch？",
+      "answer": "[[Andrej Karpathy]] 2026-03 个人开源的 AI-assisted research 极简框架（630 行 Python / 单 GPU / 5 分钟一轮 / 夜间自动跑 100 实验），是他 2026-05 加入 [[Anthropic]] 做 [[递归自我改进]] 团队的**技术伏笔与可行性证明**。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/autoresearch.md",
+      "concepts": [
+        "autoresearch"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-autoresearch-connection-001",
+      "type": "connection",
+      "question": "autoresearch 和哪些旧概念发生连接？",
+      "answer": "Andrej Karpathy、Anthropic、递归自我改进、Claude Code、CLAUDE.md、Simplicity First、Goal-Driven Execution、Dreams、原则化指令、Conway、20260519-TechCrunch-Karpathy加入Anthropic预训练团队",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/autoresearch.md",
+      "concepts": [
+        "Andrej Karpathy",
+        "Anthropic",
+        "递归自我改进",
+        "Claude Code",
+        "CLAUDE.md",
+        "Simplicity First",
+        "Goal-Driven Execution",
+        "Dreams",
+        "原则化指令",
+        "Conway",
+        "20260519-TechCrunch-Karpathy加入Anthropic预训练团队"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-bsuh-definition-001",
+      "type": "definition",
+      "question": "什么是 bsuh？",
+      "answer": "bsuh 是 Bear Blog 作者，在 2026-05-07 的短文 [[../summaries/20260507-BearBlog-AgentsNeedControlFlowNotMorePrompts|agents need control flow, not more prompts]] 中提出“可靠 Agent 需要确定性控制流，而不是更多 prompt”的工程观点。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/bsuh.md",
+      "concepts": [
+        "bsuh"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-bsuh-connection-001",
+      "type": "connection",
+      "question": "bsuh 和哪些旧概念发生连接？",
+      "answer": "../summaries/20260507-BearBlog-AgentsNeedControlFlowNotMorePrompts、Bear Blog、Hacker News、../concepts/Hooks确定性执行、../concepts/Agent工程化兜底、../concepts/确定性控制流、../concepts/Prompt天花板",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/bsuh.md",
+      "concepts": [
+        "../summaries/20260507-BearBlog-AgentsNeedControlFlowNotMorePrompts",
+        "Bear Blog",
+        "Hacker News",
+        "../concepts/Hooks确定性执行",
+        "../concepts/Agent工程化兜底",
+        "../concepts/确定性控制流",
+        "../concepts/Prompt天花板"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-davidycwei-definition-001",
+      "type": "definition",
+      "question": "什么是 davidycwei？",
+      "answer": "知乎文章《从第一性原理思考 Agentic Engineering》的作者，鹅厂架构师，提出基于 Skill 的模块化 [[../concepts/Agentic Engineering|Agentic Engineering]] 框架。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/davidycwei.md",
+      "concepts": [
+        "davidycwei"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-davidycwei-connection-001",
+      "type": "connection",
+      "question": "davidycwei 和哪些旧概念发生连接？",
+      "answer": "../concepts/Agentic Engineering、../summaries/20260306-知乎-从第一性原理思考AgenticEngineering、agentic-engineering-framework、../concepts/Spec-First工作流、../concepts/Error-Driven Context Refinement、../concepts/验证瓶颈、../concepts/LLM Wiki、../concepts/Harness工程、../concepts/Agent工程化兜底",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/davidycwei.md",
+      "concepts": [
+        "../concepts/Agentic Engineering",
+        "../summaries/20260306-知乎-从第一性原理思考AgenticEngineering",
+        "agentic-engineering-framework",
+        "../concepts/Spec-First工作流",
+        "../concepts/Error-Driven Context Refinement",
+        "../concepts/验证瓶颈",
+        "../concepts/LLM Wiki",
+        "../concepts/Harness工程",
+        "../concepts/Agent工程化兜底"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-forrestchang-connection-001",
+      "type": "connection",
+      "question": "forrestchang 和哪些旧概念发生连接？",
+      "answer": "Andrej Karpathy、CLAUDE.md、Multica、Claude Code、GitHub、原则化指令、LLM 编程三宗罪、Goal-Driven Execution、20260526-GitHub-andrej-karpathy-skills原仓库、../../AGENT、LLM Wiki、20260526-知乎-CLAUDE.md神文件让ClaudeCode听话",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/forrestchang.md",
+      "concepts": [
+        "Andrej Karpathy",
+        "CLAUDE.md",
+        "Multica",
+        "Claude Code",
+        "GitHub",
+        "原则化指令",
+        "LLM 编程三宗罪",
+        "Goal-Driven Execution",
+        "20260526-GitHub-andrej-karpathy-skills原仓库",
+        "../../AGENT",
+        "LLM Wiki",
+        "20260526-知乎-CLAUDE.md神文件让ClaudeCode听话"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-muratcankoylan-definition-001",
+      "type": "definition",
+      "question": "什么是 muratcankoylan？",
+      "answer": "muratcankoylan 是 GitHub 项目 [[Agent Skills for Context Engineering]] 的作者/维护者，将 context engineering、harness engineering 与 multi-agent patterns 整理成可按需加载的 Agent Skills。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/muratcankoylan.md",
+      "concepts": [
+        "muratcankoylan"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-muratcankoylan-connection-001",
+      "type": "connection",
+      "question": "muratcankoylan 和哪些旧概念发生连接？",
+      "answer": "Agent Skills for Context Engineering、Hacker News、../concepts/上下文工程、../concepts/Skills 2.0模块化、../concepts/渐进式披露、../summaries/20260607-HN-AgentSkillsForContextEngineering",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/muratcankoylan.md",
+      "concepts": [
+        "Agent Skills for Context Engineering",
+        "Hacker News",
+        "../concepts/上下文工程",
+        "../concepts/Skills 2.0模块化",
+        "../concepts/渐进式披露",
+        "../summaries/20260607-HN-AgentSkillsForContextEngineering"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-obsidian-agent-client-definition-001",
+      "type": "definition",
+      "question": "什么是 obsidian-agent-client？",
+      "answer": "把外部 CLI Agent（[[Qwen Code]] / [[Claude Code]] 等）嵌入 [[Obsidian]] 侧边栏的第三方插件，是\"方案 B\"的核心粘合剂。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/obsidian-agent-client.md",
+      "concepts": [
+        "obsidian-agent-client"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-obsidian-agent-client-connection-001",
+      "type": "connection",
+      "question": "obsidian-agent-client 和哪些旧概念发生连接？",
+      "answer": "Qwen Code、Claude Code、Obsidian、BRAT、20260413-知乎-Qwen Code+Obsidian搭建Karpathy知识库、Node.js",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/obsidian-agent-client.md",
+      "concepts": [
+        "Qwen Code",
+        "Claude Code",
+        "Obsidian",
+        "BRAT",
+        "20260413-知乎-Qwen Code+Obsidian搭建Karpathy知识库",
+        "Node.js"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-卡尔的ai沃茨-connection-001",
+      "type": "connection",
+      "question": "卡尔的AI沃茨 和哪些旧概念发生连接？",
+      "answer": "LearnPrompt、淘金小镇、ClawHub、Codex、Skill 榜单情报化、Goal-Driven Execution、20260527-知乎-卡尔-淘金小镇Skill榜单情报项目、LLM Wiki、Andrej Karpathy、forrestchang",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/卡尔的AI沃茨.md",
+      "concepts": [
+        "LearnPrompt",
+        "淘金小镇",
+        "ClawHub",
+        "Codex",
+        "Skill 榜单情报化",
+        "Goal-Driven Execution",
+        "20260527-知乎-卡尔-淘金小镇Skill榜单情报项目",
+        "LLM Wiki",
+        "Andrej Karpathy",
+        "forrestchang"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-淘金小镇-connection-001",
+      "type": "connection",
+      "question": "淘金小镇 和哪些旧概念发生连接？",
+      "answer": "卡尔的AI沃茨、ClawHub、Convex、Skill 榜单情报化、Goal-Driven Execution、复刻用户视角拿数据、知识复利、20260527-知乎-卡尔-淘金小镇Skill榜单情报项目",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/淘金小镇.md",
+      "concepts": [
+        "卡尔的AI沃茨",
+        "ClawHub",
+        "Convex",
+        "Skill 榜单情报化",
+        "Goal-Driven Execution",
+        "复刻用户视角拿数据",
+        "知识复利",
+        "20260527-知乎-卡尔-淘金小镇Skill榜单情报项目"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-阿浩的笔记-definition-001",
+      "type": "definition",
+      "question": "什么是 阿浩的笔记？",
+      "answer": "知乎知识管理领域 KOL，一手造工具，一手写测评，专注测评笔记软件与知识管理工具。",
+      "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
+      "sourcePage": "wiki/entities/阿浩的笔记.md",
+      "concepts": [
+        "阿浩的笔记"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "entity-阿浩的笔记-connection-001",
+      "type": "connection",
+      "question": "阿浩的笔记 和哪些旧概念发生连接？",
+      "answer": "Obsidian、多端同步方案对比、20260601-知乎-阿浩的笔记-Obsidian七种同步方案对比",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/entities/阿浩的笔记.md",
+      "concepts": [
+        "Obsidian",
+        "多端同步方案对比",
+        "20260601-知乎-阿浩的笔记-Obsidian七种同步方案对比"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-20260211-openai-harness-engineering-connection-001",
+      "type": "connection",
+      "question": "20260211 · OpenAI · Harness Engineering 和哪些旧概念发生连接？",
+      "answer": "../raw/20260211-OpenAI-HarnessEngineering、../entities/OpenAI、../entities/Codex、../entities/Ryan Lopopolo、../concepts/Harness工程、../concepts/Agent可读性、../concepts/AGENTS.md作为目录、../concepts/Agent垃圾回收、../concepts/验证瓶颈、../concepts/渐进式披露、../concepts/反馈闭环写入文件、../summaries/20260514-RubyChina-OpenClacky-Harness工程7个关键决策",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260211-OpenAI-HarnessEngineering.md",
+      "concepts": [
+        "../raw/20260211-OpenAI-HarnessEngineering",
+        "../entities/OpenAI",
+        "../entities/Codex",
+        "../entities/Ryan Lopopolo",
+        "../concepts/Harness工程",
+        "../concepts/Agent可读性",
+        "../concepts/AGENTS.md作为目录",
+        "../concepts/Agent垃圾回收",
+        "../concepts/验证瓶颈",
+        "../concepts/渐进式披露",
+        "../concepts/反馈闭环写入文件",
+        "../summaries/20260514-RubyChina-OpenClacky-Harness工程7个关键决策"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-20260306-知乎-从第一性原理思考-agentic-engineering-connection-001",
+      "type": "connection",
+      "question": "20260306 · 知乎 · 从第一性原理思考 Agentic Engineering 和哪些旧概念发生连接？",
+      "answer": "../concepts/Agentic Engineering、../concepts/验证瓶颈、../entities/davidycwei、../entities/agentic-engineering-framework、../entities/CodeBuddy、../entities/TDSQL、../concepts/Spec-First工作流、../concepts/Error-Driven Context Refinement、../concepts/Skills 2.0模块化、../concepts/Agent工程化兜底、../concepts/Vibe Coding、../concepts/Goal-Driven Execution、../concepts/Harness工程、../concepts/知识复利、../concepts/三层知识索引",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260306-知乎-从第一性原理思考AgenticEngineering.md",
+      "concepts": [
+        "../concepts/Agentic Engineering",
+        "../concepts/验证瓶颈",
+        "../entities/davidycwei",
+        "../entities/agentic-engineering-framework",
+        "../entities/CodeBuddy",
+        "../entities/TDSQL",
+        "../concepts/Spec-First工作流",
+        "../concepts/Error-Driven Context Refinement",
+        "../concepts/Skills 2.0模块化",
+        "../concepts/Agent工程化兜底",
+        "../concepts/Vibe Coding",
+        "../concepts/Goal-Driven Execution",
+        "../concepts/Harness工程",
+        "../concepts/知识复利",
+        "../concepts/三层知识索引"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-20260316-simon-willison-how-coding-agents-work-connection-001",
+      "type": "connection",
+      "question": "20260316 · Simon Willison · How coding agents work 和哪些旧概念发生连接？",
+      "answer": "../raw/20260316-SimonWillison-HowCodingAgentsWork、../entities/Simon Willison、../entities/Codex、../concepts/Tool Loop、../concepts/Harness工程、../concepts/Prompt Cache局部性、../concepts/Agentic Engineering",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260316-SimonWillison-HowCodingAgentsWork.md",
+      "concepts": [
+        "../raw/20260316-SimonWillison-HowCodingAgentsWork",
+        "../entities/Simon Willison",
+        "../entities/Codex",
+        "../concepts/Tool Loop",
+        "../concepts/Harness工程",
+        "../concepts/Prompt Cache局部性",
+        "../concepts/Agentic Engineering"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-20260407-知乎-karpathy开源agent知识库-connection-001",
+      "type": "connection",
+      "question": "20260407-知乎-Karpathy开源Agent知识库 和哪些旧概念发生连接？",
+      "answer": "Andrej Karpathy、LLM Wiki、RAG、三层架构、AGENT.md 协议、Ingest 录入、Query 查询、Maintain 维护、Claude Code、Codex、Memex、Obsidian、NotebookLM、渐进式披露、知识复利、../../AGENT、Zettelkasten、Roam Research",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260407-知乎-Karpathy开源Agent知识库.md",
+      "concepts": [
+        "Andrej Karpathy",
+        "LLM Wiki",
+        "RAG",
+        "三层架构",
+        "AGENT.md 协议",
+        "Ingest 录入",
+        "Query 查询",
+        "Maintain 维护",
+        "Claude Code",
+        "Codex",
+        "Memex",
+        "Obsidian",
+        "NotebookLM",
+        "渐进式披露",
+        "知识复利",
+        "../../AGENT",
+        "Zettelkasten",
+        "Roam Research"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-20260413-知乎-qwen-code-obsidian搭建karpathy知识库-connection-001",
+      "type": "connection",
+      "question": "20260413-知乎-Qwen Code+Obsidian搭建Karpathy知识库 和哪些旧概念发生连接？",
+      "answer": "菠萝吹雪、Qwen Code、Obsidian、obsidian-agent-client、Andrej Karpathy、LLM Wiki、Claude Code、Codex、BRAT、Node.js、AGENT.md 协议、20260407-知乎-Karpathy开源Agent知识库、Hana",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260413-知乎-Qwen Code+Obsidian搭建Karpathy知识库.md",
+      "concepts": [
+        "菠萝吹雪",
+        "Qwen Code",
+        "Obsidian",
+        "obsidian-agent-client",
+        "Andrej Karpathy",
+        "LLM Wiki",
+        "Claude Code",
+        "Codex",
+        "BRAT",
+        "Node.js",
+        "AGENT.md 协议",
+        "20260407-知乎-Karpathy开源Agent知识库",
+        "Hana"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-20260415-latent-space-notion-token-town-connection-001",
+      "type": "connection",
+      "question": "20260415 · Latent Space · Notion Token Town 和哪些旧概念发生连接？",
+      "answer": "../raw/20260415-LatentSpace-NotionTokenTown、../entities/Notion、../entities/Sarah Sachs、../entities/Simon Last、../entities/Latent Space、../entities/MCP、../concepts/模型水流判断、../concepts/软件工厂、../concepts/Model Behavior Engineer、../concepts/Agentic Search、../concepts/渐进式披露、../concepts/验证瓶颈、../concepts/Harness工程、../concepts/Agent工程化兜底、../concepts/MCP",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260415-LatentSpace-NotionTokenTown.md",
+      "concepts": [
+        "../raw/20260415-LatentSpace-NotionTokenTown",
+        "../entities/Notion",
+        "../entities/Sarah Sachs",
+        "../entities/Simon Last",
+        "../entities/Latent Space",
+        "../entities/MCP",
+        "../concepts/模型水流判断",
+        "../concepts/软件工厂",
+        "../concepts/Model Behavior Engineer",
+        "../concepts/Agentic Search",
+        "../concepts/渐进式披露",
+        "../concepts/验证瓶颈",
+        "../concepts/Harness工程",
+        "../concepts/Agent工程化兜底",
+        "../concepts/MCP"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-20260506-simon-willison-vibe-coding-and-agentic-engineering-are-getting-closer-than-i-d-like-connection-001",
+      "type": "connection",
+      "question": "20260506 · Simon Willison · Vibe coding and agentic engineering are getting closer than I'd like 和哪些旧概念发生连接？",
+      "answer": "../concepts/Vibe Coding、../concepts/Agentic Engineering、../concepts/规范偏差正常化、../entities/Andrej Karpathy、../entities/Anthropic、../concepts/LLM 编程三宗罪、../concepts/Simplicity First、../concepts/Surgical Changes、../concepts/Agent工程化兜底、../concepts/Goal-Driven Execution、../concepts/上下文工程",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260506-SimonWillison-Vibe coding and agentic engineering.md",
+      "concepts": [
+        "../concepts/Vibe Coding",
+        "../concepts/Agentic Engineering",
+        "../concepts/规范偏差正常化",
+        "../entities/Andrej Karpathy",
+        "../entities/Anthropic",
+        "../concepts/LLM 编程三宗罪",
+        "../concepts/Simplicity First",
+        "../concepts/Surgical Changes",
+        "../concepts/Agent工程化兜底",
+        "../concepts/Goal-Driven Execution",
+        "../concepts/上下文工程"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-20260507-bear-blog-agents-need-control-flow-not-more-prompts-connection-001",
+      "type": "connection",
+      "question": "20260507 · Bear Blog · Agents need control flow, not more prompts 和哪些旧概念发生连接？",
+      "answer": "../entities/Bear Blog、../entities/Hacker News、../entities/bsuh、../concepts/确定性控制流、../concepts/Prompt天花板、../concepts/Agent工程化兜底、../concepts/Hooks确定性执行、../concepts/Agentic Engineering、20260514-RubyChina-OpenClacky-Harness工程7个关键决策、../concepts/原则化指令",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260507-BearBlog-AgentsNeedControlFlowNotMorePrompts.md",
+      "concepts": [
+        "../entities/Bear Blog",
+        "../entities/Hacker News",
+        "../entities/bsuh",
+        "../concepts/确定性控制流",
+        "../concepts/Prompt天花板",
+        "../concepts/Agent工程化兜底",
+        "../concepts/Hooks确定性执行",
+        "../concepts/Agentic Engineering",
+        "20260514-RubyChina-OpenClacky-Harness工程7个关键决策",
+        "../concepts/原则化指令"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-20260514-ruby-china-openclacky-harness-工程-7-个关键决策-connection-001",
+      "type": "connection",
+      "question": "20260514 · Ruby China · OpenClacky Harness 工程 7 个关键决策 和哪些旧概念发生连接？",
+      "answer": "../concepts/Harness工程、../concepts/Prompt Cache局部性、../concepts/工具集稳定性、../entities/OpenClacky、../entities/Claude Code、../entities/OpenClaw、../entities/Hermes、../concepts/上下文膨胀与压缩、../concepts/RAG、../concepts/Agent工程化兜底、../concepts/Skills 2.0模块化、../concepts/Agent团队三阶段曲线、../entities/Mac Mini Agent Fleet",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260514-RubyChina-OpenClacky-Harness工程7个关键决策.md",
+      "concepts": [
+        "../concepts/Harness工程",
+        "../concepts/Prompt Cache局部性",
+        "../concepts/工具集稳定性",
+        "../entities/OpenClacky",
+        "../entities/Claude Code",
+        "../entities/OpenClaw",
+        "../entities/Hermes",
+        "../concepts/上下文膨胀与压缩",
+        "../concepts/RAG",
+        "../concepts/Agent工程化兜底",
+        "../concepts/Skills 2.0模块化",
+        "../concepts/Agent团队三阶段曲线",
+        "../entities/Mac Mini Agent Fleet"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-20260519-techcrunch-karpathy-加入-anthropic-预训练团队-connection-001",
+      "type": "connection",
+      "question": "20260519 · TechCrunch · Karpathy 加入 Anthropic 预训练团队 和哪些旧概念发生连接？",
+      "answer": "entities/Andrej Karpathy、entities/Anthropic、entities/autoresearch、entities/Eureka Labs、concepts/递归自我改进、entities/CLAUDE.md、../../wiki/concepts/原则化指令、../entities/Andrej Karpathy、../entities/Anthropic、../entities/autoresearch、../entities/Eureka Labs、../entities/Nick Joseph、../entities/Claude Code、../concepts/递归自我改进、../concepts/Goal-Driven Execution、../entities/Dreams、../concepts/原则化指令、../concepts/LLM Wiki、../entities/CLAUDE.md",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260519-TechCrunch-Karpathy加入Anthropic预训练团队.md",
+      "concepts": [
+        "entities/Andrej Karpathy",
+        "entities/Anthropic",
+        "entities/autoresearch",
+        "entities/Eureka Labs",
+        "concepts/递归自我改进",
+        "entities/CLAUDE.md",
+        "../../wiki/concepts/原则化指令",
+        "../entities/Andrej Karpathy",
+        "../entities/Anthropic",
+        "../entities/autoresearch",
+        "../entities/Eureka Labs",
+        "../entities/Nick Joseph",
+        "../entities/Claude Code",
+        "../concepts/递归自我改进",
+        "../concepts/Goal-Driven Execution",
+        "../entities/Dreams",
+        "../concepts/原则化指令",
+        "../concepts/LLM Wiki",
+        "../entities/CLAUDE.md"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-20260525-知乎-claude永久大脑真的来了-connection-001",
+      "type": "connection",
+      "question": "20260525-知乎-Claude永久大脑真的来了 和哪些旧概念发生连接？",
+      "answer": "Anthropic、Memory Files、Dreams、Conway、Andrej Karpathy、LLM Wiki、Maintain 维护、Claude Code、OpenClaw、REM 睡眠式记忆整合、RAG、知识复利、CLAUDE.md、Memory Files vs 本知识库",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260525-知乎-Claude永久大脑真的来了.md",
+      "concepts": [
+        "Anthropic",
+        "Memory Files",
+        "Dreams",
+        "Conway",
+        "Andrej Karpathy",
+        "LLM Wiki",
+        "Maintain 维护",
+        "Claude Code",
+        "OpenClaw",
+        "REM 睡眠式记忆整合",
+        "RAG",
+        "知识复利",
+        "CLAUDE.md",
+        "Memory Files vs 本知识库"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-20260526-github-andrej-karpathy-skills-原仓库-connection-001",
+      "type": "connection",
+      "question": "20260526 · GitHub · andrej-karpathy-skills 原仓库 和哪些旧概念发生连接？",
+      "answer": "entities/CLAUDE.md、20260526-知乎-CLAUDE.md神文件让ClaudeCode听话、forrestchang、Goal-Driven Execution、Multica、CLAUDE.md、Andrej Karpathy、Claude Code、Cursor、Think Before Coding、Simplicity First、Surgical Changes、原则化指令、LLM 编程三宗罪",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260526-GitHub-andrej-karpathy-skills原仓库.md",
+      "concepts": [
+        "entities/CLAUDE.md",
+        "20260526-知乎-CLAUDE.md神文件让ClaudeCode听话",
+        "forrestchang",
+        "Goal-Driven Execution",
+        "Multica",
+        "CLAUDE.md",
+        "Andrej Karpathy",
+        "Claude Code",
+        "Cursor",
+        "Think Before Coding",
+        "Simplicity First",
+        "Surgical Changes",
+        "原则化指令",
+        "LLM 编程三宗罪"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-20260526-知乎-claude-md-神文件让-claude-code-听话-connection-001",
+      "type": "connection",
+      "question": "20260526 · 知乎 · CLAUDE.md 神文件让 Claude Code 听话 和哪些旧概念发生连接？",
+      "answer": "Andrej Karpathy、Claude Code、raw/20260526-知乎-CLAUDE.md神文件让ClaudeCode听话、CLAUDE.md、LLM Wiki、forrestchang、GitHub、LLM 编程三宗罪、Think Before Coding、原则化指令、../../AGENT、20260407-知乎-Karpathy开源Agent知识库、20260413-知乎-Qwen Code+Obsidian搭建Karpathy知识库",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260526-知乎-CLAUDE.md神文件让ClaudeCode听话.md",
+      "concepts": [
+        "Andrej Karpathy",
+        "Claude Code",
+        "raw/20260526-知乎-CLAUDE.md神文件让ClaudeCode听话",
+        "CLAUDE.md",
+        "LLM Wiki",
+        "forrestchang",
+        "GitHub",
+        "LLM 编程三宗罪",
+        "Think Before Coding",
+        "原则化指令",
+        "../../AGENT",
+        "20260407-知乎-Karpathy开源Agent知识库",
+        "20260413-知乎-Qwen Code+Obsidian搭建Karpathy知识库"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-20260527-知乎-卡尔-淘金小镇-skill-榜单情报项目-connection-001",
+      "type": "connection",
+      "question": "20260527 · 知乎 · 卡尔 · 淘金小镇:Skill 榜单情报项目 和哪些旧概念发生连接？",
+      "answer": "淘金小镇、ClawHub、Goal-Driven Execution、知识复利、CLAUDE.md、20260527-知乎-卡尔-淘金小镇Skill榜单情报项目、卡尔的AI沃茨、Convex、Codex、LearnPrompt、Skill 榜单情报化、复刻用户视角拿数据、Goal 模式自动化爬虫、原则化指令、forrestchang、LLM Wiki、LLM Wiki Skill",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260527-知乎-卡尔-淘金小镇Skill榜单情报项目.md",
+      "concepts": [
+        "淘金小镇",
+        "ClawHub",
+        "Goal-Driven Execution",
+        "知识复利",
+        "CLAUDE.md",
+        "20260527-知乎-卡尔-淘金小镇Skill榜单情报项目",
+        "卡尔的AI沃茨",
+        "Convex",
+        "Codex",
+        "LearnPrompt",
+        "Skill 榜单情报化",
+        "复刻用户视角拿数据",
+        "Goal 模式自动化爬虫",
+        "原则化指令",
+        "forrestchang",
+        "LLM Wiki",
+        "LLM Wiki Skill"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-20260528-36氪转载智东西-shubham-saboo-30-天-6-agent-复盘-connection-001",
+      "type": "connection",
+      "question": "20260528 · 36氪转载智东西 · Shubham Saboo 30 天 6 Agent 复盘 和哪些旧概念发生连接？",
+      "answer": "../entities/Shubham Saboo、../entities/Mac Mini Agent Fleet、../entities/Claude Code、../concepts/纠错式Prompt工程、../concepts/反馈闭环写入文件、../concepts/记忆文件vs技能文件、../concepts/上下文膨胀与压缩、../concepts/Agent团队三阶段曲线、../concepts/原则化指令、../entities/CLAUDE.md、../concepts/Goal-Driven Execution、../concepts/REM 睡眠式记忆整合、../concepts/Skill 榜单情报化",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260528-36氪-Saboo30天6Agent复盘.md",
+      "concepts": [
+        "../entities/Shubham Saboo",
+        "../entities/Mac Mini Agent Fleet",
+        "../entities/Claude Code",
+        "../concepts/纠错式Prompt工程",
+        "../concepts/反馈闭环写入文件",
+        "../concepts/记忆文件vs技能文件",
+        "../concepts/上下文膨胀与压缩",
+        "../concepts/Agent团队三阶段曲线",
+        "../concepts/原则化指令",
+        "../entities/CLAUDE.md",
+        "../concepts/Goal-Driven Execution",
+        "../concepts/REM 睡眠式记忆整合",
+        "../concepts/Skill 榜单情报化"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-20260528-shareuhack-claude-md-skills-hooks-memory-四层架构实战-connection-001",
+      "type": "connection",
+      "question": "20260528 · Shareuhack · CLAUDE.md + Skills + Hooks + Memory 四层架构实战 和哪些旧概念发生连接？",
+      "answer": "../entities/CLAUDE.md、../entities/Claude Code、../entities/Shareuhack、../concepts/CLAUDE.md四层架构、../concepts/Hooks确定性执行、../concepts/Skills 2.0模块化、../concepts/三套记忆系统、../concepts/路径作用域规则、../concepts/原则化指令、../concepts/Goal-Driven Execution、summaries/20260528-36氪-Saboo30天6Agent复盘",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260528-Shareuhack-CLAUDE四层架构实战.md",
+      "concepts": [
+        "../entities/CLAUDE.md",
+        "../entities/Claude Code",
+        "../entities/Shareuhack",
+        "../concepts/CLAUDE.md四层架构",
+        "../concepts/Hooks确定性执行",
+        "../concepts/Skills 2.0模块化",
+        "../concepts/三套记忆系统",
+        "../concepts/路径作用域规则",
+        "../concepts/原则化指令",
+        "../concepts/Goal-Driven Execution",
+        "summaries/20260528-36氪-Saboo30天6Agent复盘"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-20260528-掘金-沙河-rain-mcp-协议落地三条铁律-connection-001",
+      "type": "connection",
+      "question": "20260528 · 掘金 · 沙河 rain · MCP 协议落地三条铁律 和哪些旧概念发生连接？",
+      "answer": "../entities/MCP、../entities/A2A、../entities/Anthropic、../concepts/30-70定律、../concepts/字段级权限、../concepts/Agent Gateway协议翻译层、../concepts/工具调用幻觉、../concepts/Agent工程化兜底、../concepts/LLM 编程三宗罪、summaries/20260528-Shareuhack-CLAUDE四层架构实战、../concepts/Goal-Driven Execution",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260528-掘金-MCP协议落地三条铁律.md",
+      "concepts": [
+        "../entities/MCP",
+        "../entities/A2A",
+        "../entities/Anthropic",
+        "../concepts/30-70定律",
+        "../concepts/字段级权限",
+        "../concepts/Agent Gateway协议翻译层",
+        "../concepts/工具调用幻觉",
+        "../concepts/Agent工程化兜底",
+        "../concepts/LLM 编程三宗罪",
+        "summaries/20260528-Shareuhack-CLAUDE四层架构实战",
+        "../concepts/Goal-Driven Execution"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-摘要-rag-langgraph-实战-4-个工程踩坑-让-ai-从-能用-到-能上线-connection-001",
+      "type": "connection",
+      "question": "摘要：RAG + LangGraph 实战：4 个工程踩坑，让 AI 从\"能用\"到\"能上线\" 和哪些旧概念发生连接？",
+      "answer": "../entities/OpenSpec.md、../entities/LangGraph.md、../entities/RAGFlow.md、../entities/Langfuse.md、../concepts/双引擎架构.md、../concepts/动态Token预算.md、../concepts/三角色分离工作流.md、../concepts/Prompt版本化管理.md、../concepts/流式输出体验优化.md、Claude 永久大脑、CLAUDE.md 神文件、OpenClacky Harness 工程 7 个决策",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260601-掘金-LangGraph+RAG长文档生成4个工程踩坑.md",
+      "concepts": [
+        "../entities/OpenSpec.md",
+        "../entities/LangGraph.md",
+        "../entities/RAGFlow.md",
+        "../entities/Langfuse.md",
+        "../concepts/双引擎架构.md",
+        "../concepts/动态Token预算.md",
+        "../concepts/三角色分离工作流.md",
+        "../concepts/Prompt版本化管理.md",
+        "../concepts/流式输出体验优化.md",
+        "Claude 永久大脑",
+        "CLAUDE.md 神文件",
+        "OpenClacky Harness 工程 7 个决策"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-摘要-harness-不是目的-知识才是护城河-ai-工程交付团队的知识沉淀实践-connection-001",
+      "type": "connection",
+      "question": "摘要：Harness 不是目的，知识才是护城河 —— AI 工程交付团队的知识沉淀实践 和哪些旧概念发生连接？",
+      "answer": "../entities/AI Team.md、../entities/Langfuse.md、../entities/Git.md、../concepts/三层知识索引.md、../concepts/知识成熟度模型.md、../concepts/知识生命周期管理.md、../concepts/知识分层架构.md、../concepts/上下文预算控制.md、Karpathy 开源 Agent 知识库理念、Qwen Code + Obsidian 搭建 Karpathy 知识库、LLM Wiki",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260601-知乎-Harness不是目的知识才是护城河-AITeam知识沉淀实践.md",
+      "concepts": [
+        "../entities/AI Team.md",
+        "../entities/Langfuse.md",
+        "../entities/Git.md",
+        "../concepts/三层知识索引.md",
+        "../concepts/知识成熟度模型.md",
+        "../concepts/知识生命周期管理.md",
+        "../concepts/知识分层架构.md",
+        "../concepts/上下文预算控制.md",
+        "Karpathy 开源 Agent 知识库理念",
+        "Qwen Code + Obsidian 搭建 Karpathy 知识库",
+        "LLM Wiki"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-20260601-知乎-obsidian-七种主流同步方案对比-connection-001",
+      "type": "connection",
+      "question": "20260601 · 知乎 · Obsidian 七种主流同步方案对比 和哪些旧概念发生连接？",
+      "answer": "Maintain 维护、Obsidian、LLM Wiki",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260601-知乎-阿浩的笔记-Obsidian七种同步方案对比.md",
+      "concepts": [
+        "Maintain 维护",
+        "Obsidian",
+        "LLM Wiki"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-20260607-hn-github-agent-skills-for-context-engineering-connection-001",
+      "type": "connection",
+      "question": "20260607 · HN/GitHub · Agent Skills for Context Engineering 和哪些旧概念发生连接？",
+      "answer": "20260607-HN-AgentSkillsForContextEngineering、../entities/muratcankoylan、../entities/Agent Skills for Context Engineering、../entities/Hacker News、../entities/Anthropic、../entities/Claude Code、../entities/Cursor、../concepts/上下文工程、../concepts/上下文腐烂、../concepts/渐进式披露、../concepts/Skills 2.0模块化、../concepts/Subagents上下文隔离、../concepts/工具设计合并原则、../concepts/观察结果遮蔽、../concepts/评估即门禁",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260607-HN-AgentSkillsForContextEngineering.md",
+      "concepts": [
+        "20260607-HN-AgentSkillsForContextEngineering",
+        "../entities/muratcankoylan",
+        "../entities/Agent Skills for Context Engineering",
+        "../entities/Hacker News",
+        "../entities/Anthropic",
+        "../entities/Claude Code",
+        "../entities/Cursor",
+        "../concepts/上下文工程",
+        "../concepts/上下文腐烂",
+        "../concepts/渐进式披露",
+        "../concepts/Skills 2.0模块化",
+        "../concepts/Subagents上下文隔离",
+        "../concepts/工具设计合并原则",
+        "../concepts/观察结果遮蔽",
+        "../concepts/评估即门禁"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-20260607-simon-willison-agentic-engineering-patterns-connection-001",
+      "type": "connection",
+      "question": "20260607 · Simon Willison · Agentic Engineering Patterns 和哪些旧概念发生连接？",
+      "answer": "20260607-SimonWillison-AgenticEngineeringPatterns、../entities/Claude Code、../entities/Codex、../entities/Simon Willison、../entities/Gemini CLI、../entities/Andrej Karpathy、../concepts/Agentic Engineering、../concepts/Vibe Coding、../concepts/Agent工具循环、../concepts/Harness工程、../concepts/Prompt Cache局部性、../concepts/Subagents上下文隔离、../concepts/Red-Green TDD、../concepts/First Run The Tests、../concepts/验证瓶颈、../entities/OpenClacky",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260607-SimonWillison-AgenticEngineeringPatterns.md",
+      "concepts": [
+        "20260607-SimonWillison-AgenticEngineeringPatterns",
+        "../entities/Claude Code",
+        "../entities/Codex",
+        "../entities/Simon Willison",
+        "../entities/Gemini CLI",
+        "../entities/Andrej Karpathy",
+        "../concepts/Agentic Engineering",
+        "../concepts/Vibe Coding",
+        "../concepts/Agent工具循环",
+        "../concepts/Harness工程",
+        "../concepts/Prompt Cache局部性",
+        "../concepts/Subagents上下文隔离",
+        "../concepts/Red-Green TDD",
+        "../concepts/First Run The Tests",
+        "../concepts/验证瓶颈",
+        "../entities/OpenClacky"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-20260608-知乎-skillfactory-面向-harness-设计的技能工厂-connection-001",
+      "type": "connection",
+      "question": "20260608 · 知乎 · SkillFactory 面向 Harness 设计的技能工厂 和哪些旧概念发生连接？",
+      "answer": "Trace2Skill、20260608-知乎-SkillFactory面向Harness设计的技能工厂、../entities/SkillFactory、../entities/Trace2Skill、../entities/Qwen Code、../entities/Anthropic、../entities/OpenClaw、../entities/Claude Code、../concepts/Skill工厂、../concepts/轨迹蒸馏为技能、../concepts/评测驱动Skill生成、../concepts/多路并发竞优、../concepts/Skills 2.0模块化、../concepts/Harness工程、../concepts/验证瓶颈、../concepts/反馈闭环写入文件、../entities/Agent Skills for Context Engineering、SkillRL",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260608-知乎-SkillFactory面向Harness设计的技能工厂.md",
+      "concepts": [
+        "Trace2Skill",
+        "20260608-知乎-SkillFactory面向Harness设计的技能工厂",
+        "../entities/SkillFactory",
+        "../entities/Trace2Skill",
+        "../entities/Qwen Code",
+        "../entities/Anthropic",
+        "../entities/OpenClaw",
+        "../entities/Claude Code",
+        "../concepts/Skill工厂",
+        "../concepts/轨迹蒸馏为技能",
+        "../concepts/评测驱动Skill生成",
+        "../concepts/多路并发竞优",
+        "../concepts/Skills 2.0模块化",
+        "../concepts/Harness工程",
+        "../concepts/验证瓶颈",
+        "../concepts/反馈闭环写入文件",
+        "../entities/Agent Skills for Context Engineering",
+        "SkillRL"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-claude-fable-is-relentlessly-proactive-前沿模型的极限自主性-connection-001",
+      "type": "connection",
+      "question": "Claude Fable is relentlessly proactive — 前沿模型的极限自主性 和哪些旧概念发生连接？",
+      "answer": "Claude Fable 5、Simon Willison、concepts/Agent 自主工具链构建、concepts/Coding Agent 安全沙箱、concepts/规范偏差正常化、concepts/工具调用幻觉、entities/Claude Code",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260611-SimonWillison-ClaudeFableRelentlesslyProactive.md",
+      "concepts": [
+        "Claude Fable 5",
+        "Simon Willison",
+        "concepts/Agent 自主工具链构建",
+        "concepts/Coding Agent 安全沙箱",
+        "concepts/规范偏差正常化",
+        "concepts/工具调用幻觉",
+        "entities/Claude Code"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-20260622-simon-willison-用-claude-code-将-moebius-模型移植到浏览器-connection-001",
+      "type": "connection",
+      "question": "20260622 · Simon Willison · 用 Claude Code 将 Moebius 模型移植到浏览器 和哪些旧概念发生连接？",
+      "answer": "entities/Simon Willison、entities/Claude Code、concepts/Vibe Coding、concepts/Agentic Engineering、concepts/上下文工程",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260622-SimonWillison-Porting-Moebius-model-to-browser.md",
+      "concepts": [
+        "entities/Simon Willison",
+        "entities/Claude Code",
+        "concepts/Vibe Coding",
+        "concepts/Agentic Engineering",
+        "concepts/上下文工程"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-prompt-injection-as-role-confusion-提示注入即角色混淆-connection-001",
+      "type": "connection",
+      "question": "Prompt Injection as Role Confusion — 提示注入即角色混淆 和哪些旧概念发生连接？",
+      "answer": "Charles Ye、Jasmine Cui、Dylan Hadfield-Menell、concepts/角色混淆攻击、concepts/去风格化防御、concepts/工具调用幻觉、concepts/提示注入",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260622-SimonWillison-PromptInjectionAsRoleConfusion.md",
+      "concepts": [
+        "Charles Ye",
+        "Jasmine Cui",
+        "Dylan Hadfield-Menell",
+        "concepts/角色混淆攻击",
+        "concepts/去风格化防御",
+        "concepts/工具调用幻觉",
+        "concepts/提示注入"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-20260625-codex-从0搭建ai-agent工作台规划-connection-001",
+      "type": "connection",
+      "question": "20260625-Codex-从0搭建AI-Agent工作台规划 和哪些旧概念发生连接？",
+      "answer": "../entities/CodeBuddy、../entities/MCP、../entities/Obsidian、../entities/Codex、../concepts/AI Agent 工作台、../concepts/Agent 工作台能力分层、../concepts/Agent 工作台产品化、../concepts/Agentic Engineering、../concepts/RAG、../concepts/上下文工程、../concepts/Agent工程化兜底、../concepts/验证瓶颈",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260625-Codex-从0搭建AI-Agent工作台规划.md",
+      "concepts": [
+        "../entities/CodeBuddy",
+        "../entities/MCP",
+        "../entities/Obsidian",
+        "../entities/Codex",
+        "../concepts/AI Agent 工作台",
+        "../concepts/Agent 工作台能力分层",
+        "../concepts/Agent 工作台产品化",
+        "../concepts/Agentic Engineering",
+        "../concepts/RAG",
+        "../concepts/上下文工程",
+        "../concepts/Agent工程化兜底",
+        "../concepts/验证瓶颈"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "summary-20260929-anthropic-effective-context-engineering-for-ai-agents-connection-001",
+      "type": "connection",
+      "question": "20260929 · Anthropic · Effective context engineering for AI agents 和哪些旧概念发生连接？",
+      "answer": "../concepts/上下文工程、../concepts/原则化指令、../concepts/注意力预算、../concepts/上下文腐烂、../entities/Claude Code、../concepts/上下文膨胀与压缩、../entities/Anthropic、../concepts/Just-in-Time检索、../concepts/渐进式披露、../concepts/RAG、../entities/OpenClacky、../concepts/Agent工程化兜底、../concepts/Skills 2.0模块化、../concepts/Prompt Cache局部性、../entities/Andrej Karpathy、../concepts/Simplicity First",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/summaries/20260929-Anthropic-Effective context engineering for AI agents.md",
+      "concepts": [
+        "../concepts/上下文工程",
+        "../concepts/原则化指令",
+        "../concepts/注意力预算",
+        "../concepts/上下文腐烂",
+        "../entities/Claude Code",
+        "../concepts/上下文膨胀与压缩",
+        "../entities/Anthropic",
+        "../concepts/Just-in-Time检索",
+        "../concepts/渐进式披露",
+        "../concepts/RAG",
+        "../entities/OpenClacky",
+        "../concepts/Agent工程化兜底",
+        "../concepts/Skills 2.0模块化",
+        "../concepts/Prompt Cache局部性",
+        "../entities/Andrej Karpathy",
+        "../concepts/Simplicity First"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "synthesis-20260524-理念vs实操-两篇知乎对比综述-connection-001",
+      "type": "connection",
+      "question": "20260524-理念vs实操-两篇知乎对比综述 和哪些旧概念发生连接？",
+      "answer": "20260407-知乎-Karpathy开源Agent知识库、20260413-知乎-Qwen Code+Obsidian搭建Karpathy知识库、菠萝吹雪、Andrej Karpathy、Obsidian、AGENT.md 协议、Qwen Code、Claude Code、LLM Wiki、RAG、三层架构、Ingest 录入、Query 查询、Maintain 维护、Codex、Hana、obsidian-agent-client、#待深入",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/syntheses/20260524-理念vs实操-两篇知乎对比综述.md",
+      "concepts": [
+        "20260407-知乎-Karpathy开源Agent知识库",
+        "20260413-知乎-Qwen Code+Obsidian搭建Karpathy知识库",
+        "菠萝吹雪",
+        "Andrej Karpathy",
+        "Obsidian",
+        "AGENT.md 协议",
+        "Qwen Code",
+        "Claude Code",
+        "LLM Wiki",
+        "RAG",
+        "三层架构",
+        "Ingest 录入",
+        "Query 查询",
+        "Maintain 维护",
+        "Codex",
+        "Hana",
+        "obsidian-agent-client",
+        "#待深入"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "synthesis-20260526-karpathy理念vsanthropic产品化-llm-wiki的消费级落地-connection-001",
+      "type": "connection",
+      "question": "20260526-Karpathy理念vsAnthropic产品化-LLM Wiki的消费级落地 和哪些旧概念发生连接？",
+      "answer": "Andrej Karpathy、LLM Wiki、Anthropic、Memory Files、Dreams、Conway、Maintain 维护、AGENT.md 协议、Ingest 录入、20260525-知乎-Claude永久大脑真的来了、REM 睡眠式记忆整合、20260524-理念vs实操-两篇知乎对比综述、CLAUDE.md",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/syntheses/20260526-Karpathy理念vsAnthropic产品化-LLM Wiki的消费级落地.md",
+      "concepts": [
+        "Andrej Karpathy",
+        "LLM Wiki",
+        "Anthropic",
+        "Memory Files",
+        "Dreams",
+        "Conway",
+        "Maintain 维护",
+        "AGENT.md 协议",
+        "Ingest 录入",
+        "20260525-知乎-Claude永久大脑真的来了",
+        "REM 睡眠式记忆整合",
+        "20260524-理念vs实操-两篇知乎对比综述",
+        "CLAUDE.md"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "synthesis-20260526-综述-从二手解读到一手源-claude-md-神文件的两次-ingest-教训-connection-001",
+      "type": "connection",
+      "question": "20260526 · 综述:从二手解读到一手源 —— CLAUDE.md 神文件的两次 ingest 教训 和哪些旧概念发生连接？",
+      "answer": "20260526-知乎-CLAUDE.md神文件让ClaudeCode听话、20260526-GitHub-andrej-karpathy-skills原仓库、Goal-Driven Execution、Multica、CLAUDE.md、../../AGENT、../log、知识复利、Maintain 维护、20260524-理念vs实操-两篇知乎对比综述、forrestchang、LLM 编程三宗罪",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/syntheses/20260526-二手源vs一手源-CLAUDE.md的两次ingest教训.md",
+      "concepts": [
+        "20260526-知乎-CLAUDE.md神文件让ClaudeCode听话",
+        "20260526-GitHub-andrej-karpathy-skills原仓库",
+        "Goal-Driven Execution",
+        "Multica",
+        "CLAUDE.md",
+        "../../AGENT",
+        "../log",
+        "知识复利",
+        "Maintain 维护",
+        "20260524-理念vs实操-两篇知乎对比综述",
+        "forrestchang",
+        "LLM 编程三宗罪"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "synthesis-2026-05-26-剧情闭环-理念主入场-karpathy-加入-anthropic-的本知识库意义-connection-001",
+      "type": "connection",
+      "question": "2026-05-26 · 剧情闭环：理念主入场——Karpathy 加入 Anthropic 的本知识库意义 和哪些旧概念发生连接？",
+      "answer": "Andrej Karpathy、LLM Wiki、20260407-知乎-Karpathy开源Agent知识库、Anthropic、Dreams、20260525-知乎-Claude永久大脑真的来了、Memory Files、Conway、20260526-Karpathy理念vsAnthropic产品化-LLM Wiki的消费级落地、20260519-TechCrunch-Karpathy加入Anthropic预训练团队、REM 睡眠式记忆整合、Claude Code、Nicholas Joseph、递归自我改进、entities/Andrej Karpathy、entities/Anthropic、Eureka Labs",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/syntheses/20260526-剧情闭环-Karpathy加入Anthropic的知识库意义.md",
+      "concepts": [
+        "Andrej Karpathy",
+        "LLM Wiki",
+        "20260407-知乎-Karpathy开源Agent知识库",
+        "Anthropic",
+        "Dreams",
+        "20260525-知乎-Claude永久大脑真的来了",
+        "Memory Files",
+        "Conway",
+        "20260526-Karpathy理念vsAnthropic产品化-LLM Wiki的消费级落地",
+        "20260519-TechCrunch-Karpathy加入Anthropic预训练团队",
+        "REM 睡眠式记忆整合",
+        "Claude Code",
+        "Nicholas Joseph",
+        "递归自我改进",
+        "entities/Andrej Karpathy",
+        "entities/Anthropic",
+        "Eureka Labs"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "synthesis-知识库首次审计报告-2026-05-27-connection-001",
+      "type": "connection",
+      "question": "📋 知识库首次审计报告（2026-05-27） 和哪些旧概念发生连接？",
+      "answer": "../../AGENT、CLAUDE.md、Anthropic、Andrej Karpathy",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/syntheses/20260527-审计报告.md",
+      "concepts": [
+        "../../AGENT",
+        "CLAUDE.md",
+        "Anthropic",
+        "Andrej Karpathy"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    },
+    {
+      "id": "synthesis-20260625-功能完备ai-agent工作台学习路线-connection-001",
+      "type": "connection",
+      "question": "20260625-功能完备AI-Agent工作台学习路线 和哪些旧概念发生连接？",
+      "answer": "../summaries/20260625-Codex-从0搭建AI-Agent工作台规划、AI Agent 工作台、Agent 工作台能力分层、Agent 工作台产品化、Agentic Engineering、Goal-Driven Execution、Agent工程化兜底、../entities/MCP、工具调用幻觉、字段级权限、Agent Gateway协议翻译层、上下文工程、RAG、Just-in-Time检索、上下文膨胀与压缩、LLM Wiki、验证瓶颈、规范偏差正常化、反馈闭环写入文件",
+      "explanation": "连接卡用于保持知识网络活性，避免新知识孤立存在。",
+      "sourcePage": "wiki/syntheses/20260625-功能完备AI-Agent工作台学习路线.md",
+      "concepts": [
+        "../summaries/20260625-Codex-从0搭建AI-Agent工作台规划",
+        "AI Agent 工作台",
+        "Agent 工作台能力分层",
+        "Agent 工作台产品化",
+        "Agentic Engineering",
+        "Goal-Driven Execution",
+        "Agent工程化兜底",
+        "../entities/MCP",
+        "工具调用幻觉",
+        "字段级权限",
+        "Agent Gateway协议翻译层",
+        "上下文工程",
+        "RAG",
+        "Just-in-Time检索",
+        "上下文膨胀与压缩",
+        "LLM Wiki",
+        "验证瓶颈",
+        "规范偏差正常化",
+        "反馈闭环写入文件"
+      ],
+      "difficulty": "medium",
+      "created": "2026-06-25"
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+---
+type: index
+updated: 2026-05-28
+last_audit: 2026-05-27
+---
+
+# 📚 知识库总索引
+
+> 这是整个 Wiki 的入口。Agent 回答任何问题前，先读这里定位。
+> 新页面创建后，**必须**登记到对应分类下。
+
+## 🧭 快速跳转
+
+- [[log|📜 操作日志]] — 所有 ingest / query / maintain 的时间线
+- [[../AGENT|🤖 Agent 协议]] — 工作流和规则
+- [[../README|📖 使用说明]] — 给人类看的入门
+
+---
+
+## 👤 实体（Entities · 24）
+
+> 人、公司、产品、组织、项目
+
+**人物**
+- [[entities/Andrej Karpathy|Andrej Karpathy]] — AI 顶级研究者，[[concepts/LLM Wiki|LLM Wiki]] 提出者，2026-05-19 加入 [[entities/Anthropic|Anthropic]] 预训练团队
+- [[entities/Nicholas Joseph|Nicholas Joseph]] — Anthropic 联创/Karpathy 入职引荐人
+- [[entities/forrestchang|forrestchang]] — [[entities/CLAUDE.md|CLAUDE.md]] 神文件作者，GitHub **15.5 万 star**(截至 2026-05-26)，[[entities/Multica|Multica]] 创办人
+- [[entities/卡尔的AI沃茨|卡尔的AI沃茨]] — Skill 生态玩家，[[entities/淘金小镇|淘金小镇]] 作者，[[entities/LearnPrompt|LearnPrompt]] 团队
+- [[entities/阿浩的笔记|阿浩的笔记]] — 知乎知识管理 KOL，一手造工具一手写测评，专注 Obsidian 生态
+
+**组织 · 团队**
+- [[entities/Anthropic|Anthropic]] — Claude / Memory Files / Dreams 等产品研发方
+- [[entities/Eureka Labs|Eureka Labs]] — Karpathy 之前创办的教育 AI 公司
+- [[entities/LearnPrompt|LearnPrompt]] — 卡尔所在的 GitHub 组织
+
+**产品 · 软件 · 工具**
+- [[entities/CLAUDE.md|CLAUDE.md]] — 2.3KB 的 Claude Code 指令神文件，[[concepts/原则化指令|原则化指令]] 典范
+- [[entities/Memory Files|Memory Files]] — Anthropic 的持久化记忆产品
+- [[entities/Dreams|Dreams]] — Anthropic 的睡眠式记忆整合机制
+- [[entities/Conway|Conway]] — Anthropic 三件套之一
+- [[entities/淘金小镇|淘金小镇]] — Skill 榜单情报项目(skillrush-town)
+- [[entities/Multica|Multica]] — forrestchang 的新开源 Agent 平台
+- [[entities/ClawHub|ClawHub]] — Claude Code Skill 市场
+- [[entities/autoresearch|autoresearch]] — 自动化研究工具
+- [[entities/Obsidian|Obsidian]] — 本地 Markdown 笔记软件，LLM Wiki 默认载体
+- [[entities/Claude Code|Claude Code]] — Anthropic CLI Agent，Karpathy 在用
+- [[entities/Codex|Codex]] — OpenAI CLI Agent，带 `/goal` 无限循环模式
+- [[entities/Cursor|Cursor]] — AI 编程 IDE，同样支持 karpathy-guidelines
+- [[entities/Qwen Code|Qwen Code]] — 阿里 CLI Agent，国产替代
+- [[entities/Convex|Convex]] — 云端数据库+后端函数平台
+- [[entities/obsidian-agent-client|obsidian-agent-client]] — 把 Agent 嵌进 Obsidian 的插件
+- [[entities/BRAT|BRAT]] — Obsidian beta 插件加载器
+
+---
+
+## 💡 概念（Concepts · 19）
+
+> 术语、方法、理论、模式
+
+**核心方法论**
+- [[concepts/LLM Wiki|LLM Wiki]] ⭐ — Karpathy 提出的知识库范式
+- [[concepts/三层架构|三层架构]] — raw / wiki / AGENT.md
+- [[concepts/AGENT.md 协议|AGENT.md 协议]] — Agent 配置文件
+
+**工作流**
+- [[concepts/Ingest 录入|Ingest 录入]] — 把新资料编译进 Wiki
+- [[concepts/Query 查询|Query 查询]] — 提问 + 沉淀回 Wiki
+- [[concepts/Maintain 维护|Maintain 维护]] — 定期审计
+
+**原则**
+- [[concepts/知识复利|知识复利]] — 每次操作都让 Wiki 更好
+- [[concepts/原则化指令|原则化指令]] — 用少量原则代替详细规则的 prompt 范式
+
+**CLAUDE.md 4 原则**（[[concepts/LLM 编程三宗罪|Karpathy 4 个观察]] 的解药）
+- [[concepts/Think Before Coding|Think Before Coding]] — 不要假设(第 1 原则)
+- [[concepts/Simplicity First|Simplicity First]] — 最少代码解决问题(第 2 原则)
+- [[concepts/Surgical Changes|Surgical Changes]] — 只碰必须碰的(第 3 原则)
+- [[concepts/Goal-Driven Execution|Goal-Driven Execution]] ⭐ — 定义成功标准循环验证(第 4 原则，[[entities/淘金小镇|淘金小镇]] 工程验证)
+
+**Agent 工程实践**
+- [[concepts/Skill 榜单情报化|Skill 榜单情报化]] — 把易变榜单变成 Agent 可复盘的时间线情报网
+- [[concepts/复刻用户视角拿数据|复刻用户视角拿数据]] — API 优先 > DOM 抓取的工程哲学
+- [[concepts/Goal 模式自动化爬虫|Goal 模式自动化爬虫]] — `/goal` 循环战胜 prompt-heavy
+
+**LLM 特性 · 缺陷 · 优势**
+- [[concepts/LLM 编程三宗罪|LLM 编程三宗罪]] — Karpathy 4 个观察：3 缺陷 + 1 优势
+- [[concepts/递归自我改进|递归自我改进]] — Recursive Self-Improvement，Karpathy 加入 Anthropic 后的推测方向
+
+**Anthropic 记忆系列**
+- [[concepts/REM 睡眠式记忆整合|REM 睡眠式记忆整合]] — Anthropic Dreams 背后的机制
+
+**对照**
+- [[concepts/RAG|RAG]] — 主流检索式范式，LLM Wiki 的对立面
+
+---
+
+## 📄 摘要（Summaries · 8）
+
+> 单份资料的精读摘要，与 `raw/` 一一对应
+
+- [[summaries/20260407-知乎-Karpathy开源Agent知识库|20260407 · 知乎 · Karpathy 开源 Agent 知识库]] — 理念篇
+- [[summaries/20260413-知乎-Qwen Code+Obsidian搭建Karpathy知识库|20260413 · 知乎 · Qwen Code + Obsidian 搭建]] — 实操篇
+- [[summaries/20260519-TechCrunch-Karpathy加入Anthropic预训练团队|20260519 · TechCrunch · Karpathy 加入 Anthropic 预训练团队]] — 行业事件
+- [[summaries/20260525-知乎-Claude永久大脑真的来了|20260525 · 知乎 · Claude 永久大脑真的来了]] — 产品化篇
+- [[summaries/20260526-知乎-CLAUDE.md神文件让ClaudeCode听话|20260526 · 知乎 · CLAUDE.md 神文件让 Claude Code 听话]] — 应用篇 / 二手源(截断)
+- [[summaries/20260526-GitHub-andrej-karpathy-skills原仓库|20260526 · GitHub · andrej-karpathy-skills 原仓库]] — 应用篇 / 一手源(完整) ⭐
+- [[summaries/20260527-知乎-卡尔-淘金小镇Skill榜单情报项目|20260527 · 知乎 · 卡尔 · 淘金小镇 Skill 榜单情报]] — 实践篇 / Goal 模式工程验证 ⭐
+- [[summaries/20260601-知乎-阿浩的笔记-Obsidian七种同步方案对比|20260601 · 知乎 · 阿浩的笔记 · Obsidian 七种同步方案对比]] — 工具篇 / #种子 / 本地优先 vs 多端同步工程实践
+
+---
+
+## 🔀 综述与对比（Syntheses · 5）
+
+> 跨多份资料的二次创作：对比、综述、专题、审计报告
+
+- [[syntheses/20260524-理念vs实操-两篇知乎对比综述|20260524 · 理念 vs 实操：两篇知乎对比综述]]
+- [[syntheses/20260526-Karpathy理念vsAnthropic产品化-LLM Wiki的消费级落地|20260526 · Karpathy 理念 vs Anthropic 产品化：LLM Wiki 的消费级落地]]
+- [[syntheses/20260526-二手源vs一手源-CLAUDE.md的两次ingest教训|20260526 · 二手源 vs 一手源：CLAUDE.md 的两次 ingest 教训]] ⭐ — 方法论沉淀
+- [[syntheses/20260526-剧情闭环-Karpathy加入Anthropic的知识库意义|20260526 · 剧情闭环：Karpathy 加入 Anthropic 的知识库意义]]
+- [[syntheses/20260527-审计报告|20260527 · 首次审计报告]] ⭐ — Maintain 工作流首跑
+
+---
+
+## 🏷️ Tag 一览
+
+> 仅列出**实际使用 ≥3 次**的活跃 tag（依 [[syntheses/20260527-审计报告|首次审计]] 修剪）。长尾 tag 进入「自由生长池」，不强制登记。
+
+**领域（活跃）**：`#llm`(31) `#agent`(31) `#ai`(28) `#anthropic`(9) `#claude`(8) `#prompt工程`(8) `#知识管理`(7) `#skill`(4) `#github`(3)
+**类型（活跃）**：`#方法论`(19) `#工具`(12) `#软件`(8) `#自动化`(4) `#平台`(4) `#原则`(4) `#人物`(4) `#架构`(3) `#工作流`(3) `#情报`(3) `#公司`(3) `#产品`(3) `#案例`(3)
+**状态（活跃）**：`#已验证`(16) `#待深入`(7) `#复利`(6) `#一手源`(6) `#待验证`(5) `#种子`(3) `#综述`(3) `#记忆系统`(3)
+
+*以上数字 = 在 frontmatter `tags:` 字段中实际出现次数（截至 2026-05-27）。审计每次更新。*
+
+**长尾池**：出现 1-2 次的 tag 不在此列出，可自由生长——当某个 tag 累计 ≥3 次自然提升为活跃 tag。
+
+---
+
+## 📊 健康度
+
+| 指标 | 数值 | 更新时间 |
+|---|---|---|
+| Raw 资料数 | 7 | 2026-05-28 |
+| 摘要页数 | 8 | 2026-05-28 |
+| 实体页数 | 24 | 2026-05-28 |
+| 概念页数 | 19 | 2026-05-28 |
+| 综述页数 | 5 | 2026-05-28 |
+| **总 Wiki 页** | **63**（含 index 和 log） | 2026-05-28 |
+| 上次审计 | [[syntheses/20260527-审计报告\|2026-05-27]] | 首次 |
+| 累计对外产出物 | 0（外部任务承担，本库为燃料层）| 2026-05-28 |
+
+*每次 maintain 后由 Agent 更新本表。「对外产出物」= 引用本库内容产出的文章/决策/产品，由先生自报或 ingest 时标 `#自产` tag 计数。*
