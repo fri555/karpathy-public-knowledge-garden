@@ -324,8 +324,20 @@ def _extract_one_sentence_definition(body: str) -> str | None:
     for line in body.splitlines():
         stripped = line.strip()
         if stripped.startswith("> 一句话定义："):
-            return stripped.removeprefix("> 一句话定义：").strip()
+            return _clean_inline_markdown(stripped.removeprefix("> 一句话定义："))
     return None
+
+
+def _clean_inline_markdown(value: str) -> str:
+    cleaned = value.strip()
+    cleaned = re.sub(r"\[\[([^\]|]+)\|([^\]]+)\]\]", r"\2", cleaned)
+    cleaned = re.sub(r"\[\[([^\]]+)\]\]", r"\1", cleaned)
+    cleaned = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", cleaned)
+    cleaned = re.sub(r"`([^`]+)`", r"\1", cleaned)
+    cleaned = re.sub(r"(\*\*|__)(.*?)\1", r"\2", cleaned)
+    cleaned = re.sub(r"(?<!\*)\*([^*\n]+)\*(?!\*)", r"\1", cleaned)
+    cleaned = re.sub(r"(?<!_)_([^_\n]+)_(?!_)", r"\1", cleaned)
+    return re.sub(r"\s+", " ", cleaned).strip()
 
 
 def _card_id(page: MarkdownPage, card_type: str) -> str:

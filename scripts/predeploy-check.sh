@@ -5,7 +5,11 @@ ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT_DIR"
 
 echo "==> Running backend tests"
-PYTHONPATH=backend python3 -m unittest backend.tests.test_main backend.tests.test_content_services -v
+PYTHONPATH=backend python3 -m unittest \
+  backend.tests.test_main \
+  backend.tests.test_content_services \
+  backend.tests.test_frontend_contract \
+  -v
 
 echo "==> Exporting static knowledge data"
 PYTHONPATH=backend python3 -m app.export_cards

@@ -6,7 +6,7 @@
   font-family:
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: #09090b;
-  background: #fafaf9;
+  background: #f5f7f4;
 }
 
 body {
@@ -16,4 +16,295 @@ body {
 button,
 a {
   -webkit-tap-highlight-color: transparent;
+}
+
+@layer components {
+  .ambient {
+    position: absolute;
+    border-radius: 999px;
+    filter: blur(52px);
+    opacity: 0.62;
+    pointer-events: none;
+  }
+
+  .ambient-one {
+    width: 22rem;
+    height: 22rem;
+    left: -8rem;
+    top: -7rem;
+    background: #9ae6c2;
+  }
+
+  .ambient-two {
+    width: 24rem;
+    height: 24rem;
+    right: -9rem;
+    top: 12%;
+    background: #a5d8ff;
+  }
+
+  .ambient-three {
+    width: 18rem;
+    height: 18rem;
+    bottom: -7rem;
+    left: 35%;
+    background: #ffd6a5;
+  }
+
+  .glass-pill,
+  .glass-tag,
+  .glass-dock,
+  .card-shell {
+    border: 1px solid rgb(255 255 255 / 0.54);
+    background: rgb(255 255 255 / 0.46);
+    box-shadow: 0 20px 70px rgb(24 24 27 / 0.12);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+  }
+
+  .glass-pill {
+    display: inline-flex;
+    height: 2.5rem;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #27272a;
+  }
+
+  .glass-tag {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 0.35rem 0.7rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #14532d;
+  }
+
+  .card-shell {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    min-height: min(66vh, 34rem);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-shell::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(135deg, rgb(255 255 255 / 0.72), rgb(255 255 255 / 0.18)),
+      radial-gradient(circle at 18% 10%, rgb(16 185 129 / 0.16), transparent 34%),
+      radial-gradient(circle at 90% 24%, rgb(14 165 233 / 0.15), transparent 32%);
+    pointer-events: none;
+  }
+
+  .card-shell > * {
+    position: relative;
+  }
+
+  .icon-button,
+  .dock-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    color: #27272a;
+    transition:
+      transform 160ms ease,
+      background 160ms ease;
+  }
+
+  .icon-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: rgb(255 255 255 / 0.5);
+  }
+
+  .dock-button {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  .icon-button:hover,
+  .dock-button:hover,
+  .feedback-button:hover,
+  .reveal-button:hover {
+    transform: translateY(-1px);
+    background: rgb(255 255 255 / 0.72);
+  }
+
+  .question-area {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.25rem 0.25rem 1.5rem;
+    text-align: center;
+    font-size: clamp(1.85rem, 7vw, 3.75rem);
+    line-height: 1.08;
+    font-weight: 750;
+    color: #09090b;
+  }
+
+  .status-copy {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #52525b;
+  }
+
+  .answer-surface {
+    border-radius: 0.5rem;
+    border: 1px solid rgb(255 255 255 / 0.55);
+    background: rgb(255 255 255 / 0.5);
+    padding: 1rem;
+    color: #18181b;
+  }
+
+  .answer-surface p {
+    font-size: 1rem;
+    line-height: 1.75;
+    font-weight: 650;
+  }
+
+  .answer-note {
+    margin-top: 0.65rem;
+    color: #52525b;
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+  }
+
+  .reveal-button {
+    display: inline-flex;
+    align-self: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    background: #09090b;
+    color: #fff;
+    padding: 0.8rem 1.05rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    transition:
+      transform 160ms ease,
+      background 160ms ease;
+  }
+
+  .reveal-button:hover {
+    background: #18181b;
+  }
+
+  .concept-row {
+    margin-top: 1.15rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .concept-chip {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 0.5rem;
+    background: rgb(255 255 255 / 0.46);
+    padding: 0.35rem 0.65rem;
+    font-size: 0.75rem;
+    font-weight: 650;
+    color: #3f3f46;
+  }
+
+  .source-line {
+    margin-top: 0.9rem;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.75rem;
+    color: #71717a;
+  }
+
+  .glass-dock {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 1fr auto;
+    gap: 0.35rem;
+    border-radius: 0.5rem;
+    padding: 0.35rem;
+  }
+
+  .feedback-button {
+    display: inline-flex;
+    min-width: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    border-radius: 0.5rem;
+    padding: 0 0.35rem;
+    min-height: 2.75rem;
+    color: #3f3f46;
+    font-size: 0.78rem;
+    font-weight: 700;
+    transition:
+      transform 160ms ease,
+      background 160ms ease,
+      color 160ms ease;
+  }
+
+  .feedback-button.primary {
+    background: #09090b;
+    color: #fff;
+  }
+
+  .feedback-button.active {
+    outline: 2px solid rgb(16 185 129 / 0.35);
+    background: rgb(255 255 255 / 0.82);
+    color: #09090b;
+  }
+
+  .feedback-button.primary.active {
+    background: #064e3b;
+    color: #fff;
+  }
+
+  .session-line {
+    display: flex;
+    min-height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    font-size: 0.75rem;
+    font-weight: 650;
+    color: #52525b;
+  }
+
+  .session-line button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #27272a;
+  }
+}
+
+@media (max-width: 520px) {
+  .card-shell {
+    min-height: 64vh;
+    padding: 0.85rem;
+  }
+
+  .question-area {
+    padding-top: 1.5rem;
+    font-size: clamp(1.55rem, 9vw, 2.75rem);
+  }
+
+  .feedback-button {
+    font-size: 0.72rem;
+  }
 }

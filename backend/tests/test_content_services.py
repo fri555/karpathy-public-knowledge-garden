@@ -35,6 +35,18 @@ class MarkdownContentTests(unittest.TestCase):
         self.assertIn("由 Agent 持续维护和编译的知识网络", cards[0].answer)
         self.assertEqual(cards[1].concepts, ["知识复利", "Ingest 录入"])
 
+    def test_generate_cards_for_page_strips_inline_markdown_syntax(self) -> None:
+        with TemporaryDirectory() as tmp_dir:
+            path = Path(tmp_dir) / "Markdown Concept.md"
+            path.write_text(
+                "---\ntype: concept\n---\n\n# Markdown Concept\n\n> 一句话定义：**重要概念** 是 [[LLM Wiki]] 的 `核心`。",
+                encoding="utf-8",
+            )
+
+            cards = generate_cards_for_page(parse_markdown_page(path))
+
+        self.assertEqual(cards[0].answer, "重要概念 是 LLM Wiki 的 核心。")
+
     def test_collect_cards_from_wiki_scans_supported_public_directories(self) -> None:
         with TemporaryDirectory() as tmp_dir:
             root = Path(tmp_dir)

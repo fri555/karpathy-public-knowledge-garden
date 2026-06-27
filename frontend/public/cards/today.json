@@ -4,7 +4,7 @@
       "id": "concept-30-70-定律-definition-001",
       "type": "definition",
       "question": "什么是 30/70 定律？",
-      "answer": "**Agent 的\"智能\"部分只占 30% 的工作量，剩下 70% 全在\"连接\"上**——管权限、防泄露、协议互通——这是 Agent 从 demo 走向生产的核心工程现实。",
+      "answer": "Agent 的\"智能\"部分只占 30% 的工作量，剩下 70% 全在\"连接\"上——管权限、防泄露、协议互通——这是 Agent 从 demo 走向生产的核心工程现实。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/30-70定律.md",
       "concepts": [
@@ -35,7 +35,7 @@
       "id": "concept-agent-md-协议-definition-001",
       "type": "definition",
       "question": "什么是 AGENT.md 协议？",
-      "answer": "[[三层架构]] 中的第三层——给 LLM Agent 读的配置文件，规定 Wiki 怎么组织、用什么约定、各种操作遵循什么流程。",
+      "answer": "三层架构 中的第三层——给 LLM Agent 读的配置文件，规定 Wiki 怎么组织、用什么约定、各种操作遵循什么流程。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/AGENT.md 协议.md",
       "concepts": [
@@ -100,7 +100,7 @@
       "id": "concept-agent-gateway-协议翻译层-definition-001",
       "type": "definition",
       "question": "什么是 Agent Gateway 协议翻译层？",
-      "answer": "不要试图统一所有 Agent 的通信协议（不现实），而是在中间加一个轻量级 Gateway——**对外暴露统一 MCP，内部路由到 A2A/REST/gRPC**。把协议差异隔离在 Gateway 层，不污染业务逻辑。",
+      "answer": "不要试图统一所有 Agent 的通信协议（不现实），而是在中间加一个轻量级 Gateway——对外暴露统一 MCP，内部路由到 A2A/REST/gRPC。把协议差异隔离在 Gateway 层，不污染业务逻辑。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/Agent Gateway协议翻译层.md",
       "concepts": [
@@ -210,7 +210,7 @@
       "id": "concept-agentic-engineering-definition-001",
       "type": "definition",
       "question": "什么是 Agentic Engineering？",
-      "answer": "Simon Willison 定义的术语——**专业软件工程师用 AI 工具提升自己工作的方式**，关注质量、安全、可维护性、性能，不是用 AI 降低标准。",
+      "answer": "Simon Willison 定义的术语——专业软件工程师用 AI 工具提升自己工作的方式，关注质量、安全、可维护性、性能，不是用 AI 降低标准。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/Agentic Engineering.md",
       "concepts": [
@@ -246,7 +246,7 @@
       "id": "concept-agent-团队三阶段曲线-definition-001",
       "type": "definition",
       "question": "什么是 Agent 团队三阶段曲线？",
-      "answer": "每个 Agent 团队都会经历 **混乱期（1-7 天，负收益）→ 稳定期（8-21 天，少量编辑）→ 复利期（21 天+，自动跑通）** 三阶段——**绝大多数人死在第 1 阶段**。",
+      "answer": "每个 Agent 团队都会经历 混乱期（1-7 天，负收益）→ 稳定期（8-21 天，少量编辑）→ 复利期（21 天+，自动跑通） 三阶段——绝大多数人死在第 1 阶段。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/Agent团队三阶段曲线.md",
       "concepts": [
@@ -278,7 +278,7 @@
       "id": "concept-agent-工程化兜底-definition-001",
       "type": "definition",
       "question": "什么是 Agent 工程化兜底？",
-      "answer": "Agent 再智能，也是软件系统，**软件系统就需要边界和兜底**——用确定性的工程手段（Schema 校验、白名单、循环检测、Hooks）弥补 LLM 的概率性本质。",
+      "answer": "Agent 再智能，也是软件系统，软件系统就需要边界和兜底——用确定性的工程手段（Schema 校验、白名单、循环检测、Hooks）弥补 LLM 的概率性本质。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/Agent工程化兜底.md",
       "concepts": [
@@ -311,7 +311,7 @@
       "id": "concept-claude-md-四层架构-definition-001",
       "type": "definition",
       "question": "什么是 CLAUDE.md 四层架构？",
-      "answer": "Claude Code 的完整配置体系不是 CLAUDE.md 一个文件，而是 **CLAUDE.md（行为宪法）/ Skills（可执行 SOP）/ Hooks（强制执行法）/ Memory（学习记录）** 四层分工——把所有东西塞进 CLAUDE.md 是最常见的错误。",
+      "answer": "Claude Code 的完整配置体系不是 CLAUDE.md 一个文件，而是 CLAUDE.md（行为宪法）/ Skills（可执行 SOP）/ Hooks（强制执行法）/ Memory（学习记录） 四层分工——把所有东西塞进 CLAUDE.md 是最常见的错误。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/CLAUDE.md四层架构.md",
       "concepts": [
@@ -401,7 +401,7 @@
       "id": "concept-hooks-确定性执行-definition-001",
       "type": "definition",
       "question": "什么是 Hooks 确定性执行？",
-      "answer": "**Hooks 是把\"建议\"变成\"法律\"的唯一机制**——CLAUDE.md 写\"每次都要跑测试\"，Claude 在压力情境下常会跳过；Stop Hook 强制跑测试遵守率 100%。**这就是\"建议\"和\"法律\"的差距**。",
+      "answer": "Hooks 是把\"建议\"变成\"法律\"的唯一机制——CLAUDE.md 写\"每次都要跑测试\"，Claude 在压力情境下常会跳过；Stop Hook 强制跑测试遵守率 100%。这就是\"建议\"和\"法律\"的差距。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/Hooks确定性执行.md",
       "concepts": [
@@ -432,7 +432,7 @@
       "id": "concept-ingest-录入-definition-001",
       "type": "definition",
       "question": "什么是 Ingest 录入？",
-      "answer": "[[LLM Wiki]] 三个核心操作之一——把一份新资料编译进 Wiki，通常牵动 10–15 个页面更新。",
+      "answer": "LLM Wiki 三个核心操作之一——把一份新资料编译进 Wiki，通常牵动 10–15 个页面更新。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/Ingest 录入.md",
       "concepts": [
@@ -502,7 +502,7 @@
       "id": "concept-llm-wiki-definition-001",
       "type": "definition",
       "question": "什么是 LLM Wiki？",
-      "answer": "[[Andrej Karpathy]] 提出的知识库范式——人类喂资料提问题，LLM 持续编译维护一个 Markdown 知识网络，知识\"编译一次、持续保持最新\"。",
+      "answer": "Andrej Karpathy 提出的知识库范式——人类喂资料提问题，LLM 持续编译维护一个 Markdown 知识网络，知识\"编译一次、持续保持最新\"。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/LLM Wiki.md",
       "concepts": [
@@ -575,7 +575,7 @@
       "id": "concept-maintain-维护-definition-001",
       "type": "definition",
       "question": "什么是 Maintain 维护？",
-      "answer": "[[LLM Wiki]] 三个核心操作之一——定期让 Agent 对 Wiki 做审计，找矛盾、孤儿页、过时数据、缺失反链等问题。",
+      "answer": "LLM Wiki 三个核心操作之一——定期让 Agent 对 Wiki 做审计，找矛盾、孤儿页、过时数据、缺失反链等问题。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/Maintain 维护.md",
       "concepts": [
@@ -610,7 +610,7 @@
       "id": "concept-query-查询-definition-001",
       "type": "definition",
       "question": "什么是 Query 查询？",
-      "answer": "[[LLM Wiki]] 三个核心操作之一——对着 Wiki 提问，Agent 综合相关页面回答，并把新洞察沉淀回 Wiki。",
+      "answer": "LLM Wiki 三个核心操作之一——对着 Wiki 提问，Agent 综合相关页面回答，并把新洞察沉淀回 Wiki。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/Query 查询.md",
       "concepts": [
@@ -670,7 +670,7 @@
       "id": "concept-rem-睡眠式记忆整合-definition-001",
       "type": "definition",
       "question": "什么是 REM 睡眠式记忆整合？",
-      "answer": "把人类 REM 睡眠期\"白天经历回放 + 强化重要连接 + 丢弃噪声 + 短期转长期\"的记忆整合机制，迁移到 AI Agent 上的设计范式——代表实现是 [[Anthropic]] 的 [[Dreams]]。",
+      "answer": "把人类 REM 睡眠期\"白天经历回放 + 强化重要连接 + 丢弃噪声 + 短期转长期\"的记忆整合机制，迁移到 AI Agent 上的设计范式——代表实现是 Anthropic 的 Dreams。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/REM 睡眠式记忆整合.md",
       "concepts": [
@@ -735,7 +735,7 @@
       "id": "concept-skills-2-0-模块化-definition-001",
       "type": "definition",
       "question": "什么是 Skills 2.0 模块化？",
-      "answer": "Claude Code 2026 年的 Skills 升级——从旧版 `.claude/commands/*.md` 单文件，升级到 `.claude/skills/{name}/SKILL.md + scripts/ + references/` 文件夹结构，**支持 on-demand 载入和可执行脚本**。",
+      "answer": "Claude Code 2026 年的 Skills 升级——从旧版 .claude/commands/*.md 单文件，升级到 .claude/skills/{name}/SKILL.md + scripts/ + references/ 文件夹结构，支持 on-demand 载入和可执行脚本。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/Skills 2.0模块化.md",
       "concepts": [
@@ -841,7 +841,7 @@
       "id": "concept-vibe-coding-definition-001",
       "type": "definition",
       "question": "什么是 Vibe Coding？",
-      "answer": "[[../entities/Andrej Karpathy|Karpathy]] 2025 年 3 月提出的术语——用 AI 写代码时**完全不看代码**，只看运行结果；不工作就告诉模型不工作，碰运气让它修。",
+      "answer": "Karpathy 2025 年 3 月提出的术语——用 AI 写代码时完全不看代码，只看运行结果；不工作就告诉模型不工作，碰运气让它修。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/Vibe Coding.md",
       "concepts": [
@@ -873,7 +873,7 @@
       "id": "concept-三套记忆系统-definition-001",
       "type": "definition",
       "question": "什么是 三套记忆系统？",
-      "answer": "Claude Code 有三套**完全不同**的记忆机制——CLAUDE.md（人写的规则）/ Auto Memory（Claude 自己写的笔记）/ Session Memory（系统写的状态摘要）——**混用是 Agent 行为不稳定的最常见原因**。",
+      "answer": "Claude Code 有三套完全不同的记忆机制——CLAUDE.md（人写的规则）/ Auto Memory（Claude 自己写的笔记）/ Session Memory（系统写的状态摘要）——混用是 Agent 行为不稳定的最常见原因。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/三套记忆系统.md",
       "concepts": [
@@ -904,7 +904,7 @@
       "id": "concept-三层架构-definition-001",
       "type": "definition",
       "question": "什么是 三层架构？",
-      "answer": "[[LLM Wiki]] 方法论的核心结构——原始资料层（只读）+ Wiki 层（LLM 写人读）+ [[AGENT.md 协议]]（共同迭代）。",
+      "answer": "LLM Wiki 方法论的核心结构——原始资料层（只读）+ Wiki 层（LLM 写人读）+ AGENT.md 协议（共同迭代）。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/三层架构.md",
       "concepts": [
@@ -938,7 +938,7 @@
       "id": "concept-上下文工程-definition-001",
       "type": "definition",
       "question": "什么是 上下文工程？",
-      "answer": "[[../entities/Anthropic|Anthropic]] 官方提出的 Agent 时代核心范式——从 [[原则化指令|prompt engineering]] 进化到对 Agent 运行时全生命周期 context 的 curation 与维护，目标是\"找到最小高信号 token 集合，最大化期望输出\"。",
+      "answer": "Anthropic 官方提出的 Agent 时代核心范式——从 prompt engineering 进化到对 Agent 运行时全生命周期 context 的 curation 与维护，目标是\"找到最小高信号 token 集合，最大化期望输出\"。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/上下文工程.md",
       "concepts": [
@@ -1010,7 +1010,7 @@
       "id": "concept-上下文膨胀与压缩-definition-001",
       "type": "definition",
       "question": "什么是 上下文膨胀与压缩？",
-      "answer": "长期运行的 Agent 会因为历史记录不断积累导致上下文膨胀（如 161K token），响应变慢、输出降质——必须**每两周强制压缩**到合理量级（~40K），像软件的代码重构一样定期维护。",
+      "answer": "长期运行的 Agent 会因为历史记录不断积累导致上下文膨胀（如 161K token），响应变慢、输出降质——必须每两周强制压缩到合理量级（~40K），像软件的代码重构一样定期维护。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/上下文膨胀与压缩.md",
       "concepts": [
@@ -1074,7 +1074,7 @@
       "id": "concept-反馈闭环写入文件-definition-001",
       "type": "definition",
       "question": "什么是 反馈闭环写入文件？",
-      "answer": "Agent 的反馈**必须具体到可以直接写进可持续加载的文件**，否则下一轮 Agent 会再犯同样错误——这是 Agent 系统\"真正进化\"的唯一通道。",
+      "answer": "Agent 的反馈必须具体到可以直接写进可持续加载的文件，否则下一轮 Agent 会再犯同样错误——这是 Agent 系统\"真正进化\"的唯一通道。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/反馈闭环写入文件.md",
       "concepts": [
@@ -1153,7 +1153,7 @@
       "id": "concept-字段级权限-definition-001",
       "type": "definition",
       "question": "什么是 字段级权限？",
-      "answer": "MCP Server 不应只给 Agent \"能用/不能用\"的开关，而要让每个工具声明**数据敏感度等级**，给每个会话绑定**最小权限令牌**——权限检查发生在模型\"决定做什么\"之前，而不是\"已经做了什么\"之后。",
+      "answer": "MCP Server 不应只给 Agent \"能用/不能用\"的开关，而要让每个工具声明数据敏感度等级，给每个会话绑定最小权限令牌——权限检查发生在模型\"决定做什么\"之前，而不是\"已经做了什么\"之后。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/字段级权限.md",
       "concepts": [
@@ -1182,7 +1182,7 @@
       "id": "concept-工具调用幻觉-definition-001",
       "type": "definition",
       "question": "什么是 工具调用幻觉？",
-      "answer": "LLM 不只编造文本，还会在 Agent 场景中编造**不存在的工具名、错误的参数格式、无限循环调用**——这是比文本幻觉更危险的新型缺陷，必须用工程手段三层防护。",
+      "answer": "LLM 不只编造文本，还会在 Agent 场景中编造不存在的工具名、错误的参数格式、无限循环调用——这是比文本幻觉更危险的新型缺陷，必须用工程手段三层防护。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/工具调用幻觉.md",
       "concepts": [
@@ -1274,7 +1274,7 @@
       "id": "concept-知识复利-definition-001",
       "type": "definition",
       "question": "什么是 知识复利？",
-      "answer": "[[LLM Wiki]] 的灵魂原则——每加一份资料、每问一个问题，知识库都要变得更好，绝不允许\"读完即忘\"。",
+      "answer": "LLM Wiki 的灵魂原则——每加一份资料、每问一个问题，知识库都要变得更好，绝不允许\"读完即忘\"。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/知识复利.md",
       "concepts": [
@@ -1306,7 +1306,7 @@
       "id": "concept-纠错式-prompt-工程-definition-001",
       "type": "definition",
       "question": "什么是 纠错式 Prompt 工程？",
-      "answer": "与其一开始设计完美 prompt，不如先写粗糙版让 Agent 跑起来，通过持续把具体反馈写入文件来迭代——**第 1 版很烂，第 10 版开始能用，第 30 版才稳定**，像管理新员工一样管理 Agent。",
+      "answer": "与其一开始设计完美 prompt，不如先写粗糙版让 Agent 跑起来，通过持续把具体反馈写入文件来迭代——第 1 版很烂，第 10 版开始能用，第 30 版才稳定，像管理新员工一样管理 Agent。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/纠错式Prompt工程.md",
       "concepts": [
@@ -1388,7 +1388,7 @@
       "id": "concept-记忆文件-vs-技能文件-definition-001",
       "type": "definition",
       "question": "什么是 记忆文件 vs 技能文件？",
-      "answer": "Agent 的持久化存储必须把**偏好（记忆文件）**和**操作 SOP（技能文件）**拆开——前者是\"用户喜欢什么/不喜欢什么\"，后者是\"这件事该怎么做\"。混在一起会导致规则互相打架。",
+      "answer": "Agent 的持久化存储必须把偏好（记忆文件）和操作 SOP（技能文件）拆开——前者是\"用户喜欢什么/不喜欢什么\"，后者是\"这件事该怎么做\"。混在一起会导致规则互相打架。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/记忆文件vs技能文件.md",
       "concepts": [
@@ -1452,7 +1452,7 @@
       "id": "concept-路径作用域规则-definition-001",
       "type": "definition",
       "question": "什么是 路径作用域规则？",
-      "answer": "Claude Code 的 `.claude/rules/{name}.md` 文件**只在 Claude 处理对应路径的文件时才载入**——让 CLAUDE.md 从静态文件进化成\"动态规则引擎\"，大幅减少不相关规则浪费 context。",
+      "answer": "Claude Code 的 .claude/rules/{name}.md 文件只在 Claude 处理对应路径的文件时才载入——让 CLAUDE.md 从静态文件进化成\"动态规则引擎\"，大幅减少不相关规则浪费 context。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/路径作用域规则.md",
       "concepts": [
@@ -1513,7 +1513,7 @@
       "id": "concept-递归自我改进-definition-001",
       "type": "definition",
       "question": "什么是 递归自我改进？",
-      "answer": "AI 系统**用自己改进自己**的循环范式——通过运行结果反馈、自动调整自身（模型权重 / Prompt / 工具调用策略），实现性能随时间累积的复利增长。Karpathy 2026-05 加入 [[Anthropic]] 预训练团队后，被推测的重点研究方向之一。",
+      "answer": "AI 系统用自己改进自己的循环范式——通过运行结果反馈、自动调整自身（模型权重 / Prompt / 工具调用策略），实现性能随时间累积的复利增长。Karpathy 2026-05 加入 Anthropic 预训练团队后，被推测的重点研究方向之一。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/concepts/递归自我改进.md",
       "concepts": [
@@ -1576,7 +1576,7 @@
       "id": "entity-a2a-definition-001",
       "type": "definition",
       "question": "什么是 A2A？",
-      "answer": "Google 推出的 **Agent-to-Agent 通信协议**，定位与 [[MCP]] 形成竞争——MCP 解决 Agent 到工具，A2A 解决 Agent 到 Agent。",
+      "answer": "Google 推出的 Agent-to-Agent 通信协议，定位与 MCP 形成竞争——MCP 解决 Agent 到工具，A2A 解决 Agent 到 Agent。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/A2A.md",
       "concepts": [
@@ -1655,7 +1655,7 @@
       "id": "entity-andrej-karpathy-definition-001",
       "type": "definition",
       "question": "什么是 Andrej Karpathy？",
-      "answer": "AI 领域顶级研究者，[[OpenAI]] 联合创始人，前 [[Tesla]] AI 总监，[[LLM Wiki]] 方法论的提出者。",
+      "answer": "AI 领域顶级研究者，OpenAI 联合创始人，前 Tesla AI 总监，LLM Wiki 方法论的提出者。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/Andrej Karpathy.md",
       "concepts": [
@@ -1699,7 +1699,7 @@
       "id": "entity-anthropic-definition-001",
       "type": "definition",
       "question": "什么是 Anthropic？",
-      "answer": "Claude 系列大模型背后的 AI 安全公司，[[Andrej Karpathy]] 2026 年 5 月新东家，[[Memory Files]] / [[Dreams]] / [[Conway]] 三件套的推出方。",
+      "answer": "Claude 系列大模型背后的 AI 安全公司，Andrej Karpathy 2026 年 5 月新东家，Memory Files / Dreams / Conway 三件套的推出方。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/Anthropic.md",
       "concepts": [
@@ -1771,7 +1771,7 @@
       "id": "entity-bear-blog-definition-001",
       "type": "definition",
       "question": "什么是 Bear Blog？",
-      "answer": "Bear Blog 是一个轻量博客平台；本库收录的 [[../summaries/20260507-BearBlog-AgentsNeedControlFlowNotMorePrompts|agents need control flow, not more prompts]] 由 [[bsuh]] 发布在该平台。",
+      "answer": "Bear Blog 是一个轻量博客平台；本库收录的 agents need control flow, not more prompts 由 bsuh 发布在该平台。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/Bear Blog.md",
       "concepts": [
@@ -1846,7 +1846,7 @@
       "id": "entity-claude-code-definition-001",
       "type": "definition",
       "question": "什么是 Claude Code？",
-      "answer": "[[Anthropic]] 推出的 CLI 编码 Agent，是 [[Andrej Karpathy]] 本人在 [[LLM Wiki]] 工作流中使用的主力工具之一。",
+      "answer": "Anthropic 推出的 CLI 编码 Agent，是 Andrej Karpathy 本人在 LLM Wiki 工作流中使用的主力工具之一。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/Claude Code.md",
       "concepts": [
@@ -1931,7 +1931,7 @@
       "id": "entity-codebuddy-definition-001",
       "type": "definition",
       "question": "什么是 CodeBuddy？",
-      "answer": "CodeBuddy 是本文案例中使用的 AI Coding Agent，用于在 [[TDSQL]] HBase 兼容层 conditional mutation 功能开发中执行需求澄清、方案设计、测试生成和代码编写工作流。",
+      "answer": "CodeBuddy 是本文案例中使用的 AI Coding Agent，用于在 TDSQL HBase 兼容层 conditional mutation 功能开发中执行需求澄清、方案设计、测试生成和代码编写工作流。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/CodeBuddy.md",
       "concepts": [
@@ -1962,7 +1962,7 @@
       "id": "entity-codex-definition-001",
       "type": "definition",
       "question": "什么是 Codex？",
-      "answer": "OpenAI 的 CLI 编码 Agent，与 [[Claude Code]] 同类竞品，[[Andrej Karpathy]] 自己日常使用的两大 Agent 之一；**`/goal` 无限循环模式**是其旗舰特性，已被 [[卡尔的AI沃茨]] 的 [[淘金小镇]] 项目工程验证。",
+      "answer": "OpenAI 的 CLI 编码 Agent，与 Claude Code 同类竞品，Andrej Karpathy 自己日常使用的两大 Agent 之一；/goal 无限循环模式是其旗舰特性，已被 卡尔的AI沃茨 的 淘金小镇 项目工程验证。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/Codex.md",
       "concepts": [
@@ -2015,7 +2015,7 @@
       "id": "entity-conway-definition-001",
       "type": "definition",
       "question": "什么是 Conway？",
-      "answer": "[[Anthropic]] 在研的**永不下线 Agent 平台**——独立运行环境、监听外部事件、操控浏览器，把 [[Memory Files]] + [[Dreams]] 拼成完整闭环。",
+      "answer": "Anthropic 在研的永不下线 Agent 平台——独立运行环境、监听外部事件、操控浏览器，把 Memory Files + Dreams 拼成完整闭环。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/Conway.md",
       "concepts": [
@@ -2064,7 +2064,7 @@
       "id": "entity-dreams-definition-001",
       "type": "definition",
       "question": "什么是 Dreams？",
-      "answer": "[[Anthropic]] 推出的异步后台记忆整合机制，灵感来自人类 [[REM 睡眠式记忆整合]]——让 [[Claude]] \"白天干活、晚上做梦复盘\"，是 [[Maintain 维护]] 的**自动化版本**。",
+      "answer": "Anthropic 推出的异步后台记忆整合机制，灵感来自人类 REM 睡眠式记忆整合——让 Claude \"白天干活、晚上做梦复盘\"，是 Maintain 维护 的自动化版本。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/Dreams.md",
       "concepts": [
@@ -2115,7 +2115,7 @@
       "id": "entity-eureka-labs-definition-001",
       "type": "definition",
       "question": "什么是 Eureka Labs？",
-      "answer": "[[Andrej Karpathy]] 2024 年创办的 AI 原生教育创业公司，定位\"应用 AI 助手到教育\"，截至 2026-05 因 Karpathy 加入 [[Anthropic]] 而**事实上暂停**。",
+      "answer": "Andrej Karpathy 2024 年创办的 AI 原生教育创业公司，定位\"应用 AI 助手到教育\"，截至 2026-05 因 Karpathy 加入 Anthropic 而事实上暂停。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/Eureka Labs.md",
       "concepts": [
@@ -2144,7 +2144,7 @@
       "id": "entity-gemini-cli-definition-001",
       "type": "definition",
       "question": "什么是 Gemini CLI？",
-      "answer": "Gemini CLI 是 Google/Gemini 生态的命令行 coding agent；在本库中主要作为 [[Claude Code]]、[[Codex]] 的同类对照。",
+      "answer": "Gemini CLI 是 Google/Gemini 生态的命令行 coding agent；在本库中主要作为 Claude Code、Codex 的同类对照。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/Gemini CLI.md",
       "concepts": [
@@ -2203,7 +2203,7 @@
       "id": "entity-hermes-definition-001",
       "type": "definition",
       "question": "什么是 Hermes？",
-      "answer": "Hermes 是 OpenClacky 文章中被拿来横向评测的 Agent 对照对象之一；在本库中暂作为 [[OpenClacky]] 的成本/请求数/cache 命中率参照实体。",
+      "answer": "Hermes 是 OpenClacky 文章中被拿来横向评测的 Agent 对照对象之一；在本库中暂作为 OpenClacky 的成本/请求数/cache 命中率参照实体。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/Hermes.md",
       "concepts": [
@@ -2281,7 +2281,7 @@
       "id": "entity-mcp-definition-001",
       "type": "definition",
       "question": "什么是 MCP？",
-      "answer": "Model Context Protocol，[[Anthropic]] 在 2024-2025 年间开源的 **Agent 与外部工具/数据源通信的标准协议**，被视为 Agent 时代的\"TCP/IP\"。",
+      "answer": "Model Context Protocol，Anthropic 在 2024-2025 年间开源的 Agent 与外部工具/数据源通信的标准协议，被视为 Agent 时代的\"TCP/IP\"。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/MCP.md",
       "concepts": [
@@ -2314,7 +2314,7 @@
       "id": "entity-mac-mini-agent-fleet-definition-001",
       "type": "definition",
       "question": "什么是 Mac Mini Agent Fleet？",
-      "answer": "[[Shubham Saboo]] 在一台 Mac Mini 上跑的 6 个 Agent 自治系统，托管他的副业内容创作全流程——是 2026 年最广为流传的\"一个人 + 一台机器 + 一支 AI 团队\"实战案例。",
+      "answer": "Shubham Saboo 在一台 Mac Mini 上跑的 6 个 Agent 自治系统，托管他的副业内容创作全流程——是 2026 年最广为流传的\"一个人 + 一台机器 + 一支 AI 团队\"实战案例。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/Mac Mini Agent Fleet.md",
       "concepts": [
@@ -2347,7 +2347,7 @@
       "id": "entity-memory-files-definition-001",
       "type": "definition",
       "question": "什么是 Memory Files？",
-      "answer": "[[Anthropic]] 给 [[Claude]] 造的\"内置个人 Wiki\"——按话题/项目自动组织成结构化文档，按需选择性读取，是 [[LLM Wiki]] 理念的**消费级产品化**。",
+      "answer": "Anthropic 给 Claude 造的\"内置个人 Wiki\"——按话题/项目自动组织成结构化文档，按需选择性读取，是 LLM Wiki 理念的消费级产品化。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/Memory Files.md",
       "concepts": [
@@ -2404,7 +2404,7 @@
       "id": "entity-nicholas-joseph-definition-001",
       "type": "definition",
       "question": "什么是 Nicholas Joseph？",
-      "answer": "[[Anthropic]] Head of Pretraining，[[Andrej Karpathy]] 2026-05 加入 Anthropic 后的直属上级，前 [[OpenAI]] 核心成员。",
+      "answer": "Anthropic Head of Pretraining，Andrej Karpathy 2026-05 加入 Anthropic 后的直属上级，前 OpenAI 核心成员。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/Nicholas Joseph.md",
       "concepts": [
@@ -2434,7 +2434,7 @@
       "id": "entity-obsidian-definition-001",
       "type": "definition",
       "question": "什么是 Obsidian？",
-      "answer": "基于本地 Markdown 文件的笔记软件，以双向链接和图谱视图见长，是 [[LLM Wiki]] 方法论的默认载体。",
+      "answer": "基于本地 Markdown 文件的笔记软件，以双向链接和图谱视图见长，是 LLM Wiki 方法论的默认载体。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/Obsidian.md",
       "concepts": [
@@ -2467,7 +2467,7 @@
       "id": "entity-openclacky-definition-001",
       "type": "definition",
       "question": "什么是 OpenClacky？",
-      "answer": "OpenClacky 是一个 Ruby 编写的开源通用 AI Agent，主张用 [[../concepts/Harness工程|Harness 工程]] 把 Agent 成本压低到接近 [[Claude Code]]，核心抓手是 [[../concepts/Prompt Cache局部性|Prompt Cache 局部性]] 和 [[../concepts/工具集稳定性|工具集稳定性]]。",
+      "answer": "OpenClacky 是一个 Ruby 编写的开源通用 AI Agent，主张用 Harness 工程 把 Agent 成本压低到接近 Claude Code，核心抓手是 Prompt Cache 局部性 和 工具集稳定性。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/OpenClacky.md",
       "concepts": [
@@ -2503,7 +2503,7 @@
       "id": "entity-openclaw-definition-001",
       "type": "definition",
       "question": "什么是 OpenClaw？",
-      "answer": "OpenClaw 是 OpenClacky 文章中被拿来横向评测的开源 Agent 对照对象之一；在本库中暂作为 [[OpenClacky]] 的成本/架构参照实体。",
+      "answer": "OpenClaw 是 OpenClacky 文章中被拿来横向评测的开源 Agent 对照对象之一；在本库中暂作为 OpenClacky 的成本/架构参照实体。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/OpenClaw.md",
       "concepts": [
@@ -2553,7 +2553,7 @@
       "id": "entity-qwen-code-definition-001",
       "type": "definition",
       "question": "什么是 Qwen Code？",
-      "answer": "阿里通义千问推出的 CLI 编码 Agent，是国内用户搭建 [[LLM Wiki]] 时 [[Claude Code]] / [[Codex]] 的国产替代。",
+      "answer": "阿里通义千问推出的 CLI 编码 Agent，是国内用户搭建 LLM Wiki 时 Claude Code / Codex 的国产替代。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/Qwen Code.md",
       "concepts": [
@@ -2588,7 +2588,7 @@
       "id": "entity-shareuhack-definition-001",
       "type": "definition",
       "question": "什么是 Shareuhack？",
-      "answer": "一个**自运营 6-Agent fleet** 的内容团队（Sage / Mia / Luna / Rex 等），围绕 Claude Code 的 CLAUDE.md + Skills + Hooks 架构搭建全流程无人值守的选题→研究→撰写→发布 pipeline。",
+      "answer": "一个自运营 6-Agent fleet 的内容团队（Sage / Mia / Luna / Rex 等），围绕 Claude Code 的 CLAUDE.md + Skills + Hooks 架构搭建全流程无人值守的选题→研究→撰写→发布 pipeline。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/Shareuhack.md",
       "concepts": [
@@ -2622,7 +2622,7 @@
       "id": "entity-shubham-saboo-definition-001",
       "type": "definition",
       "question": "什么是 Shubham Saboo？",
-      "answer": "前 Google PM、现 Senior AI Product Manager @ Google，Awesome LLM Apps 维护者，**用 30 天在一台 Mac Mini 上养出 6 个 Agent 团队** 并把全过程方法论化的 Agent 实战派代表。",
+      "answer": "前 Google PM、现 Senior AI Product Manager @ Google，Awesome LLM Apps 维护者，用 30 天在一台 Mac Mini 上养出 6 个 Agent 团队 并把全过程方法论化的 Agent 实战派代表。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/Shubham Saboo.md",
       "concepts": [
@@ -2657,7 +2657,7 @@
       "id": "entity-simon-willison-definition-001",
       "type": "definition",
       "question": "什么是 Simon Willison？",
-      "answer": "Simon Willison 是长期记录 LLM 与软件工程实践的技术作者/开发者，在本库中主要贡献 [[../concepts/Agentic Engineering|Agentic Engineering]]、[[../concepts/Vibe Coding|Vibe Coding]] 边界、coding agent 工作模式与 context engineering 术语传播。",
+      "answer": "Simon Willison 是长期记录 LLM 与软件工程实践的技术作者/开发者，在本库中主要贡献 Agentic Engineering、Vibe Coding 边界、coding agent 工作模式与 context engineering 术语传播。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/Simon Willison.md",
       "concepts": [
@@ -2696,7 +2696,7 @@
       "id": "entity-skillfactory-definition-001",
       "type": "definition",
       "question": "什么是 SkillFactory？",
-      "answer": "SkillFactory 是知乎实践文章中的一个面向 [[../concepts/Harness工程|Harness 工程]] 的技能生产系统，把 Skill 创建流程改造成基线诊断、测试驱动、多路生成、质量评分、回归优化的流水线。",
+      "answer": "SkillFactory 是知乎实践文章中的一个面向 Harness 工程 的技能生产系统，把 Skill 创建流程改造成基线诊断、测试驱动、多路生成、质量评分、回归优化的流水线。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/SkillFactory.md",
       "concepts": [
@@ -2731,7 +2731,7 @@
       "id": "entity-tdsql-definition-001",
       "type": "definition",
       "question": "什么是 TDSQL？",
-      "answer": "TDSQL 是腾讯数据库产品；在 [[davidycwei]] 的 [[../concepts/Agentic Engineering|Agentic Engineering]] 文章中，它作为真实工程案例的项目背景出现。",
+      "answer": "TDSQL 是腾讯数据库产品；在 davidycwei 的 Agentic Engineering 文章中，它作为真实工程案例的项目背景出现。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/TDSQL.md",
       "concepts": [
@@ -2792,7 +2792,7 @@
       "id": "entity-agentic-engineering-framework-definition-001",
       "type": "definition",
       "question": "什么是 agentic-engineering-framework？",
-      "answer": "[[davidycwei]] 提出的基于 Skill 的模块化 [[../concepts/Agentic Engineering|Agentic Engineering]] 框架，用 Markdown + YAML 将 SDLC 工作流、最佳实践、项目规范和错误复盘组织成 Agent 可按需加载的工程上下文。",
+      "answer": "davidycwei 提出的基于 Skill 的模块化 Agentic Engineering 框架，用 Markdown + YAML 将 SDLC 工作流、最佳实践、项目规范和错误复盘组织成 Agent 可按需加载的工程上下文。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/agentic-engineering-framework.md",
       "concepts": [
@@ -2823,7 +2823,7 @@
       "id": "entity-autoresearch-definition-001",
       "type": "definition",
       "question": "什么是 autoresearch？",
-      "answer": "[[Andrej Karpathy]] 2026-03 个人开源的 AI-assisted research 极简框架（630 行 Python / 单 GPU / 5 分钟一轮 / 夜间自动跑 100 实验），是他 2026-05 加入 [[Anthropic]] 做 [[递归自我改进]] 团队的**技术伏笔与可行性证明**。",
+      "answer": "Andrej Karpathy 2026-03 个人开源的 AI-assisted research 极简框架（630 行 Python / 单 GPU / 5 分钟一轮 / 夜间自动跑 100 实验），是他 2026-05 加入 Anthropic 做 递归自我改进 团队的技术伏笔与可行性证明。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/autoresearch.md",
       "concepts": [
@@ -2859,7 +2859,7 @@
       "id": "entity-bsuh-definition-001",
       "type": "definition",
       "question": "什么是 bsuh？",
-      "answer": "bsuh 是 Bear Blog 作者，在 2026-05-07 的短文 [[../summaries/20260507-BearBlog-AgentsNeedControlFlowNotMorePrompts|agents need control flow, not more prompts]] 中提出“可靠 Agent 需要确定性控制流，而不是更多 prompt”的工程观点。",
+      "answer": "bsuh 是 Bear Blog 作者，在 2026-05-07 的短文 agents need control flow, not more prompts 中提出“可靠 Agent 需要确定性控制流，而不是更多 prompt”的工程观点。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/bsuh.md",
       "concepts": [
@@ -2891,7 +2891,7 @@
       "id": "entity-davidycwei-definition-001",
       "type": "definition",
       "question": "什么是 davidycwei？",
-      "answer": "知乎文章《从第一性原理思考 Agentic Engineering》的作者，鹅厂架构师，提出基于 Skill 的模块化 [[../concepts/Agentic Engineering|Agentic Engineering]] 框架。",
+      "answer": "知乎文章《从第一性原理思考 Agentic Engineering》的作者，鹅厂架构师，提出基于 Skill 的模块化 Agentic Engineering 框架。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/davidycwei.md",
       "concepts": [
@@ -2949,7 +2949,7 @@
       "id": "entity-muratcankoylan-definition-001",
       "type": "definition",
       "question": "什么是 muratcankoylan？",
-      "answer": "muratcankoylan 是 GitHub 项目 [[Agent Skills for Context Engineering]] 的作者/维护者，将 context engineering、harness engineering 与 multi-agent patterns 整理成可按需加载的 Agent Skills。",
+      "answer": "muratcankoylan 是 GitHub 项目 Agent Skills for Context Engineering 的作者/维护者，将 context engineering、harness engineering 与 multi-agent patterns 整理成可按需加载的 Agent Skills。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/muratcankoylan.md",
       "concepts": [
@@ -2980,7 +2980,7 @@
       "id": "entity-obsidian-agent-client-definition-001",
       "type": "definition",
       "question": "什么是 obsidian-agent-client？",
-      "answer": "把外部 CLI Agent（[[Qwen Code]] / [[Claude Code]] 等）嵌入 [[Obsidian]] 侧边栏的第三方插件，是\"方案 B\"的核心粘合剂。",
+      "answer": "把外部 CLI Agent（Qwen Code / Claude Code 等）嵌入 Obsidian 侧边栏的第三方插件，是\"方案 B\"的核心粘合剂。",
       "explanation": "先用一句话回忆概念，再回到来源页补充上下文。",
       "sourcePage": "wiki/entities/obsidian-agent-client.md",
       "concepts": [
