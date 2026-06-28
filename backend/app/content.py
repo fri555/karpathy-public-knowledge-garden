@@ -75,21 +75,6 @@ def generate_cards_for_page(page: MarkdownPage) -> list[GeneratedCard]:
             )
         )
 
-    if page.links:
-        cards.append(
-            GeneratedCard(
-                id=_card_id(page, "connection"),
-                type="connection",
-                question=f"{page.title} 和哪些旧概念发生连接？",
-                answer="、".join(page.links),
-                explanation="连接卡用于保持知识网络活性，避免新知识孤立存在。",
-                source_page=str(page.path),
-                concepts=page.links,
-                difficulty="medium",
-                created="2026-06-25",
-            )
-        )
-
     return cards
 
 

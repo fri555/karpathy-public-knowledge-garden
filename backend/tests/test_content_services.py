@@ -26,14 +26,14 @@ class MarkdownContentTests(unittest.TestCase):
         self.assertEqual(page.tags, ["知识管理", "agent"])
         self.assertEqual(page.links, ["知识复利", "Ingest 录入"])
 
-    def test_generate_cards_for_page_creates_definition_and_connection_cards(self) -> None:
+    def test_generate_cards_for_page_creates_definition_cards_only(self) -> None:
         page = parse_markdown_page(FIXTURE)
         cards = generate_cards_for_page(page)
 
-        self.assertEqual([card.type for card in cards], ["definition", "connection"])
+        self.assertEqual([card.type for card in cards], ["definition"])
         self.assertEqual(cards[0].question, "什么是 LLM Wiki？")
         self.assertIn("由 Agent 持续维护和编译的知识网络", cards[0].answer)
-        self.assertEqual(cards[1].concepts, ["知识复利", "Ingest 录入"])
+        self.assertNotIn("发生连接", cards[0].question)
 
     def test_generate_cards_for_page_strips_inline_markdown_syntax(self) -> None:
         with TemporaryDirectory() as tmp_dir:
@@ -57,7 +57,7 @@ class MarkdownContentTests(unittest.TestCase):
 
             cards = collect_cards_from_wiki(root)
 
-        self.assertEqual(len(cards), 2)
+        self.assertEqual(len(cards), 1)
         self.assertEqual(cards[0].source_page, "wiki/concepts/LLM Wiki.md")
 
     def test_get_today_cards_returns_generated_cards_when_wiki_has_content(self) -> None:
@@ -94,6 +94,8 @@ class MarkdownContentTests(unittest.TestCase):
             exported = output.read_text(encoding="utf-8")
 
         self.assertIn('"question": "什么是 LLM Wiki？"', exported)
+        self.assertNotIn("发生连接", exported)
+        self.assertNotIn('"type": "connection"', exported)
         self.assertIn('"sourcePage":', exported)
 
     def test_write_pages_json_exports_public_page_index(self) -> None:
